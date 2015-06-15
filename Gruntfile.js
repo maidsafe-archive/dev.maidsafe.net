@@ -15,9 +15,9 @@ module.exports = function (grunt) {
   var TEST_PORT = grunt.option('testPort') || 8000;
   var CONFIG = {
     owner: 'maidsafe',
-    repo: 'maidsafe.github.io',
-    baseBranch: 'next',
-    deployBranch: 'master'
+    repo: 'dev.maidsafe.net',
+    baseBranch: 'master',
+    deployBranch: 'gh-pages'
   };
 
   var customMiddleware = function (req, res, next) {
