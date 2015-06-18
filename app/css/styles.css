@@ -1,0 +1,4169 @@
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.hidden{
+  display: none;
+}
+.container{
+  width: 100%;
+  padding:0;
+}
+.pull-right{
+  float:right;
+}
+.pull-left{
+  float:left;
+}
+.col-r{
+  padding-right: 0;
+  margin-right: 0;
+}
+.col-l{
+  padding-left: 0;
+  margin-left: 0;
+}
+/*********** Sticky Footer styles ****************/
+html, body {height: 100%;}
+
+#container {min-height: 100%;}
+
+#main {
+  overflow:auto;
+}  /* must be same height as the footer */
+
+footer {
+  position: relative;
+  clear:both;
+} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+/*******************************************************************************
+
+Fonts
+
+*******************************************************************************/
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLightItalic';
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemiboldItalic';
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtraboldItalic';
+    src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+        font-family: 'Dax';
+        src: url('../fonts/dax_light.eot');
+        src: url('../fonts/dax_light.eot?#iefix') format('embedded-opentype'),
+              url('../fonts/dax_light.woff') format('woff'),
+            url('../fonts/dax_light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+  
+p.style1 {font: 18px/27px 'OpenSansLight', Arial, sans-serif;}
+p.style2 {font: 18px/27px 'OpenSansLightItalic', Arial, sans-serif;}
+p.style3 {font: 18px/27px 'OpenSansRegular', Arial, sans-serif;}
+p.style4 {font: 18px/27px 'OpenSansItalic', Arial, sans-serif;}
+p.style5 {font: 18px/27px 'OpenSansSemibold', Arial, sans-serif;}
+p.style6 {font: 18px/27px 'OpenSansSemiboldItalic', Arial, sans-serif;}
+p.style7 {font: 18px/27px 'OpenSansBold', Arial, sans-serif;}
+p.style8 {font: 18px/27px 'OpenSansBoldItalic', Arial, sans-serif;}
+p.style9 {font: 18px/27px 'OpenSansExtrabold', Arial, sans-serif;}
+p.style10 {font: 18px/27px 'OpenSansExtraboldItalic', Arial, sans-serif;}
+    
+h1.style1 {font: 50px/70px 'OpenSansLight', Arial, sans-serif;}
+h1.style2 {font: 50px/70px 'OpenSansLightItalic', Arial, sans-serif;}
+h1.style3 {font: 50px/70px 'OpenSansRegular', Arial, sans-serif;}
+h1.style4 {font: 50px/70px 'OpenSansItalic', Arial, sans-serif;}
+h1.style5 {font: 50px/70px 'OpenSansSemibold', Arial, sans-serif;}
+h1.style6 {font: 50px/70px 'OpenSansSemiboldItalic', Arial, sans-serif;}
+h1.style7 {font: 50px/70px 'OpenSansBold', Arial, sans-serif;}
+h1.style8 {font: 50px/70px 'OpenSansBoldItalic', Arial, sans-serif;}
+h1.style9 {font: 50px/70px 'OpenSansExtrabold', Arial, sans-serif;}
+h1.style10 {font: 50px/70px 'OpenSansExtraboldItalic', Arial, sans-serif;}
+/*******************************************************************************
+
+Default Styles
+
+*******************************************************************************/
+body {
+  font-family: 'OpenSansRegular', Arial, sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  padding-top: 90px;
+}
+a:link
+{   
+  color: #808080;
+  text-decoration: inherit;
+}
+
+a:visited
+{
+  color: #808080;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #326fb3;
+  text-decoration: inherit;
+}
+
+a:active
+{
+  color: #000000;
+  text-decoration: inherit;
+}
+
+a.nontext /* used to override default properties of 'a' tag */
+{
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.flr {
+  float:right;
+}
+.fll {
+  float:left;
+}
+
+section {
+  clear:both;
+}
+
+.shell {
+  width:960px;
+  margin:0 auto;
+}
+
+h1 {
+  color: #808080;
+  font-family: 'OpenSansLight', Arial, sans-serif;
+  font-weight: 300;
+  padding:0;
+  margin-bottom:30px;
+  font-size:28px;
+  margin:50px auto 40px;
+
+}
+
+h2 {
+  color:#464646;
+  font-family:'OpenSansBold', Arial, sans-serif;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+h3 {
+  color:#464646;
+  font-family:'OpenSansBold', Arial, sans-serif;
+  font-size:14px;
+  line-height: 1.3;
+  margin-bottom:10px;
+}
+
+p {
+  color: #464646;
+    font-family: 'OpenSansRegular', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0px 0 0;
+}
+
+blockquote {
+  padding:15px;
+  margin-bottom:30px;
+}
+blockquote p {
+  margin:0;
+  padding:0;
+  font-style:italic;
+}
+
+strong { font-weight:bold; font-style:normal;}
+
+.bdrr { border-right:1px solid #CCCCCC; }
+
+.cent {
+  display: block;
+    text-align: center;
+}
+
+.iframe {
+  width:80%;
+  height:350px;
+}
+
+.bold {
+  font-family: 'OpenSansSemiBold', Arial, sans-serif;
+}
+
+ol {
+  margin:0 0 30px 20px;
+  font-size:14px;
+  color: #464646;
+}
+
+ol li {
+  list-style:decimal;
+  margin-bottom:5px;
+}
+
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+code {
+  background:#f9f9f9;
+  font-family: monospace;
+  padding: 10px 20px;
+  display: block;
+}
+code.inline{
+  display: inline-block;
+  padding: 10px;
+}
+
+/*******************************************************************************
+
+Header Styles
+
+*******************************************************************************/
+header {
+  height:90px;
+  width: 100%;
+  color: #5593D7;
+  font-family: 'OpenSansLight', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0;
+  margin-bottom:50px;
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:rgba(255,255,255,1.00);
+  z-index: 200;
+  border-bottom: solid 1px #808080;
+}
+
+header .build-logo {
+  background:url(../img/homepage_logo.png) no-repeat 0 0;
+  width:252px;
+  height:73px;
+  background-size:252px 73px;
+  position:relative;
+  top:10px;
+  display:block;
+}
+
+.menu-link {
+  display: none;
+  float: right;
+  text-decoration: none;
+  margin-right:20px;
+  
+}
+.menu { 
+  float: right;
+  position:relative;
+  right:0px;
+  top:40px;
+}
+.menu ul { 
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  height: 30px;
+}
+.menu ul:after {
+  content: ""; clear: both; display: block;
+}
+.menu ul li {
+  position: relative;
+  padding:0;
+  display: inline-block;
+  margin-left:28px;
+  margin-top: 4px;
+  width: 85px;
+}
+.menu ul li a { 
+  display: block;
+  text-decoration: none;
+  color: #808080;
+  text-align: center;
+}
+.menu .search input{
+  background:transparent url(../img/search.png) 5px center no-repeat;
+  background-size: 20px 20px;
+  padding: 5px 5px 5px 30px;
+  font-family: "OpenSansLight";
+  font-size: 18px;
+  border:none;
+  width:100px;
+}
+.menu .search input:focus{
+  /*border:solid 1px #808080;*/
+  background:#f2f2f2 url(../img/search.png) 5px center no-repeat;
+  background-size: 20px 20px;
+  color: #8f8f8f;
+}
+#home .menu .home:before,
+.app-devs .menu .app-devs:before,
+.core-devs .menu .core-devs:before,
+.about .menu .about:before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 35px;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #808080 transparent;
+  display: block;
+  width: 0;
+}
+#home .menu .home:after,
+.app-devs .menu .app-devs:after,
+.core-devs .menu .core-devs:after,
+.about .menu .about:after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 36px;
+  border-width: 9px 9px 0;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+}
+header ul li.search:after, header ul li.search:before{
+  display: none;
+}
+/******** Menu/top menu selected state styles ********/
+#home .menu .home a,
+#app-devs .menu .app-devs a,
+#core-devs .menu .core-devs a,
+#about .menu .about a{
+  font-family: 'OpenSansSemibold';
+}
+/*******************************************************************************
+
+Side Menu
+
+*******************************************************************************/
+
+#side-menu{
+  font-size: 16px;
+  margin-top: 50px;
+  color:#808080;
+  cursor: default;
+  height:100%;
+}
+#side-menu li{
+  padding: 5px;
+}
+#side-menu .menu-category{
+  margin: 15px 0;
+}
+#side-menu .menu-category .menu-title{
+  font-family: 'OpenSansSemibold';
+  background:transparent url(../img/menu-caret-up.png) 95% center no-repeat;
+  background-size: 14px 8px;
+}
+#side-menu .menu-category.show .menu-title, #side-menu .menu-category.no-sub.show .menu-title{
+  color: #5593d7;
+  background:#e4eff7 url(../img/menu-caret-down.png) 95% center no-repeat;
+  background-size: 14px 8px;
+}
+#side-menu .menu-category.no-sub .menu-title{
+  background-image: none !important;
+}
+#side-menu .menu-category.no-sub .menu-title a{
+  color: #5593d7;
+}
+#side-menu .menu-category .menu-item{
+  font-family: 'OpenSansLight';
+  background-color: #f9f9f9;
+  display: none;
+}
+#side-menu .menu-category.show .menu-item{
+  display: block;
+}
+#side-menu .menu-title:hover, #side-menu .menu-item:hover{
+  color:#5593d7;
+}
+/*******************************************************************************
+
+Home Page Styles
+
+*******************************************************************************/
+
+#home h1, #home h2, #home h3, #home p {
+  text-align:center;  
+  color:#808080;
+  font-family: 'OpenSansLight', Arial, sans-serif;
+}
+#home h3 {
+  font-size:24px;
+}
+#home p{
+  font-size: 18px;
+}
+.features{
+  display: block;
+  margin:0 auto;
+  float: none;
+}
+#home .features h2{
+  display: inline-block;
+  text-align: left;
+  float: none;
+  font-size: 21px;
+  width: 530px;
+  padding-bottom: 10px;
+}
+.feature{
+  padding-bottom: 20px;
+}
+.feature > div{
+  display: inline-block;
+  margin:0 15px;
+}
+.lock-icon{
+  background-image: url(../img/lock-icon.png);
+  background-size: 56px 64px;
+  width:56px;
+  height:64px;
+}
+.api-icon{
+  background-image: url(../img/api-icon.png);
+  background-size: 56px 42px;
+  width:56px;
+  height:42px;
+}
+.coins-icon{
+  background-image: url(../img/coins-icon.png);
+  background-size: 56px 42px;
+  width:56px;
+  height:42px;
+}
+#app-dev-icon-wrapper,#core-dev-icon-wrapper{
+  position: relative;
+}
+#home .app-dev h3, #home .core-dev h3{
+  margin-top:160px;
+}
+.app-dev p, .core-dev p{
+  margin:0 auto;
+  width: 80%
+}
+#home .box-links{
+  background-color: #e4eff7;
+  border-top: solid 1px #808080;
+  border-bottom: solid 1px #808080;
+  margin-top: 300px;
+  height:230px;
+}
+.box-links p{
+  width: 90%;
+  margin: 0 auto;
+}
+.box-links .icon{
+  margin: 30px auto;
+}
+.box-links .tutorials-icon{
+  width: 124px;
+  height: 86px;
+  background-image: url(../img/tutorials-icon.png);
+  background-size: 124px 86px;
+}
+.box-links .roadmap-icon{
+  width: 182px;
+  height: 86px;
+  background-image: url(../img/roadmap-icon.png);
+  background-size: 182px 86px;
+}
+.box-links .about-icon{
+  width: 86px;
+  height: 86px;
+  background-image: url(../img/about-icon.png);
+  background-size: 86px 86px;
+}
+.box-links>div{
+  position: relative;
+  height: 100%;
+}
+.box-links .border {
+    border: 0;
+    width: 1px;
+    height:100%;
+    position:absolute;
+    left:-10px;
+    background: -moz-linear-gradient(rgba(128,128,128,0) 0%, rgba(128,128,128,1) 50%, rgba(128,128,128,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(128,128,128,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(128,128,128,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(128,128,128,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(128,128,128,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(128,128,128,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+/*.box-links hr:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #f9f9f9;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}*/
+/******************** Section 1 ********************/
+
+
+/*******************************************************************************
+
+Inner Page Styles
+
+*******************************************************************************/
+
+.cat-wrapper{
+  float: right;
+}
+
+
+
+
+/*******************************************************************************
+
+About Page Styles
+
+*******************************************************************************/
+
+#about #menu1 .idle{
+  background-image: url(../img/community-idle.png);
+}
+#about #menu1 .active, #about #menu1 .idle:hover {
+  background-image: url(../img/community-active.png);
+}
+#about #menu2 .idle{
+  background-image: url(../img/company-idle.png);
+}
+#about #menu2 .active, #about #menu2 .idle:hover {
+  background-image: url(../img/company-active.png);
+}
+#about #menu3 .idle{
+  background-image: url(../img/timeline-idle.png);
+}
+#about #menu3 .active, #about #menu3 .idle:hover {
+  background-image: url(../img/timeline-active.png);
+}
+#about h1, #about h2, #about h3, #about p {
+  text-align:left;  
+  color:#131313;
+  font-family: 'OpenSansLight';
+}
+#about h1{
+  margin-top: 30px;
+  font-size: 40px;
+}
+#about h2 {
+  font-family:'OpenSansRegular', Arial, sans-serif;
+  font-size:28px;
+  margin-bottom:10px;
+}
+#about h3 {
+  font-family:'OpenSansRegular', Arial, sans-serif;
+  font-size:20px;
+  margin-bottom:10px;
+}
+#about .banner {
+  background:url(../img/about-banner-1.jpg) center -200px;
+  height:600px;
+  width: auto;
+  display:block;
+}
+#about .banner h1{
+  margin: 75px 0 75px;
+  text-align: center;
+}
+#about .banner .banner-menu h2{
+  font-size: 28px;
+  position: absolute;
+
+}
+#about .team.banner{
+  background:url(../img/team-banner-1.png) center 50px;
+  height:300px;
+  width: auto;
+  display:block;
+}
+#about .banner, #about .team.banner{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#about .banner .banner-menu{
+  margin: 0 auto;
+  position: relative;
+  background: url(../img/about-banner-menu.png);
+  background-size: 265px 240px;
+  width: 265px;
+  height: 240px;
+}
+#about .banner-menu > div{
+  position: absolute;
+}
+#about .banner-menu div.active, #about .banner-menu div.idle{
+  position: absolute;
+  display: block;
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  transition: opacity .25s ease-in-out;
+}
+
+#about #banner-menu-1{
+  top:0;
+  left: 74px;
+}
+#about #banner-menu-1 .idle{
+  background: url(../img/community-idle.png);
+}
+#about #banner-menu-1 .active{
+  opacity: 0;
+  background: url(../img/community-active.png);
+}
+#about #banner-menu-1 .active:hover{
+  opacity: 1;
+}
+#about #banner-menu-1 h2{
+  left:-15px;
+  top:-35px;
+}
+
+#about #banner-menu-2{
+  top:125px;
+  left: 0px;
+}
+#about #banner-menu-2 .idle{
+  background: url(../img/company-idle.png);
+}
+#about #banner-menu-2 .active{
+  opacity: 0;
+  background: url(../img/company-active.png);
+}
+#about #banner-menu-2 .active:hover{
+  opacity: 1;
+}
+#about #banner-menu-2 h2{
+  left:0px;
+  top:115px;
+}
+
+#about #banner-menu-3{
+  top:125px;
+  left: 150px;
+}
+#about #banner-menu-3 .idle{
+  background: url(../img/timeline-idle.png);
+}
+#about #banner-menu-3 .active{
+  opacity: 0;
+  background: url(../img/timeline-active.png);
+}
+#about #banner-menu-3 .active:hover{
+  opacity: 1;
+}
+#about #banner-menu-3 h2{
+  left:5px;
+  top:115px;
+}
+
+
+/*******************************************************************************
+
+Roadmap Page Styles
+
+*******************************************************************************/
+
+div.roadmap {
+  background-image: url("../img/roadmap/roadmap.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 540px;
+  height: 380px;
+  position: relative;
+}
+.roadmap-stage {
+  position: absolute;
+  display: block;
+  width:120px;
+  height:120px;
+  color:#fff;
+}
+
+.roadmap-stage h2{
+  margin:0;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'OpenSansLight';
+  color: inherit;
+}
+
+//#roadmap #viewer > p{font-size: 1px;}
+#roadmap #viewer > h1{margin:0 0 10px 0;}
+
+.roadmap-stage:hover {
+  color: #808080;
+  cursor: pointer; 
+  cursor: hand; 
+}
+
+#testnet1{top:35px;left: 15px;}
+#testnet2{top:265px;left: 147px;}
+#testnet3{top:35px;left: 277px;}
+#betalaunch{top:265px;left: 407px;}
+
+.bullet{
+  height:50px;
+  display: table;
+}
+
+.bullet h2{
+  margin:0;
+  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.complete h2, .progress h2{
+  font-family: 'OpenSansRegular';
+}
+
+.end{margin-bottom: 15px;}
+
+
+.bullet-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 52px;
+  height: 50px;
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+.backwards {color:#5593D7;}
+.backwards:hover {
+  color: #808080;
+  cursor: pointer; 
+  cursor: hand; 
+}
+.backwards img{
+  float:left;
+  padding-right: 10px;
+}
+.backwards p{
+  color: inherit;
+}
+
+div.start.active .bullet-icon{ background-image: url("../img/roadmap/start_active.png");}
+div.start.idle .bullet-icon{ background-image: url("../img/roadmap/start_idle.png");}
+div.complete .bullet-icon{ background-image: url("../img/roadmap/complete.png");}
+div.progress .bullet-icon{ background-image: url("../img/roadmap/progress.png");}
+div.end.active .bullet-icon{ background-image: url("../img/roadmap/end_active.png");}
+div.end.idle .bullet-icon{ background-image: url("../img/roadmap/end_idle.png");}
+
+#tech-roadmap p{padding:60px 0 0 0;}
+
+
+/*******************************************************************************
+
+Credits Page Styles
+
+*******************************************************************************/
+
+
+#credits section{
+  background:url(.img/content_divider.png) repeat-x bottom center;
+  padding-bottom:5px;
+  margin-bottom:20px;
+  height:100px;
+}
+
+.credit-text h3{
+  font-family: 'OpenSansLight', Arial, sans-serif !important;
+  font-size: 16px;
+  color: #5593D7;
+}
+
+.credit-logo{
+  height: 90px;
+  margin: 0 auto;
+}
+
+.credit-logo div{
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:0 auto;
+}
+
+.advanced-installer{ 
+  background-image: url("../img/credits/advanced-installer-logo.jpg");
+  width: 90px;
+  height: 90px;
+}
+.atlassian-jira{ 
+  background-image: url("../img/credits/atlassian-jira-logo.jpg");
+  width: 90px;
+  height: 90px;
+}
+.github-credit{
+  background-image: url(."img/github-octocat.png");
+  width: 90px;
+  height: 90px;
+}
+.jetbrains{
+  background-image: url("../img/credits/jetbrains-logo.png");
+  width: 120px;
+  height: 40px;
+  margin-top: 25px !important;
+}
+.xamarin{ 
+  background-image: url("../img/credits/xamarin-logo.png");
+  width: 90px;
+  height: 90px;
+}
+.sauce-labs{ 
+  background-image: url("../img/credits/sauce-labs-logo.jpg");
+  width: 82px;
+  height: 90px;
+}
+
+
+
+/*******************************************************************************
+
+Footer Styles
+
+*******************************************************************************/
+
+footer {
+  clear:both;
+  padding:30px 0 10px;
+  color: #808080;
+  font-size: 16px;
+  font-family: 'OpenSansLight';
+}
+footer a.maidsafe-logo {
+  background:url(../img/homepage_logo.png) no-repeat 0 0;
+  width:100px;
+  height:30px;
+  background-size:100px 30px;
+  position:relative;
+  display:block;
+}
+footer .social-links{
+  padding: 10px 0;
+}
+footer .social-links a{
+  padding: 0;
+}
+footer .social-links li{
+  padding-left: 10px;
+}
+
+footer li{
+  display: inline-block;
+}
+footer .container-12 {
+  clear:both;
+}
+.footer-links{
+  display: block;
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+}
+
+footer a {
+  color: #808080;
+  padding:10px;
+  display:inline-block;
+}
+
+footer a:visited {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #5593D7;
+  text-decoration: inherit;
+}
+
+footer a:active {
+  color: #808080;
+  text-decoration: inherit;
+}
+
+footer img { display:inline-block!important;}
+
+footer .cc-by{
+  padding:0;
+  text-align: center;
+  display: block;
+  float: none;
+}
+footer .cc-by > p > a{
+  padding: 0;
+}
+footer .cc-by p{
+  display: inline-block;
+  font-size: 12px !important;
+}
+
+
+/********************************************************************************************* 
+
+2.  960px 
+
+*********************************************************************************************/  
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+
+}
+  
+
+/********************************************************************************************* 
+
+3.  720px 
+
+*********************************************************************************************/ 
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+/*******************************************************************************
+
+Header Styles
+
+*******************************************************************************/
+#home header {
+  height:90px;
+  font-size: 14px;
+}
+
+#home .shadow {
+    background-position:0px -25px ;
+}
+
+header {
+  height:80px;
+  font-size: 14px;
+}
+
+.shadow {
+  background-size:100% 100px;
+  height:100px;
+}
+
+.logo {
+  width:180px;
+  height:52px;
+  background-size:180px 52px;
+  top:18px;
+}
+
+.menu {
+  top:56px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left:16px;
+}
+
+
+/************************ Banner Styles **************************/
+
+.banner {
+  height:300px;
+}
+blockquote.quote {
+  font-size:18px;
+  padding: 8px;
+  margin: 5px;
+  background-size:28px 21px;
+}
+blockquote.quote span {
+  background-size:28px 21px;
+  padding-right: 25px;
+  padding-left:25px;
+}
+
+p.quoter {
+  font-size:13px;
+}
+
+.list-quote blockquote.quote span {
+    background-position: 456px 88px;
+}
+
+
+/************************** Banner news ***************************/
+.banner-news {
+  padding:5px 0 0 0;
+}
+.banner-news h1 {
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.banner-news p {
+  font-size:20px;
+}
+
+.news-graphic {
+  width:202px;
+  height:86px;
+  background-size:202px 86px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner community ***************************/
+.banner-community {
+  padding:40px 0 0 0;
+}
+.banner-community h1 {
+  font-size:26px;
+}
+
+.community-development {
+  width:280px;
+  height:46px;
+  margin:30px 0 0 0;
+}
+
+.community-org {
+  width:225px;
+  height:46px;
+  margin:30px 40px 0 40px;
+}
+
+.community-safecoin {
+  width:240px;
+  height:46px;
+}
+
+
+/************************** Banner plane ***************************/
+.banner-plane {
+  padding:40px 0 0 0;
+}
+.banner-plane h1 {
+  font-size:26px;
+  color:#5593D7;
+  margin:30px 0 0 0;
+}
+.plane {
+  background:url.(img/home_plane.png) no-repeat 0 0;
+  width:423px;
+  height:75px;
+  background-size:423px 75px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner getcode ***************************/
+.banner-getcode {
+  padding:65px 0 0 0;
+}
+.banner-getcode h1 {
+  font-size:26px;
+}
+.github-icon {
+  background-position: 254px 0px;
+  background-size:100px 88px;
+}
+.spacer {
+  display:inline-block;
+  width:100px;
+}
+/************************** Banner roadmap ***************************/
+.banner-roadmap {
+  padding:10px 0 0 0;
+}
+.banner-roadmap h1 {
+  font-size:26px;
+  color:#5593D7;
+}
+
+.home-tabs p {
+  font-size:22px;
+  padding:95px 50px 15px 50px;
+  line-height:24px;
+}
+
+.core-dev-tab {
+  background-position: center 25px;
+  background-size:48px 48px;
+  margin:10px 0!important;
+}
+
+.core-dev-tab:hover {
+  background-position: center 25px;
+  background-size:48px 48px;
+}
+
+.app-builder-tab {
+  background-position: center 25px;
+  background-size:54px 43px;
+  margin:10px 18px!important;
+}
+
+.app-builder-tab:hover {
+  background-position: center 25px;
+  background-size:54px 43px;
+}
+
+.farmer-tab {
+  background-position: center 25px;
+  background-size:57px 42px;
+  margin:10px 0!important;  
+}
+
+.farmer-tab:hover {
+  background-position: center 25px;
+  background-size:57px 42px;
+}
+
+.tell-me-more-tab p {
+  padding:20px;
+}
+
+.video-box {
+  height:394px;
+}
+
+#inline1 {
+  display:none;
+}
+
+
+
+#home h2 {
+  font-size:22px;
+  margin-bottom:40px;
+}
+
+.home-box {
+  margin-bottom:40px;
+}
+
+.home-box p {
+  font-size: 18px;
+}
+
+p.alpha-testers {
+  font-size: 28px;
+  font-family:'OpenSansBold', Arial, sans-serif;
+  margin-bottom:8px;
+  line-height:32px;
+}
+
+.maidsafe-platform {
+  background-size:180px 102px;
+  width:180px;
+  height:102px;
+}
+
+.surefile-test {
+  width:120px; height:62px;
+  background-size:120px 62px;
+}
+
+.github-code {
+  width:100px; height:88px;
+  background-size:100px 88px;
+}
+
+
+
+ul.leftnav li a { font-size:14px;}
+ul.leftnav li ul li a { font-size:12px;}
+
+
+.home-box p {
+  font-size: 16px;
+}
+
+.middle h2 {
+  margin-bottom:4%;
+}
+
+
+p.alpha-testers {
+  font-size: 24px;
+  margin-bottom:10px;
+}
+
+.article-1 {  padding-right:35px;}
+.article-2 {  padding-left:15px;}
+
+.notification p{
+  font-size: 16px;
+}
+
+/*********** Sidebar **************/
+
+.sidebar p {
+  font-size:14px;
+}
+
+.sidebar .divider {
+  width:100%; /*156*/
+  height:10px;
+  background-size:100px 10px;
+}
+
+a.visit-blog {
+  width:102px;
+  height:58px;
+  background-size:102px 116px;
+
+}
+
+a.maidsafe-dev {
+  width:102px;
+  height:30px;
+  background-size:102px 60px;
+}
+
+a.maidsafe-org {
+  width:102px;
+  height:31px;
+  background-size:102px 62px;
+}
+
+a.mumble {
+  width:102px;
+  height:77px;
+  background-size:102px 154px; 
+}
+
+/*********** Developers Page **************/
+
+a.get-started-button {
+  font-size: 18px;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+  float:right;
+}
+
+a.button-blue {
+  font-size: 36px;
+    font-weight: 400;
+}
+
+#developers h1 {
+  margin-bottom:50px;
+}
+
+a.light-button, a.light-button-full {
+  font-size:16px;
+  margin:5px 6px;
+
+}
+
+a.light-button-full {
+  padding:20px 22px;
+}
+
+.diagram {
+  padding-top:90px;
+}
+
+.app-stack {
+  background-position: 230px 215px;
+}
+
+#core-developer .app-stack {
+  background-position:230px 860px;
+}
+
+/********* Get Involved Page ************/
+.get-involved-tabs {
+  margin-bottom:30px;
+}
+
+.get-involved-tabs p {
+  font-size:22px;
+  padding:95px 20px 25px 20px;
+  line-height:26px;
+}
+
+.tell-me-more-tab p {
+  padding:20px;
+}
+
+.farmers-text img {
+  width:46px;
+  height:35px;
+  margin:65px 30px 55px 0;
+}
+
+.app-builders-text img {
+  width:46px;
+  height:36px;
+  margin:50px 30px 55px 0;
+}
+
+.core-developers-text img {
+  width:40px;
+  height:40px;
+  margin:33px 25px 40px 8px;
+}
+
+
+/*********** Documents Page ***************/
+
+.doc-box-papers-publications {
+  height:727px;
+}
+
+/*********** Company Page ***************/
+.main-content .col-3 {
+  width: 146px;
+}
+
+.main-content .left-col {
+  padding:0 20px 0 0;
+  margin:0 10px 0 0;
+}
+
+.main-content .right-col {
+  padding:0 0 0 20px;
+  margin:0 0 0 10px;
+}
+#company .main-content .col-3 h2{
+  padding-top: 4px;
+  width: 146px;
+  height: 31px;
+  background-size: 146px 31px;
+  font-size: 16px;
+}
+
+/*********** Team Page ***************/
+#company .grid-9 {
+  width:540px;
+  margin:0px;
+}
+#company h1 {
+  font-size: 21px;
+}
+
+.mosaic-block {
+    height: 160px;
+    width: 160px;
+}
+
+.mosaic-block img {
+  height: 160px;
+    width: 160px;
+}
+
+.mosaic-block p {
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.mosaic-block .details {
+    padding: 10px;
+}
+.team-map {
+  width: 340px;
+  height: 470px;
+  margin-left: -10px;
+}
+.team-icon {
+  width: 40px;
+}
+#boss { top: 150px; left: 198px; }
+#david { top: 37px; left: 32px; }
+#fraser { top: 17px; left: 128px; }
+#qi { top: 53px; left: 204px; }
+#prakash { top: 12px; left: 275px; }
+#ben { top: 185px; left: 101px; }
+#mahmoud { top: 240px; left: 34px; }
+#ross { top: 285px; left: 113px; }
+#viv { top: 246px; left: 200px; }
+#pod { top: 215px; left: 285px; }
+#niall { top: 338px; left: 175px; }
+#peter { top: 402px; left: 102px; }
+#lee { top: 375px; left: 262px; }
+
+#shona { top:101px; left:112px; }
+
+#justine { top:130px; left:12px; }
+#linda { top:347px; left:33px; }
+
+#nick { top:118px; left:291px; }
+#paige { top:312px; left:294px; }
+
+.profile-info {
+  display: block;
+  width: 160px !important;
+}
+.profile-info h2 {
+  margin-top: 0;
+}
+.profile-info p{
+  font-size: 12px;
+}
+
+/*********** Credits Page ***************/
+.jetbrains{
+  width: 100px;
+  height: 30px;
+  margin-top: 25px !important;
+}
+
+/*********** Careers Page ***************/
+.vacancies {
+  padding:20px;
+}
+
+#careers .col-l {
+  margin-right:70px;
+}
+.current-jobs {
+  padding:10px;
+  top:-10px;
+}
+.current-jobs h1 {
+  font-size:17px;
+}
+.current-jobs h2 {
+  font-size:12px;
+  margin:0px 0px 15px 0;
+}
+.current-jobs p, .current-jobs ul li {
+  font-size:11px;
+}
+
+.applynow {
+  background-size:41px 40px;
+  width:41px;
+  height:40px;
+  top:-14px;
+  right:-14px;
+}
+a.applyhere {
+  background-size:100px 88px;
+  width:86px;
+  height:24px;
+  display:block;
+  float:;
+  position:relative;
+  right:-54px;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:10px 6px;
+  font-size:11px;
+}
+
+.apply-text {
+  font-size:13px;
+  letter-spacing:-0.5px;
+}
+/*********** Use Cases Page Styles *************/
+#use-cases section .grid-4 {
+  margin:0px 40px 0 0;
+}
+
+/*********** License Page Styles *************/
+
+.download-license-box, .download-license-box-last {
+  background-size:40px 40px;
+  min-height:82px;
+  font-size:13px;
+}
+a.gpl-license, a.commercial-license, a.contributor-agreement {
+  padding:20px 10px 0px 55px;
+}
+
+.download-license-box {
+  margin:0px 14px 30px 0;
+}
+.download-license-box-last {
+  margin:0px 0px 30px 0;
+}
+
+/*********** Roadmap Page Styles **************/
+
+#testnet1{top:35px;left: 15px;}
+#testnet2{top:265px;left: 147px;}
+#testnet3{top:35px;left: 277px;}
+#betalaunch{top:265px;left: 407px;}
+
+.bullet h2{
+  font-size: 14px;
+  padding: 0;
+  margin:0;
+  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+}
+.bullet{
+  height: 40px;
+  display:table;
+}
+
+
+.end{margin-bottom: 15px;}
+
+
+.bullet-icon {
+  width: 42px;
+  height: 40px;
+  padding-right: 10px;
+}
+/*********** Features Page Styles *************/
+
+.last-col {
+  margin-left:20px;
+}
+
+
+#platform-features h2 {
+  background-size:220px 49px;
+}
+
+
+h2.noservers-head {
+  padding:8px 0 23px 15px;
+  font-size:20px;
+}
+
+h2.administrators-head {
+  padding:3px 58px 18px 15px;
+  font-size:14px;
+}
+
+h2.datamanage-head {
+  padding:4px 60px 23px 15px;
+  font-size:14px;
+}
+
+h2.password-head {
+  padding:4px 62px 21px 15px;
+  font-size:14px;
+}
+
+h2.sharedata-head {
+  padding:4px 95px 23px 15px;
+  font-size:14px;
+}
+
+h2.distribute-head {
+  padding:4px 92px 21px 15px;
+  font-size:14px;
+}
+
+
+/******* Libraries Platform Page Styles ********/
+
+a.moreinfo div {
+    font-size:11px;
+}
+
+/******* Libraries Page Styles ********/
+.rightnav {
+  float:right;
+}
+
+.rightnav-box { 
+  min-height:40px;
+  margin-bottom:30px;
+}
+.rightnav-box p {
+  font-size: 13px;
+  padding-top:5px;
+}
+
+.github {
+  background-position:10px 10px;
+  padding:12px 0 0 55px;
+  background-size:40px 35px;
+}
+
+.back {
+  background-position:5px 10px;
+  padding:12px 0 0 46px;
+  background-size:36px 41px;
+}
+
+/************* Contact Page Styles ***************/
+
+#contact .col-l {
+  padding-right:10px;
+}
+#contact .col-m {
+    padding: 0 40px;
+    width: 220px;
+}
+#contact .col-r {
+  padding-left:10px;
+}
+/************** Timeline Page Styles *************/
+#timeline .top{
+  margin-left: 142px;
+}
+
+#timeline .bubble{
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  margin-top: 3px;
+}
+#timeline .bubble.left:after{
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 0px;
+  right: -15px;
+  bottom: auto;
+  left: auto;
+  border-width: 0px 0px 15px 15px;
+}
+#timeline .bubble.right:after{
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: -15px;
+  border-width: 0px 15px 15px 0;
+}
+#timeline .bubble.left{
+  text-align: right;
+  float: right;
+  margin-right: 55%;
+}
+#timeline .bubble.right{
+  text-align: left;
+  float: left;
+  margin-left: 56%
+}
+#timeline .bubble.up3b{
+  margin-top:-3px;
+}
+#timeline .bubble.up32b{
+  margin-top:-32px;
+}
+#timeline .bubble.up36b{
+  margin-top:-36px;
+}
+#timeline .bubble.up52b{
+  margin-top:-52px;
+}
+#timeline .bubble.up18b{
+  margin-top:-18px;
+}
+#timeline .bubble.up22b{
+  margin-top:-22px;
+}
+
+/*********** Assets Page Styles *************/
+#assets #wee-plane img{
+  margin-left: -70px;
+}
+#assets #safecoin-brand img {
+  margin-top: 10px;
+}
+#assets #advert img{
+  margin-top: 2px;
+}
+#assets #twitter-cover img {
+  margin: 2px 0 0 -60px;
+}
+#assets #meetup-cover img{
+  margin: 2px -100px;
+}
+
+/*********** Press Page Styles *************/
+
+/************* Footer Styles ***************/
+.legal {
+  width:58%;
+}
+
+.footer {height: 250px;}
+.footer-logos img {
+    margin-left: 20px;
+}
+}
+ 
+ 
+/********************************************************************************************* 
+
+4.  lt 720px 
+
+*********************************************************************************************/ 
+
+@media only screen and (min-width: 541px) and (max-width: 719px) {
+h2 {
+  font-size:14px;
+}
+
+h3 {
+    font-size: 12px;
+}
+p {
+  font-size:12px;
+}
+#home header {
+  height:90px;
+  font-size: 14px;
+}
+
+#home .shadow {
+    background-position:0px -25px ;
+}
+header {
+  height:80px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.shadow {
+  background-size:100% 100px;
+  height:100px;
+}
+
+.logo {
+  width:180px;
+  height:52px;
+  background-size:180px 52px;
+  top:18px;
+}
+
+.menu {
+  top:56px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left:5px;
+}
+
+.menu ul li a {
+  font-size:12px;
+}
+
+.main-content ul li { font-size:12px;}
+
+/************************ Banner Styles **************************/
+
+.banner {
+  height:250px;
+}
+blockquote.quote {
+  font-size:16px;
+  padding: 8px;
+  margin: 0px 5px;
+  background-size:18px 14px;
+}
+blockquote.quote span {
+  background-size:18px 14px;
+  padding-right: 25px;
+  padding-left:25px;
+}
+
+p.quoter {
+  font-size:11px;
+}
+
+.list-quote blockquote.quote span {
+    background-position: 325px 97px;
+}
+
+/************************** Banner news ***************************/
+.banner-news {
+  padding:5px 0 0 0;
+}
+.banner-news h1 {
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.banner-news p {
+  font-size:14px;
+}
+
+.news-graphic {
+  width:160px;
+  height:68px;
+  background-size:160px 68px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner community ***************************/
+.banner-community {
+  padding:35px 0 0 0;
+}
+.banner-community h1 {
+  font-size:20px;
+}
+
+.community-development {
+  width:219px;
+  height:36px;
+  background-size:219px 36px;
+}
+
+.community-org {
+  width:176px;
+  height:36px;
+  background-size:176px 36px;
+  margin:0px 40px;
+}
+
+.community-safecoin {
+  width:188px;
+  height:36px;
+  background-size:188px 36px;
+}
+
+/************************** Banner plane ***************************/
+.banner-plane {
+  padding:25px 0 0 0;
+}
+.banner-plane h1 {
+  font-size:20px;
+  color:#5593D7;
+  margin:30px 0 0 0;
+}
+.plane {
+  background:url.(img/home_plane.png) no-repeat 0 0;
+  width:323px;
+  height:58px;
+  background-size:323px 58px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner getcode ***************************/
+.banner-getcode {
+  padding:40px 0 0 0;
+}
+.banner-getcode h1 {
+  font-size:20px;
+}
+.github-icon {
+  background-position: 180px 15px;
+  background-size:80px 70px;
+}
+.spacer {
+  display:inline-block;
+  width:90px;
+}
+/************************** Banner roadmap ***************************/
+.banner-roadmap {
+  padding:0px 0 0 0;
+}
+.banner-roadmap h1 {
+  font-size:20px;
+}
+
+.home-tabs p {
+  font-size:18px;
+  padding:95px 40px 15px 40px;
+  line-height:24px;
+}
+
+.core-dev-tab {
+  background-position: center 25px;
+  background-size:48px 48px;
+  margin:10px 0!important;
+}
+
+.core-dev-tab:hover {
+  background-position: center 25px;
+  background-size:48px 48px;
+}
+
+.app-builder-tab {
+  background-position: center 25px;
+  background-size:54px 43px;
+  margin:10px 18px!important;
+}
+
+.app-builder-tab:hover {
+  background-position: center 25px;
+  background-size:54px 43px;
+}
+
+.farmer-tab {
+  background-position: center 25px;
+  background-size:57px 42px;
+  margin:10px 0!important;  
+}
+
+.farmer-tab:hover {
+  background-position: center 25px;
+  background-size:57px 42px;
+}
+
+.tell-me-more-tab p {
+  padding:20px;
+}
+
+
+
+.video-box {
+  height:293px;
+}
+
+video {
+  height:294px;
+}
+
+#inline1 {
+  display:none;
+}
+
+.home-box {
+  margin-bottom:30px;
+}
+
+#home h2 {
+  font-size:18px;
+  margin-bottom:30px;
+}
+.home-box p {
+  font-size: 12px;
+}
+
+.middle h2 {
+  margin-bottom:10px;
+}
+
+.maidsafe-platform {
+  background-size:140px 80px;
+  width:140px;
+  height:80px;
+}
+
+.surefile-test {
+  width:110px;
+  height:57px;
+  background-size:110px 57px;
+}
+
+.github-code {
+  width:80px;
+  height:70px;
+  background-size:80px 70px;
+  margin:0 auto;
+}
+
+p.alpha-testers {
+  font-size: 16px;
+  line-height:22px;
+  margin-bottom:10px;
+}
+
+#company .leftnav-shell, #roadmap .leftnav-shell{
+  display:none;
+}
+
+#company .topnav-shell, #roadmap .topnav-shell{
+  //margin: 0 auto;
+  padding-bottom: 30px;
+  display: block;
+  float: right;
+}
+#timeline .topnav-shell{
+  margin-top: 0
+}
+
+ul.topnav {
+  display: inline-block;
+  float: right;
+}
+ul.topnav li {
+  padding: 0px;
+  display: inline-block;
+  margin-left:28px;
+}
+ul.topnav > li { 
+  display: inline-block;
+  padding-top: 10px;
+}
+ul.topnav li a { 
+  display: block;
+  text-decoration: none;
+  color: #808080;
+}
+
+/********* Overview - Left nav selected state styles ********/
+/*#platform-overview ul.topnav .overview a,*/
+/*#platform-features ul.topnav .features a,*/
+/*#platform-faqs ul.topnav .faqs a,*/
+/*#applications ul.topnav .applications a,*/
+/*#licensing-platform ul.topnav .licensing a,*/
+/*#testimonials ul.topnav .testimonials a,*/
+/*#safecoin ul.topnav .safecoin a  {*/
+  /*color:#5593D7;*/
+/*}*/
+/******** Get Involved - Left nav selected state styles ********/
+/*#get-involved ul.topnav .get-involved a,*/
+/*#core-developer ul.topnav .core-developer a,*/
+/*#platform-libraries ul.topnav .libraries a,*/
+/*#app-builder ul.topnav .app-builder a,*/
+/*#farmers ul.topnav .farmers a,*/
+/*#safe-pods ul.topnav .safe-pods a {*/
+  /*color:#5593D7;*/
+/*}*/
+
+/******** Documents - Left nav selected state styles ********/
+/*#documents ul.topnav .documents a,*/
+/*#examples ul.topnav .examples a,*/
+/*#system-docs ul.topnav .system-docs a,*/
+/*#developer-wiki ul.topnav .developer-wiki a,*/
+/*#papers-publications ul.topnav .papers-publications a {*/
+  /*color:#5593D7;*/
+/*}*/
+
+/******** Company - Left nav selected state styles ********/
+/*#company ul.topnav .overview a,*/
+/*#company ul.topnav .team a,*/
+/*#careers ul.topnav .careers a {*/
+  /*color:#5593D7;*/
+/*}*/
+
+/*ul.leftnav li a {
+  font-size:14px;
+}
+
+ul.leftnav li ul li a {
+  font-size:12px;
+}*/
+
+.article-1 {
+  padding-right:21px;
+}
+.article-2 {
+  padding-left:15px;
+}
+
+
+.main-content {
+  padding-bottom:20px;
+}
+
+.notification{
+  height: 50px;
+}
+.notification p{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 14px;
+}
+.left-caret{
+  position: absolute;
+  display: block;
+  left: -1px;
+  background-image: url(../img/caret_left_50.png);
+  height: 50px;
+  width:25px;
+}
+.right-caret{
+  position: absolute;
+  display: block;
+  right: 0;
+  background-image: url(../img/caret_right_50.png);
+  height: 50px;
+  width:25px;
+}
+
+/*********** Sidebar **************/
+
+.sidebar img {margin:5px 0;}
+.sidebar p {
+  font-size:12px;
+}
+
+.sidebar .divider {
+  width:100%; /*156*/
+  height:7px;
+  background-size:70px 7px;
+  margin:5px 0;
+}
+.community-text {
+  padding-top:15px;
+  padding-bottom:5px;
+}
+a.visit-blog {
+  width:70px;
+  height:39px;
+  background-size:70px 78px;
+
+}
+
+a.maidsafe-dev {
+  width:70px;
+  height:21px;
+  background-size:70px 42px;
+}
+
+a.maidsafe-org {
+  width:70px;
+  height:22px;
+  background-size:70px 44px;
+}
+
+a.mumble {
+  width:70px;
+  height:53px;
+  background-size:70px 106px; 
+}
+
+
+/*********** Developers Page **************/
+
+a.get-started-button {
+  font-size: 14px;
+    font-weight: 300;
+    border-radius: 3px;
+    padding: 6px 10px 6px 10px;
+  float:right;
+}
+
+#developers h1 {
+  margin-bottom:50px;
+}
+
+a.light-button, a.light-button-full {
+  font-size:14px;
+  margin:5px 6px;
+
+}
+
+a.light-button-full {
+  padding:20px 15px;
+}
+
+.diagram {
+  padding-top:70px;
+}
+
+.app-stack {
+  background-position: 170px 205px;
+  background-size:180px 132px;
+}
+
+#core-developer .app-stack {
+  background-position:170px 910px;
+  background-size:180px 132px;
+}
+
+/********* Get Involved Page ************/
+.get-involved-tabs {
+  margin-bottom:30px;
+}
+
+.get-involved-tabs p {
+  font-size:18px;
+  padding:95px 10px 25px 10px;
+  line-height:22px;
+}
+
+.tell-me-more-tab p {
+  padding:20px;
+}
+
+.farmers-text img {
+  width:46px;
+  height:35px;
+  margin:75px 30px 75px 0;
+}
+
+.app-builders-text img {
+  width:46px;
+  height:36px;
+  margin:60px 30px 55px 0;
+}
+
+.core-developers-text img {
+  width:40px;
+  height:40px;
+  margin:40px 30px 75px 0;
+}
+
+/********* Documents Page ************/
+
+.doc-box-papers-publications {
+    height: 701px;
+}
+
+.doc-box-examples a,
+.doc-box-system-docs a,
+.doc-box-dev-wiki a,
+.doc-box-papers-publications a {
+  font-size:12px;
+}
+
+.doc-box-papers-publications li a { 
+  font-size:11px;
+  margin:0px;
+  text-indent:0px;
+} 
+
+ul.pdf-group li:before {
+  background-size:12px 15px;
+    height: 20px;
+    margin-right: 2px;
+    top: 8px;
+    width: 15px;
+}
+
+#documents .main-content ul li {
+  padding-left:0px;
+  text-indent:0px;
+}
+
+/*********** Company Page ***************/
+.main-content .col-3 {
+  width: 100%;
+}
+
+.main-content .left-col {
+  padding:0 10px 0 0;
+  margin:0 10px 0 0;
+}
+
+.main-content .right-col {
+  padding:0 0 0 10px;
+  margin:0 0 0 10px;
+}
+
+#company .main-content .col-3 h2{
+  padding-top: 5px;
+  width: 200px;
+  height: 35px;
+  background-size: 200px 35px;
+  font-size: 16px;
+  margin: 20px auto 20px;
+}
+#company .plane-banner{
+  width: 225px;
+}
+
+/*********** Team Page ***************/
+
+#company h1 {font-size: 21px;}
+
+#company h3 { font-size:12px;}
+
+#company .main-content {
+  float: left;
+  width: 100%;
+}
+
+.mosaic-block {
+    height: 160px;
+    width: 160px;
+}
+
+.mosaic-block img {
+  height: 160px;
+    width: 160px;
+}
+
+.mosaic-block p {
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.mosaic-block .details {
+    padding: 10px;
+}
+
+.team-map {
+  width: 340px;
+  height: 470px;
+  margin-left: -10px;
+}
+.team-icon {
+  width: 40px;
+}
+#boss { top: 150px; left: 198px; }
+#david { top: 37px; left: 32px; }
+#fraser { top: 17px; left: 128px; }
+#qi { top: 53px; left: 204px; }
+#prakash { top: 12px; left: 275px; }
+#ben { top: 185px; left: 101px; }
+#mahmoud { top: 240px; left: 34px; }
+#ross { top: 285px; left: 113px; }
+#viv { top: 246px; left: 200px; }
+#pod { top: 215px; left: 285px; }
+#niall { top: 353px; left: 175px; }
+#peter { top: 402px; left: 102px; }
+#lee { top: 375px; left: 262px; }
+
+#shona { top:101px; left:112px; }
+
+#justine { top:130px; left:12px; }
+#linda { top:347px; left:33px; }
+
+#nick { top:118px; left:291px; }
+#paige { top:312px; left:294px; }
+
+.profile-info{
+  width: 175px !important;
+  float: right;
+}
+/*********** Credits Page ***************/
+.credit-logo div{
+  width: 70px;
+  height: 70px;
+}
+.jetbrains{
+  width: 70px;
+  height: 22px;
+  margin-top: 25px !important;
+}
+/*********** Careers Page ***************/
+.vacancies {
+  padding:15px;
+}
+
+#careers .col-l {
+  margin-right:55px;
+}
+
+.current-jobs {
+  padding:7px;
+  top:-10px;
+}
+.current-jobs h1 {
+  font-size:17px;
+}
+.current-jobs h2 {
+  font-size:12px;
+  margin:0px 0px 15px 0;
+}
+.current-jobs p, .current-jobs ul li {
+  font-size:11px;
+}
+
+.applynow {
+  background-size:41px 40px;
+  width:41px;
+  height:40px;
+  top:-11px;
+  right:-11px;
+}
+a.applyhere {
+  background-size:100px 88px;
+  width:86px;
+  height:24px;
+  right:-12px;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:10px 6px;
+  font-size:11px;
+}
+
+.apply-text {
+  font-size:13px;
+  letter-spacing:-0.5px;
+}
+
+/*********** Use Cases Page Styles *************/
+section .grid-4 {
+  width:100%!important;
+}
+
+/*********** License Page Styles *************/
+#licensing .main-content {
+    margin-bottom:0px;
+}
+
+#licensing .main-content .grid-3 {
+  width:100%!important;
+}
+
+.download-license-box, .download-license-box-last {
+  background-size:40px 40px;
+  background-position:center 10px;
+  text-align:center;
+  min-height:82px;
+  font-size:12px;
+}
+
+a.gpl-license, a.commercial-license, a.contributor-agreement {
+  padding:60px 10px 0px 10px;
+}
+
+.download-license-box, .download-license-box-last {
+  margin-bottom:30px;
+}
+#licensing h2 {
+    font-size: 24px;
+}
+
+.online-reg-box {
+  background-size:55px 61px;
+  background-position:20px 20px;
+  margin-bottom:40px;
+}
+
+.license-reg {
+  padding:20px 20px 0px 110px;
+}
+
+
+section .grid-4 {
+  width:100%!important;
+}
+
+/*********** Roadmap Page Styles **************/
+
+#roadmap #viewer {width:98%;}
+
+div.roadmap{
+  width:540px;
+}
+
+#roadmap p{font-size: 14px;}
+/*
+.roadmap-stage {
+  width:90px;
+  height:90px;
+}
+
+.roadmap-stage h2{
+  font-size: 18px;
+}*/
+
+.roadmap-stage p{
+  margin-top: 0px;
+}
+
+
+#testnet1{top:35px;left: 15px;}
+#testnet2{top:265px;left: 147px;}
+#testnet3{top:35px;left: 277px;}
+#betalaunch{top:265px;left: 407px;}
+
+.bullet{height:40px;}
+.bullet-icon {
+  width: 42px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+/*********** Features Page Styles *************/
+
+.last-col {
+  margin-left:20px!important;
+}
+
+#platform-features h2 {
+  background-size:160px 39px;
+}
+
+h2.noservers-head {
+  padding:10px 0 11px 10px;
+  font-size:14px; 
+}
+
+h2.administrators-head {
+  padding:4px 11px 8px 10px;
+  font-size:11px;
+}
+
+h2.datamanage-head {
+  padding:2px 60px 0 10px;
+  font-size:11px;
+}
+
+h2.password-head {
+  padding:2px 62px 0px 10px;
+  font-size:11px;
+}
+
+h2.sharedata-head {
+  padding:3px 95px 0px 10px;
+  font-size:11px;
+}
+
+h2.distribute-head {
+  padding:3px 50px 14px 10px;
+  font-size:11px;
+}
+
+/******* Libraries Platform Page Styles ********/
+
+#platform-libraries .grid-1 { width:40px;}
+
+a.moreinfo {
+    width:100%;
+  float:right;
+  margin:0 0 30px 50px;
+}
+
+a.moreinfo:after {
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #4679BD;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+a.moreinfo div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height: 15px;
+    margin-top: -14px!important;
+    text-align:center;
+    color:white;
+  font-size:12px;
+}
+
+
+/******* Libraries Page Styles ********/
+.rightnav {
+  float:right;
+}
+
+.rightnav-box { 
+  min-height:40px;
+  margin-bottom:30px;
+}
+.rightnav-box p {
+  font-size: 12px;
+  padding-top:0px;
+}
+
+.github {
+  background-position:5px 8px;
+  padding:5px 0 0 45px;
+  background-size:30px 26px;
+}
+
+.back {
+  background-position:5px 8px;
+  padding:5px 0 0 36px;
+  background-size:26px 30px;
+}
+
+
+/*********** Company Page Styles *************/
+
+#company .main-content {
+    margin-bottom: 0px;
+}
+
+#company .team-row  h2 {
+  margin-bottom:3px;
+}
+#company .team-row  h3 {
+  margin-bottom:10px;
+}
+
+#company .col-l {
+  margin:0 20px 20px 0;
+}
+#company .col-m {
+  margin:0 10px 20px 10px;
+}
+#company .col-r {
+  margin:0 0 20px 20px;
+}
+/************* Contact Page Styles ***************/
+
+#contact .col-l {
+  padding-right:10px;
+}
+#contact .col-m {
+    padding: 0 20px;
+    width: 180px;
+}
+#contact .col-r {
+  padding-left:10px;
+}
+/************** Timeline Page Styles *************/
+#timeline .top{
+  margin-left: 75px;
+}
+#timeline .bubble.left{
+  text-align: right;
+  float: right;
+  margin-right: 56%;
+}
+#timeline .bubble.right{
+  text-align: left;
+  float: left;
+  margin-left: 58%
+}
+#timeline .bubble.up3c{
+  margin-top:-3px;
+}
+#timeline .bubble.up6c{
+  margin-top:-6px;
+}
+#timeline .bubble.up14c{
+  margin-top:-14px;
+}
+#timeline .bubble.up22c{
+  margin-top:-22px;
+}
+#timeline .bubble.up32c{
+  margin-top:-32px;
+}
+#timeline .bubble.up40c {
+  margin-top:-40px;
+}
+#timeline .bubble.up52c {
+  margin-top:-52px;
+}
+#timeline .bubble.up66c {
+  margin-top:-66px;
+}
+#timeline .bubble.up84c {
+  margin-top:-84px;
+}
+
+#timeline .year{
+  background-color: #5593D7;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  width: 50px;
+  text-align: center;
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 4px;
+  margin: 0px auto;
+}
+/*********** Assets Page Styles *************/
+#assets .asset{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: -10px;
+}
+#assets .thumbnail {
+  width: inherit;
+}
+#assets #maidsafe-brand img{
+  margin-top: -20px;
+}
+#assets #wee-plane img{
+  height:120px;
+  width: auto;
+  margin-left: 0px;
+}
+#assets .wee-plane-sm{
+  display: block;
+}
+#assets .wee-plane-md{
+  display: none;
+}
+#assets #safecoin-brand img {
+  margin-top: 0px;
+}
+#assets .tshirt-design-sm{
+  display: block;
+  border-top: 2px solid #7F7F7F;
+}
+#assets .tshirt-design-md{
+  display: none;
+}
+#assets #twitter-cover img{
+  height:80px;
+  width: auto;
+  margin: 0;
+}
+#assets .twitter-cover-sm{
+  display: block;
+}
+#assets .twitter-cover-md{
+  display: none;
+}
+#assets #advert img{
+  margin: 2px 0 0 0;
+  width: 100%;
+  height: auto;
+}
+#assets #meetup-cover img{
+  margin: 2px -30px;
+}
+#assets #david-nick img{
+  margin: 20px auto 0;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+#assets #company-photo img{
+  margin: 20px auto 0;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+/*********** Footer Styles *************/
+
+
+footer {  text-align:center;}
+
+footer .container-12 {
+}
+
+.footer-links { display:none;}
+
+
+footer img { display:inline-block!important;}
+
+footer ul {
+  margin-bottom:30px;
+}
+
+ul.social-links {
+  float:none;
+  margin:0;
+}
+
+ul.social-links li {
+  display:inline;
+  
+  margin:5px;
+}
+
+ul.social-links li a {
+  display:inline-block!important;
+  margin:0px;
+  padding:0px;
+}
+.legal {
+  padding-top:0px;
+  width:100%;
+}
+
+.legal a {
+  font-size:12px!important;
+  background:none!important;
+  padding: 10px 0px 10px 20px!important; 
+}
+
+.footer-logos {
+  padding-top:38px;
+  float:none;
+}
+
+.footer-logos a {
+  display:inline-block!important;
+  background:none!important;
+}
+
+.footer-logos img {
+  margin-left:20px; 
+}
+
+.logo-footer {
+  float:none;
+  position:relative;
+  left:31px
+}
+
+.idl-badge {
+  float:none;
+  position: relative;
+    right: 113px;
+    top: 100px;
+}
+}
+/********************************************************************************************* 
+
+4.  lt 540px 
+
+*********************************************************************************************/ 
+
+@media only screen and (max-width: 540px) {
+  
+
+#home h1, #home h2, #home h3 { text-align:center;}
+
+h1, h2, h3 { text-align:left;}
+
+header {
+  height:80px;
+  margin-bottom:0px;
+  padding:0px;
+}
+
+#home header {
+  height:82px;
+}
+
+#home .shadow {
+    background-position:0px -25px ;
+}
+
+.shadow {
+    background-position: 0 -28px;
+    height: 90px;
+}
+
+.logo {
+  width:152px;
+  height:44px;
+  background-size:152px 44px;
+  position:relative;
+  top:23px;
+  left:30px;
+  display:block;
+}
+
+.fw {
+  width:100%!important;
+}
+
+a.menu-link {
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  width: 35px;
+  height: 23px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-image: url.(img/nav_icon_retina.png);
+   -webkit-background-size: 35px 23px;
+    -moz-background-size: 35px 23px;
+    -o-background-size: 35px 23px;
+    background-size: 35px 23px;
+}
+.menu {
+  clear: both;
+  min-width: inherit;
+  float: none;
+  top:8px;
+}
+.menu, .menu > ul ul {
+  overflow: hidden;
+  max-height: 0;
+  background-color: #f4f4f4;
+}
+.sub-menu, .has-submenu {
+  display:block!important;
+}
+.single-link {
+  display:none!important;
+}
+.menu > li > ul.sub-menu {
+  padding: 0px;
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.menu.active, .menu > ul ul.active {
+  max-height: 155em;
+}
+.menu ul {
+  display: inline;
+}
+.menu ul li {
+  display: block;
+  margin-left: 0px;
+}
+
+.menu > ul {
+  border-top: 1px solid #808080;
+}
+.menu li, .menu > ul > li {
+  display: block;
+}
+.menu li a {
+  display: block;
+  padding: 0.8em;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.menu li.has-submenu > a:after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0.8em 1em;
+}
+.menu li.has-submenu > a.active:after {
+  content: '\25B2';
+}
+
+.menu ul ul > li a {
+  background-color: #e4e4e4;
+  padding: 14px 18px 14px 30px;
+}
+.menu ul ul, .menu ul ul ul {
+  display: inherit;
+  position: relative;
+  left: auto; top:auto;
+  box-shadow: none; 
+  border:none;
+}
+
+/*********** Sidebar **************/
+
+.sidebar img {margin:5px auto; text-align:center; display:block;}
+
+.sidebar .divider {
+  width:100%; /*156*/
+  margin:10px auto;
+  background-position:center;
+}
+.community-text {
+  padding-top:15px;
+  padding-bottom:5px;
+}
+
+a.visit-blog {
+  margin:10px auto;
+
+}
+
+a.maidsafe-dev {
+  margin:10px auto;
+}
+
+a.maidsafe-org {
+  margin:10px auto;
+}
+
+a.mumble {
+  margin:10px auto;
+}
+
+/************************ Banner Styles **************************/
+
+.banner {
+  height:250px;
+}
+blockquote.quote {
+  font-size:14px;
+  padding: 8px;
+  margin: 5px;
+  background-size:18px 14px;
+}
+blockquote.quote span {
+  background-size:18px 14px;
+  padding-right: 10px;
+  padding-left:10px;
+}
+
+p.quoter {
+  font-size:10px!important;
+  line-height:14px!important;
+}
+
+.list-quote blockquote.quote span {
+    background-position: 100% 92%;
+}
+
+
+
+/************************** Banner news ***************************/
+.banner-news {
+  padding:5px 0 0 0;
+}
+.banner-news h1 {
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.banner-news p {
+  font-size:11px!important;
+}
+
+.news-graphic {
+  width:160px;
+  height:68px;
+  background-size:160px 68px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner community ***************************/
+.banner-community {
+  padding:25px 0 0 0;
+}
+.banner-community h1 {
+  font-size:16px;
+  margin:20px 0 0 0;
+}
+
+.community-development {
+  width:219px;
+  height:36px;
+  background-size:219px 36px;
+}
+
+.community-org {
+  width:176px;
+  height:36px;
+  background-size:176px 36px;
+  margin:0px 40px;
+}
+
+.community-safecoin {
+  width:188px;
+  height:36px;
+  background-size:188px 36px;
+}
+
+/************************** Banner plane ***************************/
+.banner-plane {
+  padding:40px 0 0 0;
+}
+.banner-plane h1 {
+  font-size:16px;
+  color:#5593D7;
+}
+.plane {
+  background:url.(img/home_plane.png) no-repeat 0 0;
+  width:280px;
+  height:50px;
+  background-size:280px 50px;
+  margin:0px auto 10px auto;
+}
+
+/************************** Banner getcode ***************************/
+.banner-getcode {
+  padding:0;
+}
+.banner-getcode h1 {
+  font-size:18px;
+  height: 140px;
+}
+.github-icon {
+  background-position: center 85px;
+  background-size:60px 53px;
+}
+.spacer {
+  display: none;
+  width:60px;
+}
+/************************** Banner roadmap ***************************/
+.banner-roadmap {
+  padding:35px 0 0 0;
+}
+.banner-roadmap h1 {
+  font-size:16px;
+  color:#5593D7;
+  padding-top:10px;
+}
+.roadmap-preview {
+  width:106px;
+  height:53px;
+  background-size:106px 53px;
+}
+
+.main-content {
+  margin-top:30px;
+}
+
+.home-tabs p {
+  font-size:18px;
+  padding:95px 40px 15px 40px;
+  line-height:24px;
+}
+
+.core-dev-tab {
+  background-position: center 25px;
+  margin:10px 0!important;
+}
+
+.core-dev-tab:hover {
+  background-position: center 25px;
+}
+
+.app-builder-tab {
+  background-position: center 25px;
+  margin:10px 0px!important;
+  border:none;
+}
+
+.app-builder-tab:hover {
+  background-position: center 25px;
+}
+
+.farmer-tab {
+  background-position: center 25px;
+  margin:10px 0!important;  
+}
+
+.farmer-tab:hover {
+  background-position: center 25px;
+}
+
+.tell-me-more-tab p {
+  padding:20px;
+}
+
+.video-box {
+  /*max-height:162px;*/
+  height:auto;  
+}
+
+#inline1 {
+  display:none;
+}
+
+.home-box {
+    margin-bottom: 8%;
+
+}
+.home-box h2 {
+    margin-bottom: 10px;
+}
+
+#home p {
+  font-size:16px;
+    line-height:20px;
+}
+/*
+.first {
+  width:92%;
+  padding:4%;
+  margin-left:0px;
+  min-height:140px;
+}
+
+.middle {
+  padding:5%;
+  width:90%;
+  margin-left:0px;
+  min-height:134px;
+  
+}
+
+
+.last {
+  padding:5%;
+  width:90%;
+  min-height:134px;
+  margin-left:0px;
+}
+*/
+
+.maidsafe-platform {
+  width:150px;
+  height:85px;
+  background-size:150px 85px;
+}
+
+.surefile-test {
+  width:120px;
+  height:62px;
+  background-size:120px 62px;
+}
+
+p.alpha-testers {
+  font-size: 30px;
+  margin-bottom:5px;
+  line-height:36px;
+}
+
+.github-code {
+  width:100px;
+  height:88px;
+  background-size:100px 88px;
+}
+
+#home h2 {
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+#home .para-l h2,
+#home .para-r h2 {
+  font-size:18px;
+  margin-bottom:20px;
+  padding:0px;
+}
+
+#home .para-l p,
+#home .para-r p {
+  padding:0px;
+}
+
+.quote-box {
+  margin:4% 0;
+  padding:2% 3% 2% 3%;
+}
+
+.article-1 {
+  border-right:none;
+  padding:0px;
+}
+.article-2 {
+  padding:0px;
+}
+
+.main-content {
+  padding-bottom:20px;
+}
+
+ul.leftnav {
+  display:none;
+}
+
+#timeline .topnav-shell{display: none;}
+
+#surefile-tutorial ul.leftnav {
+  display:block;
+}
+
+#home p {
+  text-align:center;
+}
+
+p {
+  text-align:left;
+}
+
+.notification{
+  height: 50px;
+}
+.notification p{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 12px !important;
+}
+.left-caret{
+  position: absolute;
+  display: block;
+  left: -1px;
+  background-image: url(../img/caret_left_50.png);
+  height: 50px;
+  width:25px;
+}
+.right-caret{
+  position: absolute;
+  display: block;
+  right: 0;
+  background-image: url(../img/caret_right_50.png);
+  height: 50px;
+  width:25px;
+}
+
+/*********** Developers Page **************/
+
+a.get-started-button {
+  font-size: 14px;
+    font-weight: 300;
+    border-radius: 3px;
+    padding: 6px 10px 6px 10px;
+  float:right;
+}
+
+#developers h1 {
+  margin-bottom:50px;
+}
+
+a.light-button, a.light-button-full {
+  font-size:14px;
+  margin:5px 6px;
+
+}
+
+a.light-button-full {
+  padding:20px 15px;
+}
+
+.diagram {
+  padding-top:70px;
+  width:500px;
+  margin: 0 auto;
+}
+
+.app-stack {
+  background-position: 170px 240px;
+  background-size:180px 132px;
+}
+
+#core-developer .app-stack {
+  background-position:170px 1110px;
+  background-size:180px 132px;
+}
+
+/********* Get Involved Page ************/
+
+.get-involved-tabs p {
+  border-bottom:1px solid #E2E2E2;
+}
+
+
+.farmer-tab {
+    height: auto;
+}
+
+.tell-me-more-tab {
+  border-top:0;
+}
+
+/*********** Company Page ***************/
+.main-content .col-3 {
+  width: 90%;
+}
+
+.main-content .left-col {
+  padding:0;
+  margin:0;
+}
+
+.main-content .right-col {
+  padding:0;
+  margin:0;
+}
+#company .main-content .col-3 h2{
+  padding-top: 5px;
+  width: 200px;
+  height: 35px;
+  background-size: 200px 35px;
+  font-size: 16px;
+  margin: 20px auto 20px;
+}
+
+/*********** Team Page ***************/
+#company .grid-9 {
+  width:auto;
+  margin:0px;
+}
+
+.container-12 .grid-3 {
+    width: 100%;
+}
+
+#company h3 { font-size:18px;}
+
+.mosaic-block {
+    min-height: 280px;
+    width: 100%;
+}
+
+.mosaic-block img {
+  height: auto;
+    width: 100%;
+  display:block;
+}
+
+.mosaic-block p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.mosaic-block .details {
+    padding: 16px;
+}
+
+.team-map {
+  display:none;
+  /*width: 340px;
+  height: 392px;
+  margin: 0 auto;*/
+}
+.team-icon {
+  position: relative;
+  float: left;
+}
+/*#boss { top: 150px; left: 198px; }
+#david { top: 37px; left: 32px; }
+#fraser { top: 17px; left: 128px; }
+#qi { top: 53px; left: 204px; }
+#prakash { top: 12px; left: 275px; }
+#ben { top: 185px; left: 101px; }
+#mahmoud { top: 240px; left: 34px; }
+#ross { top: 285px; left: 113px; }
+#viv { top: 246px; left: 200px; }
+#brian { top: 215px; left: 285px; }
+#niall { top: 353px; left: 175px; }
+
+#shona { top:101px; left:112px; }
+
+#justine { top:130px; left:12px; }
+#linda { top:347px; left:33px; }
+
+#nick { top:118px; left:291px; }
+#paige { top:312px; left:294px; }*/
+
+.profile-info {
+  display: none;
+}
+.profile-mobile {display: block;}
+.profile-mobile h2 {
+  margin: 20px 0 5px 60px;
+}
+.profile-mobile p {
+  font-size: 12px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+.profile-mobile iframe{
+  margin-left: 60px;
+}
+/*********** Credits Page ***************/
+#credits section{
+  height: 140px;
+}
+.credit-logo{
+  width: 30% !important;
+}
+.credit-text{
+  width: 70% !important;
+  float: right;
+}
+.credit-logo{
+  padding-top: 10px;
+}
+.jetbrains{
+  padding-top: 40px;
+  width:90px;
+  height: 30px;
+}
+/******************* Careers Page *********************/
+.vacancies {
+  padding:2%;
+  position:relative;
+  top:20px;
+
+}
+
+#careers .col-l {
+  float:left;
+  margin-right:0px;
+}
+
+#careers .col-r {
+  float:right;
+}
+
+.current-jobs {
+  padding-bottom: 60px;
+}
+
+a.applyhere {
+  position:absolute;
+  bottom:6px;
+  right:-6px;
+  margin:20px 0 0 20px;
+
+}
+
+/******************* Documents Page **********************/
+
+.doc-box-papers-publications {
+    height:auto;
+}
+
+/******************* Libraries Page **********************/
+#libraries .main-content {
+  margin-bottom:0px;
+}
+
+/******* Libraries Platform Page Styles ********/
+
+#platform-libraries .grid-1 { }
+
+a.moreinfo {
+    width:20%;
+  float:right;
+  padding-right: 40%;
+}
+
+a.moreinfo div {
+  font-size:14px;
+}
+
+.libraries-maidsafe {top:0px;}
+.libraries-common {  top:0px;}
+.libraries-drive { top:0px;}
+.libraries-reliable-udp { top:0px;}
+.libraries-routing { top:0px;}
+.libraries-encrypt { top:0px;}
+.libraries-passport { top:0px;}
+.libraries-network-file-system {top:0px;}
+.libraries-vault {top:0px;}
+.libraries-vault-manager {top:0px;}
+.libraries-api { top:0px;}
+
+/*********** Roadmap Page Styles **************/
+
+#roadmap #viewer {width:96%;}
+
+div.roadmap{
+  width:321px;
+  background: url("../img/roadmap/roadmap-mobile.png") no-repeat;
+  margin:0 auto;
+}
+
+.roadmap-stage {
+  width:auto;
+  height:auto;
+  //position: relative;
+  //color:#808080;
+  //margin: 0 0 20px 0;
+}
+//.roadmap-stage:hover{color: #5593D7;}
+
+.roadmap-stage h2{
+  font-size: 24px;
+}
+
+.roadmap-stage p{
+  margin: 0px;
+}
+
+#testnet1{top:10px;left:50px;}
+#testnet2{top:90px;left:50px;}
+#testnet3{top:170px;left:50px;}
+#betalaunch{top:250px;left:60px;}
+
+.bullet{max-height: 50px;}
+
+.bullet-icon {
+  width: 52px;
+  height: 50px;
+  padding-right: 5px;
+}
+/*********** Features Page Styles *************/
+
+.last-col {
+  margin-left:0px!important;
+}
+
+
+
+h2.noservers-head {
+  
+}
+
+h2.administrators-head {
+  padding-right:50%;
+  display:block;
+}
+
+h2.datamanage-head {
+  padding-right:46%;
+  display:block;
+
+}
+
+h2.password-head {
+  padding-right:46%;
+  display:block;
+  
+}
+
+h2.sharedata-head {
+  padding-right:46%;
+  display:block;
+}
+
+h2.distribute-head {
+  padding-right:46%;
+  display:block;
+}
+
+
+/*********** License Page Styles *************/
+#licensing .main-content {
+    margin-bottom:0px;
+}
+
+#licensing h2 {
+    font-size: 24px;
+}
+
+.online-reg-box {
+  background-size:55px 61px;
+  background-position:20px 20px;
+  margin-bottom:40px;
+}
+
+.license-reg {
+  padding:20px 20px 0px 110px;
+}
+
+/*********** Company Page Styles *************/
+
+#company .main-content {
+    margin-bottom: 0px;
+}
+
+
+#company .col-l {
+  margin:0 0px 20px 0;
+}
+#company .col-m {
+  margin:0 0px 20px 0px;
+}
+#company .col-r {
+  margin:0 0 20px 0px;
+}
+/*********** Timeline Page Styles *************/
+#timeline .dot {
+  margin-left: 49%;
+}
+#timeline .top{
+  margin-left:10%;
+}
+#timeline .bubble{
+  font-size: 13px;
+  margin-top: 3px !important;
+}
+#timeline .bubble.right{
+  margin-left: 59%;
+}
+#timeline .bubble.left{
+  margin-right: 57%;
+}
+/*#timeline .bubble.up3d{
+  margin-top:-3px;
+}
+#timeline .bubble.up16d{
+  margin-top:-16px;
+}
+#timeline .bubble.up20d{
+  margin-top:-20px;
+}
+#timeline .bubble.up23d{
+  margin-top:-23px;
+}
+#timeline .bubble.up38d{
+  margin-top:-38px;
+}
+#timeline .bubble.up54d {
+  margin-top:-54px;
+}
+#timeline .bubble.up64d {
+  margin-top:-64px;
+}
+#timeline .bubble.up32d{
+  margin-top:-32px;
+}
+#timeline .bubble.up36d{
+  margin-top:-36px;
+}
+#timeline .bubble.up40d {
+  margin-top:-40px;
+}
+#timeline .bubble.up52d {
+  margin-top:-52px;
+}*/
+/*********** Assets Page Styles *************/
+#assets ul.topnav{
+  display: none;
+}
+/*********** Press Page Styles *************/
+#press ul.topnav{
+  display: none;
+}
+ul.top-stories .press-article {
+  margin: 0 auto;
+  text-align:center;
+  padding:0 5%;
+  width:90%;
+}
+
+.press-article { margin-bottom:30px;}
+
+/*
+ul.grid {
+  width:90%;
+  padding:0 5%;
+}
+*/
+
+
+
+
+/************* Contact Page Styles ***************/
+
+#contact .col-l {
+  padding-right:0px;
+}
+#contact .col-m {
+    padding: 0 0px;
+    width: 100%;
+}
+#contact .col-r {
+  padding-left:0px;
+}
+#contact form {
+  margin-bottom:50px;
+}
+
+
+/************* Surefile Tutorial Page Styles ***************/
+.sticky {
+  display:none;
+}
+
+/************* SureFile Download Page Styles ****************/
+
+#surefile-download h1 {
+  width:200px;
+  height:45px;
+  background-size:200px 45px;
+  margin:0 auto 30px auto;
+}
+
+#surefile-download h2 {
+    font-size: 20px;
+}
+
+.download-box h3 {
+  text-align:center;
+}
+
+#surefile-download .main-content {
+  margin-bottom:20px;
+}
+
+#surefile-download #main p {
+  font-size: 16px;
+}
+
+p.sub-text {
+  font-size:12px!important;
+}
+
+a.button-blue {
+    padding: 10px 15px 10px 15px;
+}
+
+a.button-blue .button-text {
+  font-size: 22px;
+}
+
+#surefile-download p.legal,
+#surefile-download p.tel  {
+  text-align:center;
+}
+/*********** Assets Page Styles *************/
+#assets #maidsafe-brand img{
+  height:100px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+#assets #wee-plane img{
+  height:130px;
+  width: auto;
+  margin: 0 auto;
+}
+#assets .wee-plane-sm{
+  display: block;
+}
+#assets .wee-plane-md{
+  display: none;
+}
+#assets #safecoin-brand img {
+  margin-top: 20px;
+  height:100px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+#assets .tshirt-design-sm{
+  display: block;
+  border-top: 2px solid #7F7F7F;
+}
+#assets .tshirt-design-md{
+  display: none;
+}
+#assets #twitter-cover img{
+  height:80px;
+  width: auto;
+  margin: 2px 0 0 0px;
+}
+#assets .twitter-cover-sm{
+  display: block;
+}
+#assets .twitter-cover-md{
+  display: none;
+}
+#assets #advert img{
+  margin-top:2px;
+}
+#assets #meetup-cover img{
+  margin: 2px 0 0 0;
+  width: auto;
+  height: 80px;
+}
+#assets #advert img{
+  margin: 2px 0 0 0;
+  width: 100%;
+  height: auto;
+}
+#assets #david-nick img{
+  margin: 20px auto 0;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+#assets #company-photo img{
+  margin: 20px auto 0;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+/********************* Footer **************************/
+
+footer {
+    clear: both;
+    height: 260px;
+    margin-top: -220px;
+    position: relative;
+  text-align:center;
+}
+
+footer p {
+  text-align:center;
+}
+
+.footer-links { display:none;}
+
+footer img { display:inline-block!important;}
+
+footer ul {
+  margin-bottom:30px;
+}
+
+ul.social-links {
+  float:none;
+  margin:0;
+}
+ul.social-links li {
+  display:inline;
+}
+ul.social-links li a {
+  display:inline-block!important;
+  margin:0px;
+  padding:0px;
+}
+.legal {
+  padding-top:0px;
+  width:100%;
+}
+
+p.legal {
+  font-size:12px!important;
+}
+
+.legal a {
+  
+  background:none!important;
+  padding: 10px 0px 10px 20px!important; 
+}
+
+.footer-logos {
+  padding-top:38px;
+  float:none;
+}
+
+.footer-logos a {display:inline-block!important; background:none!important; }
+
+.footer-logos img {
+  margin-left:20px; 
+}
+
+.logo-footer {
+  float:none;
+  position:relative;
+  left:31px
+}
+
+.idl-badge {
+  float:none;
+  position: relative;
+    right: 113px;
+    top: 150px;
+}
+}
+
+/********************************************************************************************* 
+
+4.  lt 480px 
+
+*********************************************************************************************/ 
+
+@media only screen and (max-width: 480px) {
+.video-box {
+  height:162px;
+}
+
+
+#home h2 {
+  font-size:10px;
+  margin-bottom:20px;
+}
+
+#home .para-l h2,
+#home .para-r h2 {
+  font-size:20px;
+  margin-bottom:20px;
+  padding:0px;
+}
+
+#home .para-l p,
+#home .para-r p {
+  padding:0px;
+}
+
+#company .plane-banner{
+  width: 225px;
+}
+
+}
+
+@media only screen and (max-width: 410px) {
+#assets #meetup-cover img{
+  margin: 2px 0 0 -80px;
+  width: auto;
+  height: 80px;
+}
+#assets #twitter-cover img{
+  height:80px;
+  width: auto;
+  margin: 2px 0 0 -50px;
+}
+#assets #wee-plane img{
+  height:130px;
+  width: auto;
+  margin-left:-70px;
+}
+
+#company .plane-banner{
+  display:none;
+}
+}
