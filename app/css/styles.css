@@ -1096,8 +1096,9 @@ footer .bottom{
 footer .bottom a:hover{
   text-decoration: underline;
 }
-footer .breadcrumbs{
-  padding: 5px 0;
+footer .breadcrumbs {
+  background: transparent;
+  border:none;
 }
 footer .breadcrumbs .sm-icon{
   background: url(../img/penrose-icon-sm.png);
@@ -1105,12 +1106,9 @@ footer .breadcrumbs .sm-icon{
   width: 19px;
   height: 20px;
 }
-footer .breadcrumbs li{
-  display: inline-block;
-}
 footer .bottom-nav > div{
   display: inline-block;
-  margin: 45px 9px 0;
+  margin-top: 45px;
 }
 footer .bottom-nav .title {
   margin-top: 10px;
