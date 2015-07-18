@@ -573,17 +573,39 @@ header .expanded .build-logo{
 /******** Menu/top menu selected state styles ********/
 
 .app-devs .not-mobile .menu .app-devs > a,
+#intro.app-devs .not-mobile .menu .intro a,
+#tutorial-1.app-devs .not-mobile .menu .intro a,
+#tutorial-2.app-devs .not-mobile .menu .intro a,
+#tutorial-3.app-devs .not-mobile .menu .intro a,
+#api-docs.app-devs .not-mobile .menu .api-docs a,
+#rest-api.app-devs .not-mobile .menu .api-docs a,
+#posix-api.app-devs .not-mobile .menu .api-docs a,
+#best-practices.app-devs .not-mobile .menu .best-practices a,
+#rewards.app-devs .not-mobile .menu .rewards a,
+#support.app-devs .not-mobile .menu .support a,
 .core-devs .not-mobile .menu .core-devs > a,
+#intro.core-devs .not-mobile .menu .intro a,
+#rust.core-devs .not-mobile .menu .intro a,
+#language.core-devs .not-mobile .menu .intro a,
+#examples.core-devs .not-mobile .menu .examples a,
+#example-self-encryption.core-devs .not-mobile .menu .examples a,
+#example-crust.core-devs .not-mobile .menu .examples a,
+#example-routing.core-devs .not-mobile .menu .examples a,
+#example-vaults.core-devs .not-mobile .menu .examples a,
+#example-lru-cache.core-devs .not-mobile .menu .examples a,
+#example-accumulator.core-devs .not-mobile .menu .examples a,
+#components.core-devs .not-mobile .menu .components a,
+#component-crust.core-devs .not-mobile .menu .components a,
+#component-routing.core-devs .not-mobile .menu .components a,
+#component-self-encryption.core-devs .not-mobile .menu .components a,
+#component-vaults.core-devs .not-mobile .menu .components a,
+#component-client.core-devs .not-mobile .menu .components a,
+#whiteboard-videos.core-devs .not-mobile .menu .whiteboard-videos a,
+#rewards.core-devs .not-mobile .menu .rewards a,
+#support.core-devs .not-mobile .menu .support a,
 .roadmap .not-mobile .menu .roadmap > a,
 .careers .not-mobile .menu .careers > a,
-.about .not-mobile .menu .about > a,
-#intro.app-devs .not-mobile .menu .intro a,
-#tutorials.app-devs .not-mobile .menu .tutorials a,
-#rest-api.app-devs .not-mobile .menu .rest-api a,
-#posix-api.app-devs .not-mobile .menu .posix-api a,
-#best-practices.app-devs .not-mobile .menu .best-practices a,
-#safecoin.app-devs .not-mobile .menu .safecoin a,
-#support.app-devs .not-mobile .menu .support a
+.about .not-mobile .menu .about > a
 {
   font-family: 'OpenSansBold';
 }
@@ -1012,15 +1034,14 @@ footer .top{
   padding: 10px 0;
 }
 footer .top li{
-  /*width: 19%;*/
-  /*display: inline-block;*/
+  padding-bottom: 0;
 }
 footer .top li:hover{
   text-decoration: underline !important;
   color: #fff !important;
 }
-footer .top li.wide{
-  /*width: 22%;*/
+footer .top li.homepage-link{
+  margin-top: 20px
 }
 footer .top li div{
   margin: 0 auto;
@@ -1032,9 +1053,9 @@ footer .top a{
 }
 footer .top li .community{
   background: url(../img/community-icon.png);
-  background-size: 90px 84px;
-  width: 90px;
-  height: 84px;
+  background-size: 73px 69px;
+  width: 73px;
+  height: 69px;
 }
 footer .top li .meetup{
   background: url(../img/meetup-icon.png);
@@ -1050,9 +1071,9 @@ footer .top li .homepage{
 }
 footer .top li .safe-pods{
   background: url(../img/safe-pod-icon.png);
-  background-size: 61px 78px;
-  width: 61px;
-  height: 78px;
+  background-size: 54px 69px;
+  width: 54px;
+  height: 69px;
 }
 footer .top li .twitter{
   background: url(../img/twitter-icon.png);
