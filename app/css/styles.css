@@ -68,12 +68,6 @@ html[xmlns] .clearfix {
   width: 100%;
   padding:0;
 }
-.pull-right{
-  float:right;
-}
-.pull-left{
-  float:left;
-}
 .col-r{
   padding-right: 0;
   margin-right: 0;
@@ -384,7 +378,7 @@ strong { font-weight:bold; font-style:normal;}
   height:350px;
 }
 
-.bold {
+.bold, b {
   font-family: 'OpenSansSemiBold', Arial, sans-serif;
 }
 
@@ -648,10 +642,8 @@ Side Menu
   color:#808080;
   cursor: default;
   height:100%;
-  width:23%;
   padding: 0;
   background: #efefef;
-  margin-left: 2%;
 }
 #side-menu li{
   padding: 10px;
@@ -742,22 +734,19 @@ Home Page Styles
 #home .banner h1{
   color: #fff;
   text-align: left;
-  margin:0 0 0 280px;
-  width:30%;
+  margin-top: 0;
 }
-#home .banner a:hover p{
+#home .banner a:hover{
   text-decoration: underline;
 }
-#home .banner p{
+#home .banner a{
   color: #fff;
-  margin:20px 0 0 280px;
-  font-family: 'OpenSansRegular';
-  text-align: left;
+  font-family: 'OpenSansSemibold';
   display: inline-block;
+  font-size: 16px;
 }
 #home #banner1{
-  background: url(../img/home-banner-1.jpg) 50% 60%;
-  background-size: 125% auto;
+  background: url(../img/home-banner-1.jpg) 0% 20% / cover fixed no-repeat;
   padding:140px 0;
 }
 #home .section{ 
@@ -765,63 +754,52 @@ Home Page Styles
   padding: 70px 0;
 }
 #home #banner2{
-  background: url(../img/home-banner-2.jpg) 50% 60%;
-  background-size: 125% auto;
+  background: url(../img/home-banner-2.jpg) 0% 60% / cover fixed no-repeat;
   padding:140px 0;
-}
-.features{
-  display: block;
-  margin:0 auto;
-  float: none;
 }
 #home .features h2{
   display: inline-block;
   text-align: left;
-  float: none;
   font-size: 21px;
-  width: 530px;
-  padding-bottom: 10px;
+  margin-top:8px;
 }
 .feature{
-  padding-bottom: 20px;
+  margin-bottom: 0 auto 20px !important;
 }
 .feature > div{
   display: inline-block;
-  margin:0 15px;
+  height: 64px;
 }
-#home .features p{
+#home .features a{
   color: #5593D7;
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSansSemibold';
+  font-size: 16px;
+  display: block;
+  text-align: center;
 }
-#home .features a:hover p{
+#home .features a:hover{
   text-decoration: underline;
 }
 .lock-icon{
-  background-image: url(../img/lock-icon.png);
-  background-size: 56px 64px;
-  width:56px;
-  height:64px;
+  background: url(../img/lock-icon.png) center center / 56px 64px no-repeat;
 }
 .api-icon{
-  background-image: url(../img/api-icon.png);
-  background-size: 56px 42px;
-  width:56px;
-  height:42px;
+  background: url(../img/api-icon.png) center center / 56px 42px no-repeat;
 }
 .coins-icon{
-  background-image: url(../img/coins-icon.png);
-  background-size: 56px 42px;
-  width:56px;
-  height:42px;
+  background: url(../img/coins-icon.png) center center / 56px 42px no-repeat;
 }
 #home .core-boxes {
   margin-top: 30px;
   padding-bottom: 5px;
 }
-#home .core-boxes > div{
+#home .core-boxes > li{
   box-shadow: 0px 2px 3px -2px #000;
   -webkit-box-shadow: 0px 2px 3px -2px #000;
   -moz-box-shadow: 0px 2px 3px -2px #000;
+}
+#home .core-boxes li:last-child{
+  padding-right: 0;
 }
 #home .core-boxes .thumbnail{
   background-color: #e4eff7;
@@ -844,6 +822,12 @@ Inner Page Styles
 *******************************************************************************/
 .inner-page h1:first-child{
   margin-top: 20px;
+}
+.inner-page h2{
+  margin-top: 20px;
+}
+.inner-page p{
+  padding: 5px 0;
 }
 .page-boxes {
   margin-top: 30px;
@@ -873,6 +857,15 @@ Inner Page Styles
   clear: both;
 }
 
+/*******************************************************************************
+
+Core Pages Styles
+
+*******************************************************************************/
+.crust-diagram{
+  width: 90%;
+  height: auto;
+}
 
 /*******************************************************************************
 
