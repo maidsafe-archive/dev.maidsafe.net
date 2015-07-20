@@ -1,2 +1,2 @@
 # dev.maidsafe.net
-MaidSafe.net Dev Site
+dev portal for maidsafe.net
