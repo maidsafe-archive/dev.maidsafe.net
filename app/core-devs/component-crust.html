@@ -1,0 +1,26 @@
+---
+layout: base
+bodyId: component-crust
+bodyClass: core-devs
+title: Core Developers - Crust Library
+description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
+keywords: Distributed Platform, MaidSafe
+includes: ['side-menu.html']
+---
+
+<div class="inner-page row">
+  {% include html/side-menu-core-components.html %}
+  {% include html/search.html %}
+  <div class="small-12 medium-9 columns">
+    <h1>Crust Library</h1>
+    <h2>Overview</h2>
+    <img src="../img/crust-diagram.png" class="crust-diagram"/>
+    <p>This library will allow p2p networks to establish and maintain a number of connections in a group when informed by users of the library. As connections are made they are passed up and the user can select which connections to maintain or drop. The library has a bootstrap handler which will attempt to reconnect to any previous <b>"direct connected"</b> nodes.</p>
+    <p>TCP connections are always favoured as these will be by default direct connected (until tcp hole punching can be tested). TCP is also a known reliable protocol. Reliable UDP is the fallback protocol and very effective.</p>
+    <p>The library contains a beacon system for finding nodes on a local network, this will be extended using a gossip type protocol for multi hop discovery.</p>
+    <p>Encryption of all streams will also allow for better masking of such networks and add to security, this is done also considering the possibility of attack where adversaries can send data continually we must decrypt prior to handling (meaning we do the work). There are several methods to mitigate this, including alerting upper layers of such activity. The user of the library has the option to provide a blacklisting capability per session to disconnect such nodes 'en masse'.</p>
+    <p>_direct connected == Nodes we were previously connected to. TCP nodes or reliable UDP nodes that allow incoming connections (i.e. direct or full cone nat that has been hole punched). This library also supports fallback endpoints being passed at construction that will allow a fallback should nodes from previous sessions become unavailable.</p>
+    <h2>Nat traversal/Handling</h2>
+    <p>Several methods are used for NAT traversal, UpNP, hole punching. <a href="http://www.cmlab.csie.ntu.edu.tw/%7Efranklai/NATBT.pdf" target="_blank">See here for TCP NAT traversal</a> and <a href="http://maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf" target="_blank">here for UCP/DHT NAT traversal</a> etc. These methods will be added to by the community to allow a p2p network that cannot be easily blocked. By default this library spawns sockets randomly, enabling nodes to appear on several ports over time. This makes them very difficult to trace.</p>
+  </div>
+</div>
