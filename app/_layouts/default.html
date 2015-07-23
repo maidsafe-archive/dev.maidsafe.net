@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+    {% include app_dependencies.html %}
+</head>
+<body>
+{{ content }}
+{% include google_analytics.html %}
+</body>
+</html>

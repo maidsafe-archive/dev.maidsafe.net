@@ -1,0 +1,96 @@
+.custom-nav {
+    color: white;
+    height: 80px;
+    background-color: #456680;
+}
+/*** Medium and Large Screen Nav bar ***/
+.custom-nav ul {
+    list-style-type: none;
+}
+
+.brand-logo {
+    position: absolute;
+    top: 22px;
+}
+
+.nav-options {
+    margin-top: 40px;
+}
+
+.nav-options li {
+    height: 40px;
+    padding: 6px 0px;
+    margin-left: .5px;
+}
+
+.nav-options li:hover {
+    background-color: #6d8b9e;
+}
+
+.nav-options li.active {
+    background-color: #6d8b9e;
+}
+/*** Small Screen Nav bar ***/
+.top-bar, .top-bar.expanded .title-area {
+    height: 80px;
+    background-color: #456680;
+}
+
+.top-bar .name {
+    height: 80px;
+}
+
+.top-bar .title-area h1 {
+    padding: 15px 10px 0px;
+}
+
+.top-bar .toggle-topbar {
+    top: 25px;
+}
+
+.top-bar .toggle-topbar a span {
+    box-shadow: none !important;
+}
+
+.top-bar .toggle-topbar a span:after {
+    width: 25px;
+    content: url("../imgs/drop_arrow_high.svg");
+    float: right;
+    margin: 5px 10px;
+}
+
+.top-bar.expanded .toggle-topbar {
+    background-color: #628096;
+}
+
+.top-bar.expanded .toggle-topbar a {
+    color: white;
+}
+
+/* TODO Change the img */
+.top-bar.expanded .toggle-topbar a span:after {
+    content: url("../imgs/drop_arrow_high.svg");
+}
+
+.accordion-navigation, .accordion dd>a, .accordion .content.active, .accordion dd>a:hover {
+    background-color: #628096;
+}
+
+.accordion-navigation, .accordion dd>a {
+    color: white;
+}
+
+.vertical-nav-list {
+    padding: 0px 20px !important;
+}
+dl.vertical-nav-list {
+    margin: 0px 20px;
+}
+
+dl.vertical-nav-list dd {
+    margin: 10px 0px;
+}
+
+dl.vertical-nav-list dd a {
+    padding: 0px;
+}
