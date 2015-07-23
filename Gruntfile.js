@@ -486,6 +486,7 @@ module.exports = function (grunt) {
     'connect:serve',
     'jshint:all',
     'jscs',
+    'csslint:check',
     'link-checker',
     'htmllint'
   ]);
