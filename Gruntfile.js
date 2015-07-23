@@ -20,7 +20,7 @@ module.exports = function (grunt) {
   var TEST_PORT = grunt.option('testPort') || 8000;
   var CONFIG = {
     owner: 'maidsafe',
-    repo: 'dev.maidsafe.github.io',
+    repo: 'dev.maidsafe.net',
     baseBranch: 'master',
     deployBranch: 'gh_pages'
   };
