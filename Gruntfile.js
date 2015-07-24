@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   var BRANCH_KEY = 'local_branch';
   var TEST_PORT = grunt.option('testPort') || 8000;
   var CONFIG = {
-    owner: 'maidsafe',
+    owner: 'krishnaIndia',
     repo: 'dev.maidsafe.net',
     baseBranch: 'master',
     deployBranch: 'gh_pages'
@@ -522,7 +522,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('deploy', [
    // 'check',
-    'test',
+   // 'test',
     'build',
     'buildcontrol'
     ]);
