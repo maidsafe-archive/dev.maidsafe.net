@@ -115,11 +115,10 @@ ul {
     background-color: #628096;
 }
 
+
 .vertical-nav-list {
+    margin: -15px 0 0 20px;
     padding: 0 20px !important;
-}
-dl.vertical-nav-list {
-    margin: 0 20px;
 }
 
 dl.vertical-nav-list dd {
@@ -127,7 +126,7 @@ dl.vertical-nav-list dd {
 }
 
 dl.vertical-nav-list dd a {
-    padding: 0;
+    padding: 10px 0 0 0;
 }
 
 /*********Footer*****************/
