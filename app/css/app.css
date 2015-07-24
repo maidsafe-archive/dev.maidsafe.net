@@ -12,7 +12,6 @@ ul {
 }
 
 .custom-nav {
-    color: white;
     height: 80px;
     background-color: #456680;
     z-index: 999;
@@ -53,7 +52,6 @@ ul {
 }
 
 .custom-sub-nav {
-    color: white;
     height: 48px;
     background-color: #6d8b9e;
     z-index: 900;
@@ -99,7 +97,7 @@ ul {
 
 .top-bar .toggle-topbar a span:after {
     width: 25px;
-    content: url("../imgs/drop_arrow_high.svg");
+    content: url("../imgs/menu_arrow_down.svg");
     float: right;
     margin: 5px 10px;
 }
@@ -108,21 +106,12 @@ ul {
     background-color: #628096;
 }
 
-.top-bar.expanded .toggle-topbar a {
-    color: white;
-}
-
-/* TODO Change the img */
 .top-bar.expanded .toggle-topbar a span:after {
-    content: url("../imgs/drop_arrow_high.svg");
+    content: url("../imgs/menu_arrow_up.svg");
 }
 
 .accordion-navigation, .accordion dd>a, .accordion .content.active, .accordion dd>a:hover {
     background-color: #628096;
-}
-
-.accordion-navigation, .accordion dd>a {
-    color: white;
 }
 
 .vertical-nav-list {
@@ -153,7 +142,6 @@ dl.vertical-nav-list dd a {
 }
 
 .badge {
-    color: white;
     padding: 25px 0 15px;
     font-size: 14px;
 }
@@ -172,9 +160,9 @@ dl.vertical-nav-list dd a {
 }
 
 .breadcrumbs {
-     border-style: none;
-     border-width: 0;
-     background-color: transparent;
+    border-style: none;
+    border-width: 0;
+    background-color: transparent;
     margin-bottom: 43px;
 }
 
