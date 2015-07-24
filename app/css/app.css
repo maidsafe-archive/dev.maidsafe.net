@@ -1,3 +1,7 @@
+body {
+    color: white;
+}
+
 a, a:hover {
     text-decoration: none !important;
     color: white !important;
@@ -144,7 +148,8 @@ dl.vertical-nav-list dd a {
 
 .footer-links-pane {
     background-color: #335066;
-    height: 372px;
+    min-height: 372px;
+    padding: 24px 0px;
 }
 
 .badge {
@@ -164,4 +169,45 @@ dl.vertical-nav-list dd a {
 
 .badge .img-holder {
     height: 80px;
+}
+
+.breadcrumbs {
+     border-style: none;
+     border-width: 0px;
+     background-color: transparent;
+    margin-bottom: 43px;
+}
+
+.breadcrumbs img {
+    width: 20px;
+    margin: -5px 5px;
+}
+
+.breadcrumbs a {
+    text-transform: none;
+    font-size: inherit;
+}
+
+.footer-links-pane .link-title {
+    margin: 0px 0px 15px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.footer-links-pane ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-links-pane ul li a {
+    font-size: 14px;
+    color: #DAF2E9 !important;
+}
+
+.disclaimer-section {
+    margin: 63px 0px;
+}
+
+.disclaimer-section a {
+    font-size: 14px;
 }
