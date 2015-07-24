@@ -1,3 +1,7 @@
+/* exported setNavigationIndex */
+
+/* jshint ignore:start */
+// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
 $(document).foundation({
   accordion: {
     // specify the class used for accordion panels
@@ -11,6 +15,8 @@ $(document).foundation({
     toggleable: true
   }
 });
+/* jshint ignore:end */
+// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 
 /**
  * Sets the 'active' class to the index of the Main Navigation element starting from 0
@@ -18,4 +24,4 @@ $(document).foundation({
  */
 var setNavigationIndex = function(index) {
   $($('.custom-nav li')[index]).addClass('active');
-}
+};

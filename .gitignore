@@ -2,3 +2,4 @@
 /app/_bower_components
 /node_modules
 /.jekyll
+/.tmp
