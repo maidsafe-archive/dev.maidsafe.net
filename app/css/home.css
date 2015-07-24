@@ -21,6 +21,16 @@
     font-weight: 600;
 }
 
+/*** Override properties for Smaller screens ***/
+@media screen and (max-width: 640px)  {
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+}
+/**********************************************/
+
 .first-banner {
     background-image:  url("../img/phone_purple.jpg");
 }
@@ -30,13 +40,15 @@
 }
 
 .descriptive-content {
-    height: 550px;
+    height: 680px;
     color: black;
+    padding: 35px 0;
 }
 
 .descriptive-content h1 {
     color: #5593da;
     margin: 50px 0 40px 0;
+    font-weight: bold;
 }
 
 .descriptive-content p {

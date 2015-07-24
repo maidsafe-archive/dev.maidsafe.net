@@ -1,6 +1,7 @@
 body {
     color: white;
     font-family: "Open Sans", sans-serif;
+    font-size: 18px;
 }
 
 a, a:hover {
@@ -194,7 +195,6 @@ dl.vertical-nav-list dd a {
 
 .footer-links-pane ul li a {
     font-size: 14px;
-    color: #DAF2E9 !important;
 }
 
 .disclaimer-section {
