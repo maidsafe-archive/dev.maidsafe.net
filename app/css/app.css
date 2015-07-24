@@ -1,5 +1,6 @@
 body {
     color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 a, a:hover {
@@ -157,6 +158,11 @@ dl.vertical-nav-list dd a {
 
 .badge .img-holder {
     height: 80px;
+}
+
+.fix-badge-comapany-site {
+    height: 92%;
+    margin: -5% 0 0 10%;
 }
 
 .breadcrumbs {
