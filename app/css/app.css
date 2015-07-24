@@ -3,6 +3,10 @@ a, a:hover {
     color: white !important;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .custom-nav {
     color: white;
     height: 80px;
@@ -130,4 +134,34 @@ dl.vertical-nav-list dd {
 
 dl.vertical-nav-list dd a {
     padding: 0px;
+}
+
+/*********Footer*****************/
+.footer-badges-pane {
+    background-color: #456680;
+    min-height: 150px;
+}
+
+.footer-links-pane {
+    background-color: #335066;
+    height: 372px;
+}
+
+.badge {
+    color: white;
+    padding: 25px 0px 15px;
+    font-size: 14px;
+}
+
+.badge:hover {
+    background-color: #5E7A90;
+}
+
+.badge span {
+    margin: 15px 0px 0px;
+    display: block;
+}
+
+.badge .img-holder {
+    height: 80px;
 }
