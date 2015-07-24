@@ -1,7 +1,13 @@
+a, a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
 .custom-nav {
     color: white;
     height: 80px;
     background-color: #456680;
+    z-index: 999;
 }
 /*** Medium and Large Screen Nav bar ***/
 .custom-nav ul {
@@ -30,6 +36,37 @@
 .nav-options li.active {
     background-color: #6d8b9e;
 }
+
+.nav-options li.active a.has-sub-nav:after {
+    content: url("../imgs/drop_arrow_high.svg");
+    width: 20px;
+    float: right;
+    margin: 5px 8px 0px 0px;
+}
+
+.custom-sub-nav {
+    color: white;
+    height: 48px;
+    background-color: #6d8b9e;
+    z-index: 900;
+}
+
+.custom-sub-nav .active {
+    font-weight: bold;
+}
+
+.custom-sub-nav .options div {
+    height: 48px;
+}
+
+.custom-sub-nav .options div.column {
+    padding: 20px 0px 0px;
+}
+
+.custom-sub-nav .options .column:hover {
+    background-color: #628096;
+}
+
 /*** Small Screen Nav bar ***/
 .top-bar, .top-bar.expanded .title-area {
     height: 80px;

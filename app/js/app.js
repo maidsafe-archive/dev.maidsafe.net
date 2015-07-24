@@ -11,3 +11,7 @@ $(document).foundation({
     toggleable: true
   }
 });
+
+var setNavigationIndex = function(index) {
+  $($('.custom-nav li')[index]).addClass('active');
+}

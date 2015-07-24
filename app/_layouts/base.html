@@ -10,8 +10,6 @@ layout: default
     {{ content }}
 </div>
 
-{% include vendor.html %}
-{% include app_dependencies.html %}
 {% for resource in page.includes %}
 {% include {{resource}} %}
 {% endfor %}
