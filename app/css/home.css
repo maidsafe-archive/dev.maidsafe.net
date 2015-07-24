@@ -1,0 +1,85 @@
+.banner {
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1 {
+    margin: 118px 0 0;
+    color: white;
+}
+
+.banner p {
+    margin: 45px 0;
+    font-size: 24px;
+    width: 90%;
+}
+
+.banner a {
+    font-size: 24px;
+    color: #5593D7 !important;
+}
+
+.first-banner {
+    background-image:  url("../imgs/phone_purple.jpg");
+}
+
+.second-banner {
+    background-image:  url("../imgs/street_people.jpg");
+}
+
+.descriptive-content {
+    height: 550px;
+    color: black;
+}
+
+.descriptive-content h1 {
+    color: #5593da;
+    margin: 50px 0 40px 0;
+}
+
+.descriptive-content p {
+    margin: 0 0 40px 0;
+    font-size: 20px;
+}
+
+.descriptive-content img {
+    margin: 0 0 70px 0;
+}
+
+.descriptive-content span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tutorial-content {
+    height: auto;
+    min-height: 650px;
+    padding: 20px 0;
+}
+
+.tutorial-content .card {
+    margin: 0 0 20px ;
+    height: 300px;
+}
+
+.tutorial-content .card .media {
+    height: 169px;
+    background-color: #668DAA;
+}
+
+.tutorial-content .card .content {
+    height: 130px;
+    border: solid #CCCCCC 1px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.tutorial-content .card .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 5px;
+}
+
+.tutorial-content .card .description {
+    font-size: 15px;
+}
