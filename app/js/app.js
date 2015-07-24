@@ -12,6 +12,10 @@ $(document).foundation({
   }
 });
 
+/**
+ * Sets the 'active' class to the index of the Main Navigation element starting from 0
+ * @param index
+ */
 var setNavigationIndex = function(index) {
   $($('.custom-nav li')[index]).addClass('active');
 }

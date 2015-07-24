@@ -41,7 +41,7 @@ a, a:hover {
     content: url("../imgs/drop_arrow_high.svg");
     width: 20px;
     float: right;
-    margin: 5px 8px 0px 0px;
+    margin: 3px 8px 0px -5px;
 }
 
 .custom-sub-nav {
