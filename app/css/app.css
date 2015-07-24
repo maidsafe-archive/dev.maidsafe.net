@@ -174,7 +174,7 @@ dl.vertical-nav-list dd a {
 
 .breadcrumbs img {
     width: 20px;
-    margin: -5px 5px;
+    margin: 0 5px 0 0;
 }
 
 .breadcrumbs a {
@@ -186,6 +186,7 @@ dl.vertical-nav-list dd a {
     margin: 0 0 15px;
     padding: 0;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .footer-links-pane ul {
