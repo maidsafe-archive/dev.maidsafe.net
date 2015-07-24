@@ -46,7 +46,7 @@ ul {
 }
 
 .nav-options li.active a.has-sub-nav:after {
-    content: url("../imgs/drop_arrow_high.svg");
+    content: url("../img/drop_arrow_high.svg");
     width: 20px;
     float: right;
     margin: 3px 8px 0 -5px;
@@ -98,7 +98,7 @@ ul {
 
 .top-bar .toggle-topbar a span:after {
     width: 25px;
-    content: url("../imgs/menu_arrow_down.svg");
+    content: url("../img/menu_arrow_down.svg");
     float: right;
     margin: 5px 10px;
 }
@@ -108,7 +108,7 @@ ul {
 }
 
 .top-bar.expanded .toggle-topbar a span:after {
-    content: url("../imgs/menu_arrow_up.svg");
+    content: url("../img/menu_arrow_up.svg");
 }
 
 .accordion-navigation, .accordion dd>a, .accordion .content.active, .accordion dd>a:hover {
