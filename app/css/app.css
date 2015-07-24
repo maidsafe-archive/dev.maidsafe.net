@@ -1,0 +1,207 @@
+body {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.custom-nav {
+    height: 80px;
+    background-color: #456680;
+    z-index: 999;
+}
+/*** Medium and Large Screen Nav bar ***/
+.custom-nav ul {
+    list-style-type: none;
+}
+
+.brand-logo {
+    position: absolute;
+    top: 22px;
+}
+
+.nav-options {
+    margin-top: 40px;
+}
+
+.nav-options li {
+    height: 40px;
+    padding: 6px 0;
+    margin-left: .5px;
+}
+
+.nav-options li:hover {
+    background-color: #6d8b9e;
+}
+
+.nav-options li.active {
+    background-color: #6d8b9e;
+}
+
+.nav-options li.active a.has-sub-nav:after {
+    content: url("../img/drop_arrow_high.svg");
+    width: 20px;
+    float: right;
+    margin: 3px 8px 0 -5px;
+}
+
+.custom-sub-nav {
+    height: 48px;
+    background-color: #6d8b9e;
+    z-index: 900;
+}
+
+.custom-sub-nav .active {
+    font-weight: bold;
+}
+
+.custom-sub-nav .options div {
+    height: 48px;
+}
+
+.custom-sub-nav .options div.column {
+    padding: 20px 0 0;
+}
+
+.custom-sub-nav .options .column:hover {
+    background-color: #628096;
+}
+
+/*** Small Screen Nav bar ***/
+.top-bar, .top-bar.expanded .title-area {
+    height: 80px;
+    background-color: #456680;
+}
+
+.top-bar .name {
+    height: 80px;
+}
+
+.top-bar .title-area h1 {
+    padding: 15px 10px 0;
+}
+
+.top-bar .toggle-topbar {
+    top: 25px;
+}
+
+.top-bar .toggle-topbar a span {
+    box-shadow: none !important;
+}
+
+.top-bar .toggle-topbar a span:after {
+    width: 25px;
+    content: url("../img/menu_arrow_down.svg");
+    float: right;
+    margin: 5px 10px;
+}
+
+.top-bar.expanded .toggle-topbar {
+    background-color: #628096;
+}
+
+.top-bar.expanded .toggle-topbar a span:after {
+    content: url("../img/menu_arrow_up.svg");
+}
+
+.accordion-navigation, .accordion dd>a, .accordion .content.active, .accordion dd>a:hover {
+    background-color: #628096;
+}
+
+
+.vertical-nav-list {
+    margin: -15px 0 0 20px;
+    padding: 0 20px !important;
+}
+
+dl.vertical-nav-list dd {
+    margin: 10px 0;
+}
+
+dl.vertical-nav-list dd a {
+    padding: 10px 0 0 0;
+}
+
+/*********Footer*****************/
+.footer-badges-pane {
+    background-color: #456680;
+    min-height: 150px;
+}
+
+.footer-links-pane {
+    background-color: #335066;
+    min-height: 372px;
+    padding: 24px 0;
+}
+
+.badge {
+    padding: 25px 0 15px;
+    font-size: 14px;
+}
+
+.badge:hover {
+    background-color: #5E7A90;
+}
+
+.badge span {
+    margin: 15px 0 0;
+    display: block;
+}
+
+.badge .img-holder {
+    height: 80px;
+}
+
+.fix-badge-comapany-site {
+    height: 92%;
+    margin: -5% 0 0 10%;
+}
+
+.breadcrumbs {
+    border-style: none;
+    border-width: 0;
+    background-color: transparent;
+    margin-bottom: 43px;
+}
+
+.breadcrumbs img {
+    width: 20px;
+    margin: 0 5px 0 0;
+}
+
+.breadcrumbs a {
+    text-transform: none;
+    font-size: inherit;
+}
+
+.footer-links-pane .link-title {
+    margin: 0 0 15px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-links-pane ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-pane ul li a {
+    font-size: 14px;
+}
+
+.disclaimer-section {
+    margin: 63px 0;
+}
+
+.disclaimer-section a {
+    font-size: 14px;
+}

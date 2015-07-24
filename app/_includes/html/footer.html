@@ -1,0 +1,145 @@
+<footer class="row-full-width">
+    <div class="footer-badges-pane row-full-width">
+        <div class="row">
+            <div class="columns">
+                <div class="columns small-12 text-center show-for-small-only">
+                    <div class="badge row">
+                        <div class="column small-12 medium-centered img-holder">
+                            <img alt="" src="img/maidsafe_user_logo.svg" class="fix-badge-comapany-site">
+                        </div>
+                        <span>MaidSafe Company Site</span>
+                    </div>
+                </div>
+                <div class="columns small-6 medium-2 text-center">
+                    <div class="badge row">
+                        <a href="#">
+                            <div class="column small-12 medium-12 medium-centered img-holder">
+                                <img alt="" src="img/community.png">
+                            </div>
+                            <span>Community Forum</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns small-6 medium-2 text-center">
+                    <div class="badge row">
+                        <a href="#">
+                            <div class="column small-12 medium-12 medium-centered img-holder">
+                                <img alt="" src="img/meetup.png">
+                            </div>
+                            <span>Join a meetup</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns medium-3 text-center show-for-medium-up">
+                    <div class="badge row">
+                        <a href="#">
+                            <div class="column medium-12 medium-centered img-holder">
+                                <img alt="" src="img/maidsafe_user_logo.svg">
+                            </div>
+                            <span>MaidSafe Company Site</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns small-6 medium-2 text-center">
+                    <div class="badge row">
+                        <a href="#">
+                            <div class="column small-12 medium-12 medium-centered img-holder">
+                                <img alt="" src="img/safe_pod.png">
+                            </div>
+                            <span>SAFE Pods</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns small-6 medium-2 text-center end">
+                    <div class="badge row">
+                        <a href="#">
+                            <div class="column small-12 medium-12 medium-centered img-holder">
+                                <img alt="" src="img/twitter.png">
+                            </div>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-links-pane row-full-width">
+        <div class="row">
+            <nav class="breadcrumbs">
+                <a href="#"> <img alt="" src="img/penrose.svg"> Developer</a>
+                {% for nav in page.breadcrumbs %}
+                    <a href="/"> {{ nav }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+        <div class="row">
+            <div class="column medium-6">
+                <div class="column medium-12 link-title">
+                    App Dev
+                </div>
+                <div class="row">
+                    <div class="column medium-12">
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a href="/app_devs.html">Getting Started</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a>Getting Started</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a>Getting</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column medium-6">
+                <div class="column medium-12 link-title">
+                    Core Dev
+                </div>
+                <div class="row">
+                    <div class="column medium-12">
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a href="/app_devs.html">Getting Started</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a>Getting Started</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                        <ul class="column small-6 medium-4 link-holder">
+                            <li><a>Getting</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                            <li><a>App 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column small-12 medium-6 right disclaimer-section">
+                <ul class="column small-12 medium-12 medium-pull-2">
+                    <li class="column small-3 medium-3"><a>Disclaimer</a></li>
+                    <li class="column small-3 medium-3"><a>Privacy</a></li>
+                    <li class="column small-3 medium-3"><a>Contact us</a></li>
+                    <li class="column small-3 medium-3"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".breadcrumbs a").last().addClass('current');
+    </script>
+</footer>

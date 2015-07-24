@@ -18,6 +18,8 @@
   "maxerr": 30,
   "node": true,
   "globals"   : {
+    "$": true,
+    "document": true,
     "describe": false,
     "it": false,
     "before": false,
