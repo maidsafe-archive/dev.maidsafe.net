@@ -25,8 +25,24 @@ $(function() {
  * Toggle Seconday Navigation on click
  */
 var showSecondayNavigation = function() {
-  $('#secNav').on('click', function() {
-    var navList = $(this).siblings('.nav-list');
+  $('#secNavButton').on('click', function() {
+    var navList = $('#secNav');
+    var subNav = $('.secondary-nav-sub');
+    if (subNav.hasClass('show')) {
+      subNav.removeClass('show');
+    }
+    if (navList.hasClass('show')) {
+      navList.removeClass('show');
+      return;
+    }
+    navList.addClass('show');
+  });
+
+  $('#secNav .nav-list li').on('click', function() {
+    var navList = $(this).children('.secondary-nav-sub');
+    if (!navList) {
+      return;
+    }
     if (navList.hasClass('show')) {
       navList.removeClass('show');
       return;
