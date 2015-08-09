@@ -2,28 +2,8 @@ $(function() {
   showSecondayNavigation();
   toggleSideMenu();
 });
-/* exported setNavigationIndex */
-
-/* jshint ignore:start */
-// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
-// $(document).foundation({
-//   accordion: {
-//     // specify the class used for accordion panels
-//     content_class: 'content',
-//     // specify the class used for active (or open) accordion panels
-//     active_class: 'active',
-//     // allow multiple accordion panels to be active at the same time
-//     multi_expand: true,
-//     // allow accordion panels to be closed by clicking on their headers
-//     // setting to false only closes accordion panels when another is opened
-//     toggleable: true
-//   }
-// });
-/* jshint ignore:end */
-// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
-
 /**
- * Toggle Seconday Navigation on click
+ * Toggle Seconday Navigation
  */
 var showSecondayNavigation = function() {
   $('#secNavButton').on('click', function() {
@@ -58,6 +38,10 @@ var showSecondayNavigation = function() {
   });
 };
 
+/**
+ * Toggle Sidebar Navigation
+ */
+
 var toggleSideMenu = function() {
   $('#showSidemenu').on('click', function() {
     var sidemenu = $("#sidemenu");
@@ -68,7 +52,7 @@ var toggleSideMenu = function() {
     sidemenu.addClass('show');
   });
 
-  $('.left-side-menu > li a').on('click', function(e) {
+  $('.left-side-menu > li > a').on('click', function(e) {
     var instant = $(this);
     if (e.target != this) {
       return;
@@ -77,6 +61,15 @@ var toggleSideMenu = function() {
       instant.parent().removeClass('selected');
       return;
     }
+    $('.left-side-menu li').removeClass('selected');
+    instant.parent().addClass('selected');
+  });
+  $('.left-side-menu > li > ul > li > a').on('click', function(e) {
+    var instant = $(this);
+    if (e.target != this) {
+      return;
+    }    
+    $('.left-side-menu > li > ul > li').removeClass('selected');
     instant.parent().addClass('selected');
   });
 }
