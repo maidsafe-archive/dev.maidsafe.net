@@ -50,9 +50,8 @@
   <div class="breadcum container">
     <img class="icon" src="./img/penrose.svg" alt="" />
     <nav>
-      <a href="/">Developer</a>
       {% for nav in page.breadcrumbs %}
-          <a href="{{ nav }}.html">{{ nav }}</a>
+          <a href="{{nav[1]}}">{{nav[0]}}</a>
       {% endfor %}
     </nav>
   </div>

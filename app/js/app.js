@@ -27,8 +27,14 @@ $(function() {
  */
 var showSecondayNavigation = function() {
   $('#secNavButton').on('click', function() {
+    var instance = $(this);
     var navList = $('#secNav');
     var subNav = $('.secondary-nav-sub');
+    if (instance.hasClass('active')) {
+      instance.removeClass('active');
+    } else {
+      instance.addClass('active');
+    }
     if (subNav.hasClass('show')) {
       subNav.removeClass('show');
     }

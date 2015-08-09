@@ -1,10 +1,51 @@
 ---
 layout: base
-title: MaidSafe - The New Decentralized Internet
+title: MaidSafe - Core Developers
 description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
 keywords: Distributed Platform, MaidSafe
 includes: []
-breadcrumbs: [index]
+breadcrumbs:
+  Developer: /
+  Core Developer: CoreDevelopers.html
+leftSidebar:
+  - target: Crust
+    href: default
+  - target: Routing
+    href: default
+  - target: Vaults
+    href: default
+    innerNav:
+      - name: Overview
+        link: default
+      - name: Detailed Document
+        link: default
+      - name: Language of Network
+        link: default
+  - target: Careers
+    href: careers.html
+innerPrimaryNav:
+  Getting Started: #
+  Components: #
+  Rewards: #
+  Support: #
+secondaryNav:
+  - target : App Developers
+    href: default
+  - target : Core Developers
+    href: default
+    innerNav:
+      - name: Getting Started
+        link: CoreDevelopers.html
+      - name: Components
+        link: default
+      - name: Rewards
+        link: default
+      - name: Support
+        link: default
+  - target: RoadMap
+    href: default
+  - target: Careers
+    href: careers.html
 ---
 <div class="wrapper container">
   <div class="sub-page-title-base">
@@ -12,22 +53,9 @@ breadcrumbs: [index]
     <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg">Show</h4>
   </div>
   <div class="inner-wrapper row">
-    <div id="sidemenu" class="left-side-menu-base  hidden-xs hidden-sm col-xs-12 col-md-3">
-      <ul class="left-side-menu">
-        <li><a href="#">Crust</a></li>
-        <li><a href="#">Routing</a></li>
-        <li>
-          <a href="#">Vaults</a>
-          <ul class="left-side-menu-inner">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Detailed Document</a></li>
-            <li><a href="#">Language of Network</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Self Encryption</a></li>
-        <li><a href="#">Client</a></li>
-      </ul>
-    </div>
+    <!-- Left Sidebar -->
+    {% include leftSidebar.html %}
+    <!-- #Left Sidebar -->
     <div class="col-xs-12 col-md-9 col-md-offset-3">
       <div class="page-1">
         <h3 class="title">Vaults</h3>

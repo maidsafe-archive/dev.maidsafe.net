@@ -104,7 +104,7 @@
 }
 
 /* Media Small Screens */
-@media screen and (min-width: 786px) and (max-width: 992px) {
+@media screen and (min-width: 620px) and (max-width: 992px) {
   /* Home Banner */
   .home-banner {
     height: 350px;

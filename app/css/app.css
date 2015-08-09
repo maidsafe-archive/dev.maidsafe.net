@@ -101,7 +101,6 @@ header .primary-nav-sub {
   padding: 0;
   text-align: left;
   background-color: #628098;
-  display: none;
 }
 
 header .primary-nav-sub .primary-nav-sub-base {
@@ -121,6 +120,11 @@ header .primary-nav-sub .primary-nav-sub-base > li a{
   text-decoration: none;
   font-size: 14px;
   padding: 13px 0;
+  font-weight: 300;
+}
+
+header .primary-nav-sub .primary-nav-sub-base > li.selected {
+  font-weight: 600;
 }
 
 header .secondary-nav {
@@ -153,7 +157,7 @@ header .secondary-nav .nav-list > li a {
   height: 100%;
   color: white;
   text-decoration: none;
-  line-height: 36px;
+  line-height: 48px;
   text-align: left;
   padding: 0 16px;
   display: block;
@@ -170,6 +174,25 @@ header .secondary-nav .nav-list > li .secondary-nav-sub {
 
 header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   display: block;
+}
+
+#secNavButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#secNavButton a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 13px;
+}
+
+#secNavButton.active a {
+  background-color: #628096;
 }
 
 /* Home Banner */

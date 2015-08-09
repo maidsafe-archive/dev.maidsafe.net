@@ -1,0 +1,38 @@
+<div id="sidemenu" class="left-side-menu-base  hidden-xs hidden-sm col-xs-12 col-md-3">
+  <ul class="left-side-menu">
+    {% for leftSidebar in page.leftSidebar %}
+      <li>
+        {% if leftSidebar.href == 'default' %}
+          <a href="#">{{leftSidebar.target}}</a>
+        {% else %}
+          <a href="{{leftSidebar.href}}">{{leftSidebar.target}}</a>
+        {% endif %}
+        {% if leftSidebar.innerNav %}
+          <ul class="left-side-menu-inner">
+            {% for key in leftSidebar.innerNav %}
+              <li>
+                {% if key.link == 'default' %}
+                  <a href="#">{{key.name}}</a>
+                {% else %}
+                  <a href="{{key.link}}">{{key.name}}</a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+    <!-- <li><a href="#">Routing</a></li>
+    <li>
+      <a href="#">Vaults</a>
+      <ul class="left-side-menu-inner">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Detailed Document</a></li>
+        <li><a href="#">Language of Network</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Self Encryption</a></li>
+    <li><a href="#">Client</a></li> -->
+  </ul>
+</div>
