@@ -1,5 +1,9 @@
 /* Media XSmall Screens */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+  .wrapper {
+    padding: 0;
+  }
+
   /* Home Banner */
   .home-banner {
     height: 350px;
@@ -75,6 +79,28 @@
     text-align: center;
   }
   /* #Footer */
+
+  /* Page Banner */
+  .page-banner {
+    height: 300px;
+  }
+  .page-banner .label-1 {
+    margin-top: 80px;
+    font: normal normal normal 30px/36px 'Open Sans';
+  }
+
+  .page-banner .label-2 {
+    margin: 24px 0;
+    font: normal normal normal 14px/17px 'Open Sans';
+  }
+  /* #Page Banner */
+
+  /* Left Side Bar */
+  .left-side-menu:after {
+    display: none;
+  }
+  /* #Left Side Bar */
+
 }
 
 /* Media Small Screens */
@@ -172,4 +198,18 @@
 
   /* #Footer */
 
+  /* Page Banner */
+  .page-banner {
+    height: 350px;
+  }
+  .page-banner .label-1 {
+    margin-top: 118px;
+    font: normal normal normal 30px/36px 'Open Sans';
+  }
+
+  .page-banner .label-2 {
+    margin: 24px 0;
+    font: normal normal normal 14px/17px 'Open Sans';
+  }
+  /* #Page Banner */
 }

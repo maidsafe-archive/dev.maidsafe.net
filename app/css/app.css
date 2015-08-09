@@ -3,6 +3,24 @@ body {
     font-size: 18px;
 }
 
+.sub-page-title {
+  margin: 0;
+  padding: 0 16px;
+  line-height: 48px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+}
+
+.inner-wrapper {
+  position: relative;
+  margin: 0;
+}
+
 /* Header */
 header {
   width: 100%;
@@ -68,10 +86,8 @@ header .primary-nav-sub {
   margin: 0;
   padding: 0;
   text-align: left;
-  position: absolute;
-  top: 100%;
-  left: 0;
   background-color: #628098;
+  display: none;
 }
 
 header .primary-nav-sub .primary-nav-sub-base {
@@ -101,6 +117,7 @@ header .secondary-nav {
   top: 100%;
   left: 0;
   display: none;
+  z-index: 99;
 }
 
 header .secondary-nav.show {
@@ -376,3 +393,137 @@ footer .layer-3 ul li img{}
   left: 100%;
   margin: 0 5px;
 }
+
+/* Page 1 */
+.page-1 {
+  margin-top: 48px;
+  margin-bottom: 68px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+}
+.page-1 .title{
+  color: #5b94d9;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+.page-1 .p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 16px 0;
+  color: #808080;
+}
+.page-1 .p a{
+  color: #808080;
+  text-decoration: underline;
+}
+.page-1 .sec{
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.page-1 .sec .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.page-1 .list {
+  font-size: 14px;
+}
+.page-1 .list li {
+  padding: 8px 0;
+  color: #808080;
+  font-weight: 300;
+}
+/*.page-1 .title{}*/
+/* #Page 1 */
+
+/* Page Banner */
+.page-banner {
+  height: 416px;
+  color: white;
+}
+
+.page-banner.careers {
+  background-image: url(../img/street_people.jpg);
+  background-size: cover;
+}
+.page-banner .label-1 {
+  margin-top: 118px;
+  font: normal normal normal 49px/59px 'Open Sans';
+}
+.page-banner .label-2 {
+  margin: 45px 0;
+  font: normal normal normal 24px/27px 'Open Sans';
+}
+/* #Page Banner */
+
+/* Left Side Menu */
+.left-side-menu-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 0;
+  height: 100%;
+}
+.left-side-menu {
+  height: 100%;
+  position: relative;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side-menu:after {
+  content: "";
+  width: 100%;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+.left-side-menu > li {
+  list-style: none;
+  padding: 0 16px;
+}
+.left-side-menu > li a {
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.left-side-menu li.selected {
+  background-color: white;
+}
+
+.left-side-menu li.selected > a {
+  color: #5b94d9;
+}
+
+.left-side-menu li.selected > .left-side-menu-inner {
+  display: block !important;
+}
+
+.left-side-menu li.selected > .left-side-menu-inner li.selected a {
+    color: #5b94d9;
+}
+
+.left-side-menu li > .left-side-menu-inner {
+  display: none;
+  margin: 0;
+  padding: 0 8px 16px;
+}
+.left-side-menu li > .left-side-menu-inner li {
+  list-style: none;
+}
+.left-side-menu li > .left-side-menu-inner li a {
+  font-weight: 300;
+}
+/* #Left Side Menu */
