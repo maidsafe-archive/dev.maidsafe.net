@@ -7,16 +7,19 @@ includes: []
 breadcrumbs: [index]
 ---
 <div class="wrapper container">
-  <h2 class="sub-page-title">Components</h2>
+  <div class="sub-page-title-base">
+    <h2 class="sub-page-title">Components</h2>
+    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg">Show</h4>
+  </div>
   <div class="inner-wrapper row">
-    <div class="left-side-menu-base  hidden-xs hidden-sm col-xs-12 col-md-3">
+    <div id="sidemenu" class="left-side-menu-base  hidden-xs hidden-sm col-xs-12 col-md-3">
       <ul class="left-side-menu">
         <li><a href="#">Crust</a></li>
         <li><a href="#">Routing</a></li>
-        <li class="selected">
+        <li>
           <a href="#">Vaults</a>
           <ul class="left-side-menu-inner">
-            <li class="selected"><a href="#">Overview</a></li>
+            <li><a href="#">Overview</a></li>
             <li><a href="#">Detailed Document</a></li>
             <li><a href="#">Language of Network</a></li>
           </ul>

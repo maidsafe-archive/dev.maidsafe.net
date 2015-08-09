@@ -1,5 +1,6 @@
 $(function() {
   showSecondayNavigation();
+  toggleSideMenu();
 });
 /* exported setNavigationIndex */
 
@@ -50,3 +51,26 @@ var showSecondayNavigation = function() {
     navList.addClass('show');
   });
 };
+
+var toggleSideMenu = function() {
+  $('#showSidemenu').on('click', function() {
+    var sidemenu = $("#sidemenu");
+    if (sidemenu.hasClass('show')) {
+      sidemenu.removeClass('show');
+      return;
+    }
+    sidemenu.addClass('show');
+  });
+
+  $('.left-side-menu > li a').on('click', function(e) {
+    var instant = $(this);
+    if (e.target != this) {
+      return;
+    }
+    if (instant.parent().hasClass('selected')) {
+      instant.parent().removeClass('selected');
+      return;
+    }
+    instant.parent().addClass('selected');
+  });
+}
