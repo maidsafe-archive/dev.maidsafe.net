@@ -118,6 +118,10 @@ header .primary-nav-sub .primary-nav-sub-base > li {
   float: left;
 }
 
+header .primary-nav-sub .primary-nav-sub-base > li:first-child a {
+  font-weight: 600;
+}
+
 header .primary-nav-sub .primary-nav-sub-base > li a{
   display: inline-block;
   color: white;
@@ -127,7 +131,7 @@ header .primary-nav-sub .primary-nav-sub-base > li a{
   font-weight: 300;
 }
 
-header .primary-nav-sub .primary-nav-sub-base > li.selected {
+header .primary-nav-sub .primary-nav-sub-base > li.selected a {
   font-weight: 600;
 }
 
