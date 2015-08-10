@@ -23,8 +23,41 @@ body {
   position: absolute;
   top: 0;
   line-height: 48px;
-  right: 0;
+  right: 10px;
   font-size: 14px;
+  padding-right: 25px;
+}
+
+.sub-page-title-opt:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-image: url(../img/drop_arrow_high.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+.sub-page-title-opt.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-image: url(../img/drop_arrow_high.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  transform: rotateZ(180deg);
+}
+
+.sub-page-title-opt a {
+  color: #555;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -69,6 +102,7 @@ header .sec-2 .primary-nav li {
   list-style: none;
   display: inline-block;
   text-align: center;
+  position: relative;
 }
 
 header .sec-2 .primary-nav > li:hover {
@@ -77,6 +111,19 @@ header .sec-2 .primary-nav > li:hover {
 
 header .sec-2 .primary-nav > li.selected {
   background-color: #628098;
+}
+
+header .sec-2 .primary-nav > li.selected:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-image: url(../img/menu_arrow_down.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 header .sec-2 .primary-nav > li.lg-txt {
@@ -188,6 +235,20 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   position: absolute;
   right: 0;
   bottom: 0;
+  padding-right: 20px;
+}
+
+#secNavButton:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-image: url(../img/menu_arrow_down.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 #secNavButton a {
@@ -197,10 +258,24 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   display: block;
   width: 100%;
   padding: 13px;
+  text-align: right;
 }
 
-#secNavButton.active a {
+#secNavButton.active {
   background-color: #628096;
+}
+
+#secNavButton.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-image: url(../img/menu_arrow_up.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 /* Home Banner */
@@ -545,7 +620,7 @@ footer .layer-3 ul li img{}
 .left-side-menu > li a {
   display: block;
   width: 100%;
-  line-height: 28px;
+  line-height: 36px;
   color: #555;
   font-size: 14px;
   font-weight: 600;
@@ -577,7 +652,6 @@ footer .layer-3 ul li img{}
 .left-side-menu li > .left-side-menu-inner li {
   list-style: none;
 }
-
 .left-side-menu li > .left-side-menu-inner li a {
   font-weight: 300;
 }

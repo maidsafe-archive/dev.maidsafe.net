@@ -44,7 +44,15 @@ var showSecondayNavigation = function() {
 
 var toggleSideMenu = function() {
   $('#showSidemenu').on('click', function() {
+    var instant = $(this);
     var sidemenu = $("#sidemenu");
+    if (instant.hasClass('active')) {
+      instant.removeClass('active');
+      instant.children('a').text('show');
+    } else {
+      instant.addClass('active');
+      instant.children('a').text('hide');
+    }
     if (sidemenu.hasClass('show')) {
       sidemenu.removeClass('show');
       return;
@@ -68,7 +76,7 @@ var toggleSideMenu = function() {
     var instant = $(this);
     if (e.target != this) {
       return;
-    }    
+    }
     $('.left-side-menu > li > ul > li').removeClass('selected');
     instant.parent().addClass('selected');
   });
