@@ -12,10 +12,13 @@
     <div class="sec-2 col-xs-3 col-sm-4 pull-right col-md-9">
       <!-- Primary Navigation -->
       <ul class="primary-nav hidden-xs hidden-sm">
-        <li class="lg-txt"><a href="#">App Developers</a></li>
-        <li class="lg-txt"><a href="CoreDevelopers.html">Core Developers</a></li>
-        <li class="sm-txt"><a href="#">Roadmap</a></li>
-        <li class="sm-txt"><a href="careers.html">Careers</a></li>
+        {% for nav in page.primaryNav %}
+          {% if nav.link == 'default' %}
+            <li class="{{nav.class}}"><a href="#">{{nav.target}}</a></li>
+          {% else %}
+            <li class="{{nav.class}}"><a href="{{nav.link}}">{{nav.target}}</a></li>
+          {% endif %}
+        {% endfor %}        
       </ul>
       <!-- #Primary Navigation -->
     </div>

@@ -75,6 +75,10 @@ header .sec-2 .primary-nav > li:hover {
   background-color: #628098;
 }
 
+header .sec-2 .primary-nav > li.selected {
+  background-color: #628098;
+}
+
 header .sec-2 .primary-nav > li.lg-txt {
   width: 200px;
 }
