@@ -210,6 +210,7 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   background-image: url(../img/phone_purple.jpg);
   background-size: cover;
   color: white;
+  background-position: center;
 }
 
 .home-banner .label-1 {
@@ -480,13 +481,13 @@ footer .layer-3 ul li img{}
   color: #808080;
   font-weight: 300;
 }
-/*.page-1 .title{}*/
 /* #Page 1 */
 
 /* Page Banner */
 .page-banner {
   height: 416px;
   color: white;
+  background-position: center;
 }
 
 .page-banner.careers {
@@ -512,6 +513,7 @@ footer .layer-3 ul li img{}
   padding: 0;
   height: 100%;
 }
+
 .left-side-menu-base.show {
   display: block !important;
   position: relative;
@@ -534,10 +536,12 @@ footer .layer-3 ul li img{}
   height: 100%;
   z-index: -1;
 }
+
 .left-side-menu > li {
   list-style: none;
   padding: 0 16px;
 }
+
 .left-side-menu > li a {
   display: block;
   width: 100%;
@@ -569,9 +573,11 @@ footer .layer-3 ul li img{}
   margin: 0;
   padding: 0 8px 16px;
 }
+
 .left-side-menu li > .left-side-menu-inner li {
   list-style: none;
 }
+
 .left-side-menu li > .left-side-menu-inner li a {
   font-weight: 300;
 }
