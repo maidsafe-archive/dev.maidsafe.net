@@ -45,7 +45,7 @@
 
   /* Footer */
   footer .brand-list .brand-list-items {
-    min-width: auto !important;
+    min-width: inherit !important;
     width: 100%;
   }
 
@@ -103,8 +103,8 @@
 
 }
 
-/* Media Small Screens */
-@media screen and (min-width: 620px) and (max-width: 992px) {
+/* Media Above 480px  */
+@media screen and (min-width: 480px) {
   /* Home Banner */
   .home-banner {
     height: 350px;
@@ -152,7 +152,7 @@
     position: static;
   }
   footer .brand-list .brand-list-items {
-    min-width: auto !important;
+    min-width: inherit !important;
     width: 100%;
   }
   footer .brand-list .brand-list-base .brand-list-items.lg {
@@ -163,6 +163,7 @@
     padding-right: 0;
     border-bottom: 1px solid #325165;
   }
+
   footer .brand-list .brand-list-base .sec-left {
     position: static;
     padding-left: 0;
@@ -179,9 +180,11 @@
     margin-top: 17px;
   }
 
-  footer .brand-list .brand-list-base .sec-left .brand-list-items:first-child, footer .brand-list .brand-list-base .sec-right .brand-list-items:first-child {
+  footer .brand-list .brand-list-base .sec-left .brand-list-items:first-child,
+  footer .brand-list .brand-list-base .sec-right .brand-list-items:first-child {
     border-bottom: 1px solid #325165;
   }
+
   footer .brand-list .brand-list-base .sec-right {
     position: static;
     padding-left: 0;
@@ -211,5 +214,61 @@
     margin: 24px 0;
     font: normal normal normal 14px/17px 'Open Sans';
   }
+  footer .layer-3 ul {
+    text-align: center;
+  }
   /* #Page Banner */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  /* Safe Client*/
+  .safe-client .title {
+    margin-top: 96px;
+  }
+
+  .safe-client .desc {
+    margin-top: 34px;
+  }
+
+  .safe-client .media {
+    margin: 70px 0;
+  }
+
+  .safe-client .foot {
+    margin-bottom: 80px;
+  }
+  .safe-client .foot span {
+    display: inline-block !important;
+  }
+  /* #Safe Client*/
+  /* Footer */
+  footer .layer-2 .key-map {
+    width: 50% !important;
+    float: left;
+  }
+  footer .layer-2 .key-map:first-child .content {
+    position: relative;
+  }
+
+  footer .layer-2 .key-map:first-child .content .key-list:nth-child(2){
+    width: 100% !important;
+  }
+  footer .layer-2 .key-map:first-child .content .key-list:nth-child(3){
+    position: absolute;
+    width: 50% !important;
+    top: 0;
+    right: 0;
+  }
+
+  footer .layer-2 .key-map:last-child .content .key-list {
+    width: 50% !important;
+  }
+
+  footer .layer-2 .key-map:last-child .content .key-list:nth-child(3){
+    margin-left: 50%;
+  }
+  footer .layer-3 ul {
+    text-align: center;
+  }
+  /* #Footer */
 }

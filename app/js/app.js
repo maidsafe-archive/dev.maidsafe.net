@@ -1,7 +1,5 @@
-$(function() {
-  showSecondayNavigation();
-  toggleSideMenu();
-});
+/* jshint undef: false, unused: false */
+
 /**
  * Toggle Seconday Navigation
  */
@@ -39,13 +37,12 @@ var showSecondayNavigation = function() {
 };
 
 /**
- * Toggle Sidebar Navigation
+ * Toggle Left Sidebar Navigation
  */
-
 var toggleSideMenu = function() {
   $('#showSidemenu').on('click', function() {
     var instant = $(this);
-    var sidemenu = $("#sidemenu");
+    var sidemenu = $('#sidemenu');
     if (instant.hasClass('active')) {
       instant.removeClass('active');
       instant.children('a').text('show');
@@ -62,7 +59,7 @@ var toggleSideMenu = function() {
 
   $('.left-side-menu > li > a').on('click', function(e) {
     var instant = $(this);
-    if (e.target != this) {
+    if (e.target !== this) {
       return;
     }
     if (instant.parent().hasClass('selected')) {
@@ -72,12 +69,18 @@ var toggleSideMenu = function() {
     $('.left-side-menu li').removeClass('selected');
     instant.parent().addClass('selected');
   });
+
   $('.left-side-menu > li > ul > li > a').on('click', function(e) {
     var instant = $(this);
-    if (e.target != this) {
+    if (e.target !== this) {
       return;
     }
     $('.left-side-menu > li > ul > li').removeClass('selected');
     instant.parent().addClass('selected');
   });
-}
+};
+
+$(function() {
+  showSecondayNavigation();
+  toggleSideMenu();
+});

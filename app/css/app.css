@@ -1,7 +1,9 @@
+/* Common */
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
 }
+
 .sub-page-title-base {
   position: relative;
   width: 100%;
@@ -60,13 +62,12 @@ body {
   text-decoration: none;
 }
 
-.wrapper {
-}
-
 .inner-wrapper {
   position: relative;
   margin: 0;
 }
+
+/* #Common */
 
 /* Header */
 header {
@@ -91,6 +92,7 @@ header .sec-2 {
   text-align: left;
 }
 
+/* Primary Navigation */
 header .sec-2 .primary-nav {
   display: block;
   margin: 0;
@@ -145,7 +147,9 @@ header .sec-2 .primary-nav > li a {
   font-size: 14px;
   padding: 13px 0;
 }
+/* #Primary Navigation */
 
+/* Inner Primary Navigation */
 header .primary-nav-sub {
   width: 100%;
   margin: 0;
@@ -162,7 +166,6 @@ header .primary-nav-sub .primary-nav-sub-base > li {
   display: inline-block;
   list-style: none;
   padding: 0 8px;
-  float: left;
 }
 
 header .primary-nav-sub .primary-nav-sub-base > li:first-child a {
@@ -181,7 +184,9 @@ header .primary-nav-sub .primary-nav-sub-base > li a{
 header .primary-nav-sub .primary-nav-sub-base > li.selected a {
   font-weight: 600;
 }
+/* #Inner Primary Navigation */
 
+/* Secondary Navigation */
 header .secondary-nav {
   text-align: right;
   font-size: 14px;
@@ -230,15 +235,17 @@ header .secondary-nav .nav-list > li .secondary-nav-sub {
 header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   display: block;
 }
+/* #Secondary Navigation */
 
-#secNavButton {
+/* Secondary Navigation Button  */
+.secNavButton {
   position: absolute;
   right: 0;
   bottom: 0;
   padding-right: 20px;
 }
 
-#secNavButton:after {
+.secNavButton:after {
   content: "";
   position: absolute;
   top: 0;
@@ -251,7 +258,7 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   background-size: 16px;
 }
 
-#secNavButton a {
+.secNavButton a {
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -261,11 +268,11 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   text-align: right;
 }
 
-#secNavButton.active {
+.secNavButton.active {
   background-color: #628096;
 }
 
-#secNavButton.active:after {
+.secNavButton.active:after {
   content: "";
   position: absolute;
   top: 0;
@@ -277,75 +284,7 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   background-repeat: no-repeat;
   background-size: 16px;
 }
-
-/* Home Banner */
-.home-banner {
-  width: 100%;
-  height: 550px;
-  background-image: url(../img/phone_purple.jpg);
-  background-size: cover;
-  color: white;
-  background-position: center;
-}
-
-.home-banner .label-1 {
-  margin-top: 118px;
-  font: normal normal normal 49px/59px 'Open Sans';
-}
-.home-banner .label-2 {
-  margin: 45px 0;
-  font: normal normal normal 24px/27px 'Open Sans';
-}
-.home-banner .label-3 {
-  font-size: 22px;
-  font-weight: bold;
-}
-.home-banner .label-3 a{
-  color: #5b94d9;
-  text-decoration: none;
-}
-
-/* Safe Client */
-.safe-client {
-  background-color: white;
-  text-align: center;
-}
-
-.safe-client .title {
-  margin-top: 96px;
-  color: #5b94d9;
-}
-
-.safe-client .desc {
-  line-height: 36px;
-  color: #5e5e5e;
-  font-weight: 300;
-  margin-top: 34px;
-}
-
-.safe-client .media {
-  margin: 70px 0;
-}
-
-.safe-client .media img {
-  width: 100%;
-  max-width: 679px;
-}
-
-.safe-client .foot {
-  font-weight: normal;
-  margin-bottom: 80px;
-}
-
-.safe-client .foot a {
-  background-color: #5692d8;
-  padding: 8px 16px;
-  line-height: 24px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-}
+/* #Secondary Navigation Button  */
 
 /* Footer */
 footer {
@@ -369,16 +308,16 @@ footer .brand-list .brand-list-base .sec-left {
 footer .brand-list .brand-list-base .sec-right {
   text-align: left;
 }
-footer .brand-list  .brand-list-base .sec-center {}
+
 footer .brand-list .brand-list-base .sec-left {
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
 }
 footer .brand-list .brand-list-base .sec-right {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
 }
 
 footer .brand-list .brand-list-base .brand-list-items {
@@ -422,17 +361,12 @@ footer .layer-2 {
   margin-top: 43px;
 }
 
-footer .layer-2 .key-map {
-
-}
-
 footer .layer-2 .key-map .title{
   font-size: 15px;
   color: white;
   font-weight: bold;
 }
 
-footer .layer-2 .key-map .content {}
 footer .layer-2 .key-map .content .key-list {
   display: block;
   margin: 0;
@@ -476,9 +410,81 @@ footer .layer-3 ul li a{
   font-weight: 300;
   text-decoration: none;
 }
-footer .layer-3 ul li img{}
-/* Breadcum */
+/* #Footer */
 
+/* Home Banner */
+.home-banner {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/phone_purple.jpg);
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+
+.home-banner .label-1 {
+  margin-top: 118px;
+  font: normal normal normal 49px/59px 'Open Sans';
+}
+.home-banner .label-2 {
+  margin: 45px 0;
+  font: normal normal normal 24px/27px 'Open Sans';
+}
+.home-banner .label-3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.home-banner .label-3 a{
+  color: #5b94d9;
+  text-decoration: none;
+}
+/* #Home Banner */
+
+/* Safe Client */
+.safe-client {
+  background-color: white;
+  text-align: center;
+}
+
+.safe-client .title {
+  margin-top: 96px;
+  color: #5b94d9;
+}
+
+.safe-client .desc {
+  line-height: 36px;
+  color: #5e5e5e;
+  font-weight: 300;
+  margin-top: 34px;
+}
+
+.safe-client .media {
+  margin: 70px 0;
+}
+
+.safe-client .media img {
+  width: 100%;
+  max-width: 679px;
+}
+
+.safe-client .foot {
+  font-weight: normal;
+  margin-bottom: 80px;
+}
+
+.safe-client .foot a {
+  background-color: #5692d8;
+  padding: 8px 16px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+/* #Safe Client */
+
+
+/* Breadcum */
 .breadcum {
   margin-top: 24px;
 }
@@ -514,8 +520,9 @@ footer .layer-3 ul li img{}
   left: 100%;
   margin: 0 5px;
 }
+/* #Breadcum */
 
-/* Page 1 */
+/* Page 1 Layout */
 .page-1 {
   margin-top: 48px;
   margin-bottom: 68px;
@@ -556,9 +563,9 @@ footer .layer-3 ul li img{}
   color: #808080;
   font-weight: 300;
 }
-/* #Page 1 */
+/* #Page 1 Layout */
 
-/* Page Banner */
+/* Inner Page Banner */
 .page-banner {
   height: 416px;
   color: white;
@@ -577,7 +584,7 @@ footer .layer-3 ul li img{}
   margin: 45px 0;
   font: normal normal normal 24px/27px 'Open Sans';
 }
-/* #Page Banner */
+/* #Inner Page Banner */
 
 /* Left Side Menu */
 .left-side-menu-base {
