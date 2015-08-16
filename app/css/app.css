@@ -13,9 +13,9 @@ body {
 .sub-page-title {
   margin: 0;
   padding: 0 16px;
-  line-height: 48px;
+  line-height: 62px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   color: #555;
   background-color: #f2f2f2;
 }
@@ -25,7 +25,7 @@ body {
   padding: 0 8px;
   position: absolute;
   top: 0;
-  line-height: 48px;
+  line-height: 62px;
   right: 10px;
   font-size: 14px;
   padding-right: 25px;
@@ -178,7 +178,11 @@ header .primary-nav-sub .primary-nav-sub-base {
 header .primary-nav-sub .primary-nav-sub-base > li {
   display: inline-block;
   list-style: none;
-  padding: 0 8px;
+  padding: 0 12px;
+}
+
+header .primary-nav-sub .primary-nav-sub-base > li:first-child {
+  padding-left: 0;
 }
 
 header .primary-nav-sub .primary-nav-sub-base > li:first-child a {
@@ -549,9 +553,10 @@ footer .layer-3 ul li a{
 }
 .page-1 .title{
   color: #5b94d9;
-  font-size: 32px;
+  font-size: 49px;
+  line-height: 25px;
   font-weight: 300;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 .page-1 .p {
   font-size: 14px;
@@ -648,7 +653,7 @@ footer .layer-3 ul li a{
   width: 100%;
   line-height: 36px;
   color: #555;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -679,6 +684,6 @@ footer .layer-3 ul li a{
   list-style: none;
 }
 .left-side-menu li > .left-side-menu-inner li a {
-  font-weight: 300;
+  font-weight: normal;
 }
 /* #Left Side Menu */

@@ -111,6 +111,16 @@
   }
   /* #Left Side Bar */
 
+  /* Page Type 1 */
+  .page-1 {
+    margin-top: 25px;
+  }
+  .page-1 .title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: normal;
+  }
+  /* #Page Type 1 */
 }
 
 /* Media Less than 768px  */
