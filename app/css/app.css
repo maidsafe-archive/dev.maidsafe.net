@@ -2,6 +2,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
+    /*min-width: 320px;*/
 }
 
 .sub-page-title-base {
@@ -75,21 +76,27 @@ header {
   background-color: #456782;
   position: relative;
 }
-
+header .header-base {
+  position: relative;
+}
+header .sec-1 {
+  padding: 0;
+}
 header .sec-1 .site-logo {
   height: 80px;
   position: relative;
 }
 
 header .sec-1 .site-logo img {
-  width: 100%;
-  max-width: 255px;
+  width: 255px;
+  display: block;
   position: absolute;
   bottom: 13px;
 }
 
 header .sec-2 {
   text-align: left;
+  padding: 0;
 }
 
 /* Primary Navigation */
@@ -97,7 +104,8 @@ header .sec-2 .primary-nav {
   display: block;
   margin: 0;
   padding: 0;
-  margin-top: 34px;
+  margin-top: 30px;
+  float: right;
 }
 
 header .sec-2 .primary-nav li {
@@ -115,6 +123,10 @@ header .sec-2 .primary-nav > li.selected {
   background-color: #628098;
 }
 
+header .sec-2 .primary-nav > li.selected a {
+  padding-right: 8px;
+}
+
 header .sec-2 .primary-nav > li.selected:after {
   content: "";
   position: absolute;
@@ -123,9 +135,9 @@ header .sec-2 .primary-nav > li.selected:after {
   width: 30px;
   height: 100%;
   background-image: url(../img/menu_arrow_down.svg);
-  background-position: left center;
+  background-position: 0px 22px;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 14px;
 }
 
 header .sec-2 .primary-nav > li.lg-txt {
@@ -144,7 +156,8 @@ header .sec-2 .primary-nav > li a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 24px;
   padding: 13px 0;
 }
 /* #Primary Navigation */
@@ -176,7 +189,7 @@ header .primary-nav-sub .primary-nav-sub-base > li a{
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   padding: 13px 0;
   font-weight: 300;
 }
@@ -222,7 +235,7 @@ header .secondary-nav .nav-list > li a {
   padding: 0 16px;
   display: block;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 header .secondary-nav .nav-list > li .secondary-nav-sub {
@@ -261,11 +274,13 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
 .secNavButton a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   display: block;
   width: 100%;
   padding: 13px;
   text-align: right;
+  text-transform: lowercase;
+  outline: 0;
 }
 
 .secNavButton.active {
@@ -303,10 +318,10 @@ footer .brand-list .brand-list-base {
 }
 
 footer .brand-list .brand-list-base .sec-left {
-  text-align: right;
+  text-align: center;
 }
 footer .brand-list .brand-list-base .sec-right {
-  text-align: left;
+  text-align: center;
 }
 
 footer .brand-list .brand-list-base .sec-left {
@@ -350,7 +365,8 @@ footer .brand-list .brand-list-base .brand-list-items.lg img {
 }
 
 footer .brand-list .brand-list-base .brand-list-items > .title {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 300;
   color: white;
   margin: 0;
   line-height: 22px;
@@ -424,11 +440,13 @@ footer .layer-3 ul li a{
 
 .home-banner .label-1 {
   margin-top: 118px;
-  font: normal normal normal 49px/59px 'Open Sans';
+  font-size: 49px;
+  line-height: 59px;
 }
 .home-banner .label-2 {
   margin: 45px 0;
-  font: normal normal normal 24px/27px 'Open Sans';
+  font-size: 24px;
+  line-height: 27px;
 }
 .home-banner .label-3 {
   font-size: 22px;
@@ -490,9 +508,8 @@ footer .layer-3 ul li a{
 }
 
 .breadcum .icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
+  width: 20px;
+  height: 20px;
 }
 
 .breadcum .icon img {
@@ -578,11 +595,13 @@ footer .layer-3 ul li a{
 }
 .page-banner .label-1 {
   margin-top: 118px;
-  font: normal normal normal 49px/59px 'Open Sans';
+  font-size: 49px;
+  line-height: 59px;
 }
 .page-banner .label-2 {
   margin: 45px 0;
-  font: normal normal normal 24px/27px 'Open Sans';
+  font-size: 24px;
+  line-height: 27px;
 }
 /* #Inner Page Banner */
 
