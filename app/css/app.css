@@ -135,7 +135,7 @@ header .sec-2 .primary-nav > li.selected:after {
   width: 30px;
   height: 100%;
   background-image: url(../img/menu_arrow_down.svg);
-  background-position: 0px 22px;
+  background-position: 0 22px;
   background-repeat: no-repeat;
   background-size: 14px;
 }
