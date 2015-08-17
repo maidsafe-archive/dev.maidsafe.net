@@ -323,17 +323,13 @@ footer .brand-list .brand-list-base {
 
 footer .brand-list .brand-list-base .sec-left {
   text-align: center;
-}
-footer .brand-list .brand-list-base .sec-right {
-  text-align: center;
-}
-
-footer .brand-list .brand-list-base .sec-left {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 footer .brand-list .brand-list-base .sec-right {
+  text-align: center;
   position: absolute;
   top: 0;
   right: 0;
