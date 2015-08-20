@@ -19,6 +19,6 @@ install:
   - npm install
   - bower install
 
-before_script: grunt build
+before_script: grunt build:dist
 
 script: grunt test
