@@ -12,23 +12,22 @@ body {
 
 .sub-page-title {
   margin: 0;
-  padding: 0 16px;
-  line-height: 62px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 13px 16px 13px 26px;
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: normal;
   color: #555;
   background-color: #f2f2f2;
 }
 
 .sub-page-title-opt {
   margin: 0;
-  padding: 0 8px;
+  padding: 0 25px 0 8px;
   position: absolute;
   top: 0;
   line-height: 62px;
   right: 10px;
   font-size: 14px;
-  padding-right: 25px;
 }
 
 .sub-page-title-opt:after {
@@ -63,6 +62,11 @@ body {
   text-decoration: none;
 }
 
+.wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .inner-wrapper {
   position: relative;
   margin: 0;
@@ -77,6 +81,8 @@ header {
   position: relative;
 }
 header .header-base {
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
 }
 header .sec-1 {
@@ -84,11 +90,12 @@ header .sec-1 {
 }
 header .sec-1 .site-logo {
   height: 80px;
+  padding-left: 24px;
   position: relative;
 }
 
 header .sec-1 .site-logo img {
-  width: 255px;
+  width: 230px;
   display: block;
   position: absolute;
   bottom: 13px;
@@ -156,7 +163,7 @@ header .sec-2 .primary-nav > li a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   padding: 13px 0;
 }
@@ -172,6 +179,7 @@ header .primary-nav-sub {
 }
 
 header .primary-nav-sub .primary-nav-sub-base {
+  padding-left: 26px;
   margin-bottom: 0;
 }
 
@@ -193,7 +201,7 @@ header .primary-nav-sub .primary-nav-sub-base > li a{
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   padding: 13px 0;
   font-weight: 300;
 }
@@ -278,7 +286,7 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
 .secNavButton a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   width: 100%;
   padding: 13px;
@@ -555,7 +563,7 @@ footer .layer-3 ul li a{
   margin-bottom: 36px;
 }
 .page-1 .p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   margin: 16px 0;
   color: #808080;
@@ -569,12 +577,12 @@ footer .layer-3 ul li a{
   margin-bottom: 24px;
 }
 .page-1 .sec .sub-title{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .page-1 .list {
-  font-size: 14px;
+  font-size: 16px;
 }
 .page-1 .list li {
   padding: 8px 0;
@@ -641,7 +649,7 @@ footer .layer-3 ul li a{
 
 .left-side-menu > li {
   list-style: none;
-  padding: 0 16px;
+  padding: 0 16px 0 26px;
 }
 
 .left-side-menu > li a {
@@ -673,7 +681,7 @@ footer .layer-3 ul li a{
 .left-side-menu li > .left-side-menu-inner {
   display: none;
   margin: 0;
-  padding: 0 8px 16px;
+  padding: 0 18px 16px;
 }
 
 .left-side-menu li > .left-side-menu-inner li {
