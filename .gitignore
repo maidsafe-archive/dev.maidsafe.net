@@ -4,3 +4,4 @@
 /.jekyll
 /.tmp
 /dist
+/Gemfile.lock
