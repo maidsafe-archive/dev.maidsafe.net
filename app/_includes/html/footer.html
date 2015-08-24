@@ -1,0 +1,124 @@
+<!-- Site Footer -->
+<footer>
+  <!-- Branding List -->
+  <div class="brand-list">
+    <div class="brand-list-base row">
+
+      <div class="sec-center col-xs-12">
+        <!-- Maidsafe Company Site -->
+        <div class="brand-list-items lg">
+          <div class="brand-logo"><img src="./img/maidsafe_user_logo.svg" alt="Maidsafe Company Site" /></div>
+          <h4 class="title">Maidsafe Company Site</h4>
+        </div>
+        <!-- #Maidsafe Company Site -->
+      </div>
+
+      <div class="sec-left col-xs-6 col-md-5">
+        <!-- Community Forums -->
+        <div class="brand-list-items">
+          <div class="brand-logo"><img src="./img/community.png" alt="Community" /></div>
+          <h4 class="title">Community Forums</h4>
+        </div>
+        <!-- #Community Forums -->
+        <!-- Join a meet -->
+        <div class="brand-list-items">
+          <div class="brand-logo"><img src="./img/meetup.png" alt="Meet Up" /></div>
+          <h4 class="title">Join a meet</h4>
+        </div>
+        <!-- #Join a meet -->
+      </div>
+
+      <div class="sec-right col-xs-6 col-md-5">
+        <!-- Safe Pod -->
+        <div class="brand-list-items">
+          <div class="brand-logo"><img src="./img/safe_pod.png" alt="Safe Pod" /></div>
+          <h4 class="title">Safe Pod</h4>
+        </div>
+        <!-- #Safe Pod -->
+
+        <!-- Twitter -->
+        <div class="brand-list-items">
+          <div class="brand-logo"><img src="./img/twitter.png" alt="Twitter" /></div>
+          <h4 class="title">Twitter</h4>
+        </div>
+        <!-- #Twitter -->
+      </div>
+    </div>
+  </div>
+  <!-- #Branding List -->
+  <!-- Breadcum -->
+  <div class="breadcum container">
+    <img class="icon" src="./img/penrose.svg" alt="" />
+    <nav>
+      {% for nav in page.breadcrumbs %}
+      <a href="{{nav[1]}}">{{nav[0]}}</a>
+      {% endfor %}
+    </nav>
+  </div>
+  <!-- #Breadcum -->
+  <!-- KeyMap -->
+  <div class="layer-2 container">
+    <div class="key-map col-xs-12 col-md-6">
+      <h3 class="title">App Dev</h3>
+      <div class="content">
+        <ul class="key-list col-xs-6 col-sm-4">
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">App 1</a></li>
+          <li><a href="#">App 2</a></li>
+          <li><a href="#">App 3</a></li>
+        </ul>
+        <ul class="key-list col-xs-6 col-sm-4">
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Rest API</a></li>
+          <li><a href="#">POSIX API</a></li>
+        </ul>
+        <ul class="key-list col-xs-6 col-xs-offset-6 col-sm-4">
+          <li><a href="#">Rewards</a></li>
+          <li class="blank"></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Section (a)</a></li>
+          <li><a href="#">Section (b)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="key-map col-xs-12 col-md-6">
+      <h3 class="title">Core Dev</h3>
+      <div class="content">
+        <ul class="key-list col-xs-6 col-sm-4">
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">Self Encryption Example</a></li>
+          <li><a href="#">Crust Example</a></li>
+          <li><a href="#">Router Example</a></li>
+          <li><a href="#">Vault Example</a></li>
+          <li><a href="#">LRU Cache</a></li>
+          <li><a href="#">Accumulator</a></li>
+        </ul>
+        <ul class="key-list col-xs-6 col-sm-4">
+          <li><a href="#">Components</a></li>
+          <li><a href="#">zCrust</a></li>
+          <li><a href="#">Routing</a></li>
+          <li><a href="#">Vaults</a></li>
+          <li><a href="#">Self Encryption</a></li>
+          <li><a href="#">Client</a></li>
+        </ul>
+        <ul class="key-list col-xs-6 col-xs-offset-6 col-sm-4">
+          <li><a href="#">Rewards</a></li>
+          <li class="blank"></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Core Dev video</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- KeyMap -->
+  <!-- Layer 3 -->
+  <div class="layer-3 container">
+    <ul>
+      <li><a href="#">Disclaimer</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- #Layer 3 -->
+</footer>
+<!-- #Site Footer -->

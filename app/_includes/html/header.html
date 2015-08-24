@@ -1,0 +1,70 @@
+<!-- Site Header -->
+<header>
+  <div class="container header-base">
+    <!-- Site Logo -->
+    <div class="sec-1 col-xs-9 col-sm-5 col-md-3">
+      <div class="site-logo">
+        <a href="/"><img src="./img/dev_logo.svg" alt="MaidSafe Logo" /></a>
+      </div>
+    </div>
+    <!-- #Site Logo -->
+    <!-- Navigation -->
+    <div class="sec-2 col-xs-3 col-sm-4 pull-right col-md-9">
+      <!-- Primary Navigation -->
+      <ul class="primary-nav hidden-xs hidden-sm">
+        {% for nav in page.primaryNav %}
+        {% if nav.link == 'default' %}
+        <li class="{{nav.class}}"><a href="#">{{nav.target}}</a></li>
+        {% else %}
+        <li class="{{nav.class}}"><a href="{{nav.link}}">{{nav.target}}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <!-- #Primary Navigation -->
+    </div>
+    <!-- #Navigation -->
+    <div id="secNavButton" class="secNavButton hidden-md hidden-lg"><a href="#">Menu</a></div>
+  </div>
+
+  <!-- Primary Navigation Sub -->
+  <div class="primary-nav-sub hidden-xs hidden-sm">
+    <ul class="primary-nav-sub-base container">
+      {% for innerPrimaryNav in page.innerPrimaryNav %}
+      <li><a href="{{innerPrimaryNav[1]}}">{{innerPrimaryNav[0]}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <!-- Primary Navigation Sub -->
+
+  <!-- Secondary Navigation -->
+  <div id="secNav" class="secondary-nav hidden-md hidden-lg">
+    <ul class="nav-list">
+      {% for secondaryNav in page.secondaryNav %}
+      <li class="lg-txt">
+        {% if secondaryNav.href == 'default' %}
+        <a href="#">{{secondaryNav.target}}</a>
+        {% else %}
+        <a href="{{secondaryNav.href}}">{{secondaryNav.target}}</a>
+        {% endif %}
+
+        {% if secondaryNav.innerNav %}
+        <ul class="secondary-nav-sub">
+          {% for innerNav in secondaryNav.innerNav %}
+          <li>
+            {% if innerNav.link == 'default' %}
+            <a href="#">{{innerNav.name}}</a>
+            {% else %}
+            <a href="{{innerNav.link}}">{{innerNav.name}}</a>
+            {% endif %}
+
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <!-- #Secondary Navigation -->
+</header>
+<!-- #Site Header -->
