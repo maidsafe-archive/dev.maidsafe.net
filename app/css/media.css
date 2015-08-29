@@ -396,6 +396,22 @@
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
+  .layout-1 {
+      width: 100%;
+  }
+
+  .layout-1 .left-sec {
+    width: 22% !important;
+    margin: 0;
+    float: left;
+  }
+
+  .layout-1 .right-sec {
+    width: 78% !important;
+    margin: 0;
+    float: right;
+  }
+
   footer .brand-list .brand-list-base .sec-center {
     width: 272px;
     margin: 0 auto;
