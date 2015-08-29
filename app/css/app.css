@@ -15,7 +15,7 @@ body {
   padding: 13px 16px 13px 26px;
   line-height: 36px;
   font-size: 22px;
-  font-weight: normal;
+  font-weight: 600;
   color: #555;
   background-color: #f2f2f2;
 }
@@ -70,6 +70,31 @@ body {
 .inner-wrapper {
   position: relative;
   margin: 0;
+}
+
+.banner-gradian {
+  position: relative;
+}
+.banner-gradian > div {
+  position: relative;
+  z-index: 2;
+}
+.banner-gradian:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0.1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.8)), color-stop(51%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.1)));
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0.1) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0.1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 51%, rgba(0,0,0,0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fefefe', GradientType=1 );
 }
 
 /* #Common */
@@ -446,6 +471,10 @@ footer .layer-3 ul li a{
   background-position: center;
 }
 
+.home-banner .home-banner-container {
+  padding: 0 0 0 24px;
+}
+
 .home-banner .label-1 {
   margin-top: 118px;
   font-size: 49px;
@@ -598,6 +627,10 @@ footer .layer-3 ul li a{
   background-position: center;
 }
 
+.page-banner .page-banner-container {
+  padding: 0 0 0 24px;
+}
+
 .page-banner.careers {
   background-image: url(../img/street_people.jpg);
   background-size: cover;
@@ -656,7 +689,7 @@ footer .layer-3 ul li a{
   display: block;
   width: 100%;
   line-height: 36px;
-  color: #555;
+  color: #808091;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
