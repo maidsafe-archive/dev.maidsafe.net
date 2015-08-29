@@ -38,22 +38,14 @@ body {
   width: 20px;
   height: 100%;
   background-image: url(../img/drop_arrow_high.svg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 14px;
+  transition: transform 0.5s ease-out;
 }
 
 .sub-page-title-opt.active:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 100%;
   background-image: url(../img/drop_arrow_high.svg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 14px;
   transform: rotateZ(180deg);
 }
 
@@ -167,7 +159,7 @@ header .sec-2 .primary-nav > li.selected:after {
   width: 30px;
   height: 100%;
   background-image: url(../img/menu_arrow_down.svg);
-  background-position: 0 22px;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: 14px;
 }
@@ -295,19 +287,6 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   padding-right: 20px;
 }
 
-.secNavButton:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 100%;
-  background-image: url(../img/menu_arrow_down.svg);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 16px;
-}
-
 .secNavButton a {
   color: white;
   text-decoration: none;
@@ -324,17 +303,22 @@ header .secondary-nav .nav-list > li .secondary-nav-sub.show {
   background-color: #628096;
 }
 
-.secNavButton.active:after {
+.secNavButton:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 30px;
   height: 100%;
-  background-image: url(../img/menu_arrow_up.svg);
-  background-position: left;
+  background-image: url(../img/menu_arrow_down.svg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 16px;
+  transition: transform 0.5s ease-out;
+}
+
+.secNavButton.active:after {
+  transform: rotate(180deg);
 }
 /* #Secondary Navigation Button  */
 
