@@ -124,6 +124,7 @@
 
   /* Banner Gradient */
   .banner-gradian:after {
+    background: #000000;
     background: rgba(0,0,0,0.8);
     background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.5)), color-stop(100%, rgba(0,0,0,0)));
