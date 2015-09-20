@@ -415,15 +415,16 @@
   }
 
   .layout-1 .left-sec {
-    width: 22% !important;
+    width: 20.5% !important;
     margin: 0;
     float: left;
   }
 
   .layout-1 .right-sec {
-    width: 78% !important;
+    width: 79.5% !important;
     margin: 0;
     float: right;
+    padding: 0 16px;
   }
 
   footer .brand-list .brand-list-base .sec-center {

@@ -136,7 +136,7 @@ header .sec-2 .primary-nav {
 header .sec-2 .primary-nav li {
   list-style: none;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
@@ -165,16 +165,21 @@ header .sec-2 .primary-nav > li.selected:after {
   background-size: 14px;
 }
 
-header .sec-2 .primary-nav > li.lg-txt {
-  width: 200px;
+header .sec-2 .primary-nav > li.type-1 {
+  width: 170px;
+  padding-left: 17px;
 }
 
-header .sec-2 .primary-nav > li.normal-txt {
-  width: 100%;
+header .sec-2 .primary-nav > li.type-2 {
+  width: 175px;
+  padding-left: 17px;
+  padding-right: 16px;
 }
 
-header .sec-2 .primary-nav > li.sm-txt {
-  width: 120px;
+header .sec-2 .primary-nav > li.type-3 {
+  width: 103px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 header .sec-2 .primary-nav > li a {
@@ -563,7 +568,7 @@ footer .layer-3 ul li a{
 
 /* Page 1 Layout */
 .page-1 {
-  margin-top: 48px;
+  padding-top: 32px;
   margin-bottom: 68px;
   padding-left: 16px;
   padding-right: 16px;
@@ -572,9 +577,10 @@ footer .layer-3 ul li a{
 .page-1 .title{
   color: #5b94d9;
   font-size: 49px;
-  line-height: 25px;
+  line-height: 36px;
   font-weight: 300;
   margin-bottom: 36px;
+  margin-top: 0;
 }
 .page-1 .p {
   font-size: 16px;
