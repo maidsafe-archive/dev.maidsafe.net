@@ -1,116 +1,37 @@
 ---
-layout: base
-title: MaidSafe - Core Developers
-description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
-keywords: Distributed Platform, MaidSafe
-includes: []
-sidebarClass: left-sec
-breadcrumbs:
-  Developer: /
-  Core Developer: core_developers.html
-leftSidebar:
-  - target: Getting Started
-    href: core_developers.html
-  - target: Crust
-    href: core_developers_crust.html
-  - target: Routing
-    href: core_developers_routing.html
-  - target: Vaults
-    href: core_developers_vaults.html
-  - target: Self Encryption
-    href: core_developers_self_encryption.html
-  - target: Client
-    href: default
-  - target: DNS
-    href: default
-  - target: NFS
-    href: default
-primaryNav:
-  - target: App Developers
-    link: app_developers.html
-    class: type-1
-  - target: Core Developers
-    link: default
-    class: type-2 selected
-  - target: Careers
-    link: careers.html
-    class: type-3
-innerPrimaryNav:
-  Getting Started: #
-  Support: #
-  Rewards: #
-secondaryNav:
-  - target : App Developers
-    href: default
-    innerNav:
-      - name: Rust
-        link: default
-      - name: JavaScript
-        link: default
-      - name: Rewards
-        link: default
-  - target : Core Developers
-    href: default
-    innerNav:
-      - name: Getting Started
-        link: core_developers.html
-      - name: Support
-        link: default
-      - name: Rewards
-        link: default
-  - target: Careers
-    href: careers.html
+layout: core_developer_layout
 ---
-<div class="wrapper container">
-  <!-- Sub Page Title -->
-  <div class="sub-page-title-base">
-    <h2 class="sub-page-title">Components</h2>
-    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg"><a href="#">Show</a></h4>
-  </div>
-  <!-- #Sub Page Title -->
-
-  <div class="inner-wrapper row layout-1">
-    <!-- Left Sidebar -->
-    {% include leftSidebar.html %}
-    <!-- #Left Sidebar -->
-
-    <div class="page-1-base col-xs-12 col-md-9 col-md-offset-3 right-sec">
-      <div class="page-1">
-        <h3 class="title">Client</h3>
-        <p class="p">
-          The main entry point to the network, providing REST API access and POSIX API access, in addition to the following:
-        </p>
-        <ul class="list">
-          <li>
-            Self-authentication - A mechanism that enables users to create
-            accounts on the SAFE Network and log in from any computer without
-            the need or knowledge of third parties
-          </li>
-          <li>
-            Messaging - This module handles communication between public
-            identities in the network. All communication between MPID's
-            (MaidSafe Public ID's) in the network are private and digitally
-            signed
-          </li>
-        </ul>
-        <p class="p">
-          The following features are on the development roadmap and will be
-          added in due course:
-        </p>
-        <ul class="list">
-          <li>
-            Safecoin - A cryptographic network token that is integral to the
-            network, rewarding and incentivizing all network contributors. API
-            access will enable balance check, transfer, escrow and multi-sig
-            functionality
-          </li>
-          <li>
-            Compute - Still to be implemented, this module will enable the
-            processing of distributed computing actions, leveraging the massive
-            processing capability of the decentralized system
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<h3 class="title">Client</h3>
+<p class="p">
+  The main entry point to the network, providing REST API access and POSIX API access, in addition to the following:
+</p>
+<ul class="list">
+  <li>
+    Self-authentication - A mechanism that enables users to create
+    accounts on the SAFE Network and log in from any computer without
+    the need or knowledge of third parties
+  </li>
+  <li>
+    Messaging - This module handles communication between public
+    identities in the network. All communication between MPID's
+    (MaidSafe Public ID's) in the network are private and digitally
+    signed
+  </li>
+</ul>
+<p class="p">
+  The following features are on the development roadmap and will be
+  added in due course:
+</p>
+<ul class="list">
+  <li>
+    Safecoin - A cryptographic network token that is integral to the
+    network, rewarding and incentivizing all network contributors. API
+    access will enable balance check, transfer, escrow and multi-sig
+    functionality
+  </li>
+  <li>
+    Compute - Still to be implemented, this module will enable the
+    processing of distributed computing actions, leveraging the massive
+    processing capability of the decentralized system
+  </li>
+</ul>

@@ -1,136 +1,57 @@
 ---
-layout: base
-title: MaidSafe - Core Developers
-description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
-keywords: Distributed Platform, MaidSafe
-includes: []
-sidebarClass: left-sec
-breadcrumbs:
-  Developer: /
-  Core Developer: core_developers.html
-leftSidebar:
-  - target: Getting Started
-    href: core_developers.html
-  - target: Crust
-    href: core_developers_crust.html
-  - target: Routing
-    href: default
-  - target: Vaults
-    href: core_developers_vaults.html
-  - target: Self Encryption
-    href: core_developers_self_encryption.html
-  - target: Client
-    href: core_developers_client.html
-  - target: DNS
-    href: default
-  - target: NFS
-    href: default
-primaryNav:
-  - target: App Developers
-    link: app_developers.html
-    class: type-1
-  - target: Core Developers
-    link: default
-    class: type-2 selected
-  - target: Careers
-    link: careers.html
-    class: type-3
-innerPrimaryNav:
-  Getting Started: #
-  Support: #
-  Rewards: #
-secondaryNav:
-  - target : App Developers
-    href: default
-    innerNav:
-      - name: Rust
-        link: default
-      - name: JavaScript
-        link: default
-      - name: Rewards
-        link: default
-  - target : Core Developers
-    href: default
-    innerNav:
-      - name: Getting Started
-        link: core_developers.html
-      - name: Support
-        link: default
-      - name: Rewards
-        link: default
-  - target: Careers
-    href: careers.html
+layout: core_developer_layout
 ---
-<div class="wrapper container">
-  <!-- Sub Page Title -->
-  <div class="sub-page-title-base">
-    <h2 class="sub-page-title">Components</h2>
-    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg"><a href="#">Show</a></h4>
-  </div>
-  <!-- #Sub Page Title -->
-
-  <div class="inner-wrapper row layout-1">
-    <!-- Left Sidebar -->
-    {% include leftSidebar.html %}
-    <!-- #Left Sidebar -->
-
-    <div class="page-1-base col-xs-12 col-md-9 col-md-offset-3 right-sec">
-      <div class="page-1">
-        <h3 class="title">Routing</h3>
-        <p class="p">
-          A specialised storage DHT. A secured 
-          <a href="http://en.wikipedia.org/wiki/Distributed_hash_table"
-          target="_blank">DHT</a>, based on a 
-          <a href="http://en.wikipedia.org/wiki/Kademlia" target="_blank">kademlia-like</a>
-          implementation, but with some very stark
-          differences. This is a recursive, as opposed to iterative network,
-          enabling easier NAT traversal, providing more efficient use of
-          routers and larger networks. This also allows very fast
-          reconfiguration of network changes, alleviating the requirement for
-          a refresh algorithm. A recursive solution based on a network
-          protocol layer that is 'connection oriented' also allows a close
-          group to be aligned with security protocols.
-        </p>
-        <p class="p">
-          This library makes use of 
-          <a href="http://en.wikipedia.org/wiki/Public-key_cryptography"
-          target="_blank">Public-key cryptography</a> 
-          to allow a mechanism to ensure nodes are well recognised and
-          cryptographically secured. This pattern allows the creation of a DHT
-          based PKI and this in turn allows a decentralised network to make
-          use of groups as fixed in relation to any address. This is
-          particularly useful in a continually fluid network as described 
-          <a href="http://maidsafe.net/Whitepapers/pdf/MaidSafeDistributedHashTable.pdf"
-          target="_blank">here</a>, creating a server-less and
-          <a href="http://maidsafe.net/docs/SAFEnetwork.pdf" target="_blank">autonomous network.</a>
-        </p>
-        <p class="p">
-          This is a very under researched area. For a general introduction to
-          some of the ideas behind the design related to XOR Space, watching 
-          <a href="https://www.youtube.com/watch?v=Lr9FJRDcNzk&list=PLiYqQVdgdw_sSDkdIZzDRQR9xZlsukIxD">
-            The SAFE Network from First Principles series</a> 
-          is recommended. The slides for XOR Distance Metric and Basic Routing
-          lecture are also <a href="http://ericklavoie.com/talks/safenetwork/1-xor-routing.pdf">
-            available here</a>. The last video from the series on
-          how the same ideas were applied to decentralised BitTorrent trackers
-          is available <a href="https://www.youtube.com/watch?v=YFV908uoLPY">
-          here</a>. A proper formalisation of the Routing algorithm
-          is in progress.
-        </p>
-        <div class="sec">
-          <h3 class="sub-title">Pre-requisite:</h3>
-          <p class="p">
-            libsodium is a native dependency for 
-            <a href="https://github.com/dnaq/sodiumoxide">sodiumxoide</a>.
-            Thus, install sodium by following the instructions
-            <a href="http://doc.libsodium.org/installation/index.html">here</a>.
-            &nbsp;For windows, download and use the 
-            <a href="https://download.libsodium.org/libsodium/releases/libsodium-1.0.2-mingw.tar.gz">prebuilt mingw library</a>.
-            Extract and place the libsodium.a file in "bin\x86_64-pc-windows-gnu"
-            &nbsp;for 64bit System, or "bin\i686-pc-windows-gnu" for a 32bit system.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<h3 class="title">Routing</h3>
+<p class="p">
+  A specialised storage DHT. A secured 
+  <a href="http://en.wikipedia.org/wiki/Distributed_hash_table"
+  target="_blank">DHT</a>, based on a 
+  <a href="http://en.wikipedia.org/wiki/Kademlia" target="_blank">kademlia-like</a>
+  implementation, but with some very stark
+  differences. This is a recursive, as opposed to iterative network,
+  enabling easier NAT traversal, providing more efficient use of
+  routers and larger networks. This also allows very fast
+  reconfiguration of network changes, alleviating the requirement for
+  a refresh algorithm. A recursive solution based on a network
+  protocol layer that is 'connection oriented' also allows a close
+  group to be aligned with security protocols.
+</p>
+<p class="p">
+  This library makes use of 
+  <a href="http://en.wikipedia.org/wiki/Public-key_cryptography"
+  target="_blank">Public-key cryptography</a> 
+  to allow a mechanism to ensure nodes are well recognised and
+  cryptographically secured. This pattern allows the creation of a DHT
+  based PKI and this in turn allows a decentralised network to make
+  use of groups as fixed in relation to any address. This is
+  particularly useful in a continually fluid network as described 
+  <a href="http://maidsafe.net/Whitepapers/pdf/MaidSafeDistributedHashTable.pdf"
+  target="_blank">here</a>, creating a server-less and
+  <a href="http://maidsafe.net/docs/SAFEnetwork.pdf" target="_blank">autonomous network.</a>
+</p>
+<p class="p">
+  This is a very under researched area. For a general introduction to
+  some of the ideas behind the design related to XOR Space, watching 
+  <a href="https://www.youtube.com/watch?v=Lr9FJRDcNzk&list=PLiYqQVdgdw_sSDkdIZzDRQR9xZlsukIxD">
+    The SAFE Network from First Principles series</a> 
+  is recommended. The slides for XOR Distance Metric and Basic Routing
+  lecture are also <a href="http://ericklavoie.com/talks/safenetwork/1-xor-routing.pdf">
+    available here</a>. The last video from the series on
+  how the same ideas were applied to decentralised BitTorrent trackers
+  is available <a href="https://www.youtube.com/watch?v=YFV908uoLPY">
+  here</a>. A proper formalisation of the Routing algorithm
+  is in progress.
+</p>
+<div class="sec">
+  <h3 class="sub-title">Pre-requisite:</h3>
+  <p class="p">
+    libsodium is a native dependency for 
+    <a href="https://github.com/dnaq/sodiumoxide">sodiumxoide</a>.
+    Thus, install sodium by following the instructions
+    <a href="http://doc.libsodium.org/installation/index.html">here</a>.
+    &nbsp;For windows, download and use the 
+    <a href="https://download.libsodium.org/libsodium/releases/libsodium-1.0.2-mingw.tar.gz">prebuilt mingw library</a>.
+    Extract and place the libsodium.a file in "bin\x86_64-pc-windows-gnu"
+    &nbsp;for 64bit System, or "bin\i686-pc-windows-gnu" for a 32bit system.
+  </p>
 </div>

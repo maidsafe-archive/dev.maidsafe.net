@@ -1,115 +1,36 @@
 ---
-layout: base
-title: MaidSafe - Core Developers
-description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
-keywords: Distributed Platform, MaidSafe
-includes: []
-sidebarClass: left-sec
-breadcrumbs:
-  Developer: /
-  Core Developer: core_developers.html
-leftSidebar:
-  - target: Getting Started
-    href: core_developers.html
-  - target: Crust
-    href: core_developers_crust.html
-  - target: Routing
-    href: default
-  - target: Vaults
-    href: core_developers_vaults.html
-  - target: Self Encryption
-    href: default
-  - target: Client
-    href: core_developers_client.html
-  - target: DNS
-    href: default
-  - target: NFS
-    href: default
-primaryNav:
-  - target: App Developers
-    link: app_developers.html
-    class: type-1
-  - target: Core Developers
-    link: default
-    class: type-2 selected
-  - target: Careers
-    link: careers.html
-    class: type-3
-innerPrimaryNav:
-  Getting Started: #
-  Support: #
-  Rewards: #
-secondaryNav:
-  - target : App Developers
-    href: default
-    innerNav:
-      - name: Rust
-        link: default
-      - name: JavaScript
-        link: default
-      - name: Rewards
-        link: default
-  - target : Core Developers
-    href: default
-    innerNav:
-      - name: Getting Started
-        link: core_developers.html
-      - name: Support
-        link: default
-      - name: Rewards
-        link: default
-  - target: Careers
-    href: careers.html
+layout: core_developer_layout
 ---
-<div class="wrapper container">
-  <!-- Sub Page Title -->
-  <div class="sub-page-title-base">
-    <h2 class="sub-page-title">Components</h2>
-    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg"><a href="#">Show</a></h4>
-  </div>
-  <!-- #Sub Page Title -->
-
-  <div class="inner-wrapper row layout-1">
-    <!-- Left Sidebar -->
-    {% include leftSidebar.html %}
-    <!-- #Left Sidebar -->
-
-    <div class="page-1-base col-xs-12 col-md-9 col-md-offset-3 right-sec">
-      <div class="page-1">
-        <h3 class="title">Self-Encryption</h3>
-        <p class="p">
-          Self-encrypting files (convergent encryption plus obfuscation) which
-          can be accessed via either a REST or POSIX API. The REST API offers
-          simplicity (GET, PUT, POST, DELETE), while the POSIX API provides
-          more granular access.
-        </p>
-        <p class="p">
-          A version of 
-          <a href="https://en.wikipedia.org/wiki/Convergent_encryption">
-          convergent encryption</a> with an additional obfuscation step. This
-          pattern enables secured data that can also be 
-          <a href="https://en.wikipedia.org/wiki/Data_deduplication">
-          de-duplicated</a>. This library presents an API that can be
-          utilised in any application that provides a POSIX like filesystem
-          interface, dealing very effectively with the content part of any data
-          (in tests the parallelised approach can actually be faster than
-          reading/writing data as a single stream). It is important to realise
-          two important aspects of this library:
-        </p>
-        <ul class="list">
-          <li>This library deals with file content <b>only</b></li>
-          <li>This library provides very secure data, but does return a data
-            structure (DataMap) that in turn requires to be secured.
-          </li>
-        </ul>
-        <p class="p">
-          INSERT SELF ENCRYPTION DIAGRAM: https://safenetwork.wiki/en/File:Self-encryption.png
-        </p>
-        <p class="p">
-          It would be good to embed the self encryption video on this page:
-          <a href="https://www.youtube.com/watch?v=Jnvwv4z17b4">https://www.youtube.com/watch?v=Jnvwv4z17b4</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+<h3 class="title">Self-Encryption</h3>
+<p class="p">
+  Self-encrypting files (convergent encryption plus obfuscation) which
+  can be accessed via either a REST or POSIX API. The REST API offers
+  simplicity (GET, PUT, POST, DELETE), while the POSIX API provides
+  more granular access.
+</p>
+<p class="p">
+  A version of 
+  <a href="https://en.wikipedia.org/wiki/Convergent_encryption">
+  convergent encryption</a> with an additional obfuscation step. This
+  pattern enables secured data that can also be 
+  <a href="https://en.wikipedia.org/wiki/Data_deduplication">
+  de-duplicated</a>. This library presents an API that can be
+  utilised in any application that provides a POSIX like filesystem
+  interface, dealing very effectively with the content part of any data
+  (in tests the parallelised approach can actually be faster than
+  reading/writing data as a single stream). It is important to realise
+  two important aspects of this library:
+</p>
+<ul class="list">
+  <li>This library deals with file content <b>only</b></li>
+  <li>This library provides very secure data, but does return a data
+    structure (DataMap) that in turn requires to be secured.
+  </li>
+</ul>
+<p class="p">
+  INSERT SELF ENCRYPTION DIAGRAM: https://safenetwork.wiki/en/File:Self-encryption.png
+</p>
+<p class="p">
+  It would be good to embed the self encryption video on this page:
+  <a href="https://www.youtube.com/watch?v=Jnvwv4z17b4">https://www.youtube.com/watch?v=Jnvwv4z17b4</a>
+</p>

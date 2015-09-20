@@ -1,126 +1,47 @@
 ---
-layout: base
-title: MaidSafe - Core Developers
-description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
-keywords: Distributed Platform, MaidSafe
-includes: []
-sidebarClass: left-sec
-breadcrumbs:
-  Developer: /
-  Core Developer: core_developers.html
-leftSidebar:
-  - target: Getting Started
-    href: core_developers.html
-  - target: Crust
-    href: default
-  - target: Routing
-    href: core_developers_routing.html
-  - target: Vaults
-    href: core_developers_vaults.html
-  - target: Self Encryption
-    href: core_developers_self_encryption.html
-  - target: Client
-    href: core_developers_client.html
-  - target: DNS
-    href: default
-  - target: NFS
-    href: default
-primaryNav:
-  - target: App Developers
-    link: app_developers.html
-    class: type-1
-  - target: Core Developers
-    link: default
-    class: type-2 selected
-  - target: Careers
-    link: careers.html
-    class: type-3
-innerPrimaryNav:
-  Getting Started: #
-  Support: #
-  Rewards: #
-secondaryNav:
-  - target : App Developers
-    href: default
-    innerNav:
-      - name: Rust
-        link: default
-      - name: JavaScript
-        link: default
-      - name: Rewards
-        link: default
-  - target : Core Developers
-    href: default
-    innerNav:
-      - name: Getting Started
-        link: core_developers.html
-      - name: Support
-        link: default
-      - name: Rewards
-        link: default
-  - target: Careers
-    href: careers.html
+layout: core_developer_layout
 ---
-<div class="wrapper container">
-  <!-- Sub Page Title -->
-  <div class="sub-page-title-base">
-    <h2 class="sub-page-title">Components</h2>
-    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg"><a href="#">Show</a></h4>
-  </div>
-  <!-- #Sub Page Title -->
-
-  <div class="inner-wrapper row layout-1">
-    <!-- Left Sidebar -->
-    {% include leftSidebar.html %}
-    <!-- #Left Sidebar -->
-
-    <div class="page-1-base col-xs-12 col-md-9 col-md-offset-3 right-sec">
-      <div class="page-1">
-        <h3 class="title">Crust</h3>
-        <p class="p">
-          Reliable P2P network connections in Rust with NAT traversal. This
-          library will enable P2P networks to establish and maintain a number
-          of connections in a group when informed by users of the library. As
-          connections are made, they are passed up and the user can select which
-           connections to maintain or drop. TCP connections are always
-           favoured, as these will be directly connected (until TCP hole
-           punching is implemented) by default and TCP is also a known and
-           reliable protocol. Reliable UDP operates as a fall back protocol
-           and is very effective.
-        </p>
-        <p class="p">
-          Crust contains a bootstrap handler which will attempt to reconnect
-          to any previous "direct connected" nodes, while the libraries
-          beaconing system enables nodes on a local network to be found.
-          This functionality will be extended in due course using a gossip
-          type protocol for multi hop discovery.
-        </p>
-        <p class="p">
-          The user of the library has the option to provide a blacklisting
-          capability per session to disconnect such nodes 'en masse'.
-          <br>
-          _direct connected == Nodes we were previously connected to.
-          TCP nodes or reliable UDP nodes that allow incoming connections
-          (i.e. direct or full cone NAT that has been hole punched). This
-          library also supports fall-back endpoints being passed at
-          construction that will allow a fall-back should nodes from previous
-          sessions become unavailable.
-        </p>
-        <div class="sec">
-          <h3 class="sub-title">Nat traversal/Handling</h3>
-          <p class="p">
-            Several methods are used for NAT traversal, UpNP, hole punching 
-            <a href="http://www.cmlab.csie.ntu.edu.tw/~franklai/NATBT.pdf">
-            See here for TCP NAT traversal</a> and 
-            <a href="http://maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf">
-              here for UCP/DHT NAT traversal
-            </a> etc. These methods will be added to by the community to allow
-            a p2p network that cannot be easily blocked. By default this library
-            spawns sockets randomly, enabling nodes to appear on several ports
-            over time. This makes them very difficult to trace.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<h3 class="title">Crust</h3>
+<p class="p">
+  Reliable P2P network connections in Rust with NAT traversal. This
+  library will enable P2P networks to establish and maintain a number
+  of connections in a group when informed by users of the library. As
+  connections are made, they are passed up and the user can select which
+   connections to maintain or drop. TCP connections are always
+   favoured, as these will be directly connected (until TCP hole
+   punching is implemented) by default and TCP is also a known and
+   reliable protocol. Reliable UDP operates as a fall back protocol
+   and is very effective.
+</p>
+<p class="p">
+  Crust contains a bootstrap handler which will attempt to reconnect
+  to any previous "direct connected" nodes, while the libraries
+  beaconing system enables nodes on a local network to be found.
+  This functionality will be extended in due course using a gossip
+  type protocol for multi hop discovery.
+</p>
+<p class="p">
+  The user of the library has the option to provide a blacklisting
+  capability per session to disconnect such nodes 'en masse'.
+  <br>
+  _direct connected == Nodes we were previously connected to.
+  TCP nodes or reliable UDP nodes that allow incoming connections
+  (i.e. direct or full cone NAT that has been hole punched). This
+  library also supports fall-back endpoints being passed at
+  construction that will allow a fall-back should nodes from previous
+  sessions become unavailable.
+</p>
+<div class="sec">
+  <h3 class="sub-title">Nat traversal/Handling</h3>
+  <p class="p">
+    Several methods are used for NAT traversal, UpNP, hole punching 
+    <a href="http://www.cmlab.csie.ntu.edu.tw/~franklai/NATBT.pdf">
+    See here for TCP NAT traversal</a> and 
+    <a href="http://maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf">
+      here for UCP/DHT NAT traversal
+    </a> etc. These methods will be added to by the community to allow
+    a p2p network that cannot be easily blocked. By default this library
+    spawns sockets randomly, enabling nodes to appear on several ports
+    over time. This makes them very difficult to trace.
+  </p>
 </div>
