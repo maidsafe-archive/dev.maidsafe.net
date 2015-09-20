@@ -609,6 +609,22 @@ footer .layer-3 ul li a{
   color: #808080;
   font-weight: 300;
 }
+.page-1 .media {
+  width: 100%;
+  margin: 32px 0;
+  border-color: #EEE;
+  border-width: 1px 0;
+  border-style: solid;
+}
+
+.page-1 .media img {
+  width: 100%;
+}
+.page-1 .media .video {
+  width: 100%;
+  border: 0;
+  height: 480px;
+}
 /* #Page 1 Layout */
 
 /* Inner Page Banner */

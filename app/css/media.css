@@ -120,6 +120,10 @@
     margin-bottom: 25px;
     font-weight: normal;
   }
+  
+  .page-1 .media .video {
+    height: 200px;
+  }
   /* #Page Type 1 */
 
   /* Banner Gradient */
