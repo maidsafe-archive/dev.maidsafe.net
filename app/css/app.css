@@ -639,7 +639,7 @@ footer .layer-3 ul li a{
 }
 
 .page-banner.careers {
-  background-image: url(../img/street_people.jpg);
+  background-image: url(../img/careers.jpg);
   background-size: cover;
 }
 .page-banner .label-1 {
@@ -731,3 +731,67 @@ footer .layer-3 ul li a{
   font-weight: normal;
 }
 /* #Left Side Menu */
+
+/* Page 2 */
+.page-2 {
+  padding-bottom: 60px;
+}
+.page-2 .top-sec {
+  margin: 60px 0 !important;
+}
+.page-2 .p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 16px 0;
+  color: #808080;
+  text-align: justify;
+}
+.page-2 .box-type-base {
+  width: 50%;
+  float: left;
+}
+.page-2 .box-type-base .box-type {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  height: 420px;
+}
+.page-2 .box-type-base:first-child .box-type {
+  margin-right: 25px;
+}
+.page-2 .box-type-base:last-child .box-type {
+  margin-left: 25px;
+}
+.page-2 .box-type-base .box-type > .head {
+  font-size: 39px;
+  line-height: 49px;
+  padding: 40px;
+  font-weight: normal;
+  background-color: rgb(69, 102, 128);
+  color: white;
+}
+.page-2 .box-type-base .box-type .content {
+  position: relative;
+  height: 245px;
+  padding: 40px;
+}
+
+.page-2 .box-type-base .box-type .content .text {
+  font-size: 22px;
+  line-height: 27px;
+  margin: 0;
+  text-align: justify;
+}
+
+.page-2 .box-type-base .box-type .content .center-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* #Page 2 */

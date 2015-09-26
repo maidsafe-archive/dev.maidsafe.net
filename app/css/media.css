@@ -120,7 +120,7 @@
     margin-bottom: 25px;
     font-weight: normal;
   }
-  
+
   .page-1 .media .video {
     height: 200px;
   }
@@ -139,6 +139,33 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fefefe', GradientType=1 );
   }
   /* #Banner Gradient */
+  /* Page 2 */
+  .page-2 .box-type-base {
+    width: 100%;
+    max-width: 448px;
+    margin-bottom: 25px;
+  }
+  
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+    margin: 0 !important;
+  }
+
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
 }
 
 /* Media Less than 768px  */
@@ -258,6 +285,31 @@
     text-align: center;
   }
   /* #Page Banner */
+  /* Page 2 */
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+  }
+  .page-2 .box-type-base:first-child .box-type {
+    margin-right: 12.5px;
+  }
+  .page-2 .box-type-base:last-child .box-type {
+    margin-left: 12.5px;
+  }
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
 }
 
 /* Less Than 1024 */
@@ -410,6 +462,32 @@
     text-align: center;
   }
   /* #Footer */
+  /* Page 2 */
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+  }
+  .page-2 .box-type-base:first-child .box-type {
+    margin-right: 12.5px;
+  }
+  .page-2 .box-type-base:last-child .box-type {
+    margin-left: 12.5px;
+  }
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
+  /* #Page 2 */
 }
 
 /* Desktops and laptops ----------- */
