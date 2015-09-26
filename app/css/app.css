@@ -634,12 +634,27 @@ footer .layer-3 ul li a{
   background-position: center;
 }
 
+.page-banner.sub {
+  height: 330px;
+}
 .page-banner .page-banner-container {
   padding: 0 0 0 24px;
 }
 
 .page-banner.careers {
   background-image: url(../img/careers.jpg);
+  background-size: cover;
+}
+.page-banner.careers1 {
+  background-image: url(../img/careers1.jpg);
+  background-size: cover;
+}
+.page-banner.careers2 {
+  background-image: url(../img/careers2.jpg);
+  background-size: cover;
+}
+.page-banner.careers3 {
+  background-image: url(../img/careers3.jpg);
   background-size: cover;
 }
 .page-banner .label-1 {
@@ -795,3 +810,71 @@ footer .layer-3 ul li a{
   left: 0;
 }
 /* #Page 2 */
+
+/* Page 3 */
+.page-3 {
+  position: relative;
+  padding: 0;
+}
+.page-3 .sec-1 {
+  float: left;
+  width: 720px;
+  padding: 80px 32px 80px 0;
+}
+.page-3 .sec-1 .title {
+  color: #5b94d9;
+  font-size: 49px;
+  line-height: 59px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.page-3 .sec-1 .sub-title {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.page-3 .sec-1 .list {
+  font-size: 16px;
+}
+.page-3 .sec-1 .list li {
+  padding: 8px 0;
+  color: #808080;
+  font-weight: 300;
+}
+.page-3 .sec-1 .center-button {
+  text-align: center;
+  margin-top: 80px;
+}
+.page-3 .sec-1 .center-button a {
+  background-color: rgb(69, 102, 128);
+  padding: 8px 16px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+.page-3 .sec-2 {
+  width: 240px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  padding-left: 22px;
+  padding-top: 179px;
+  background-color: rgb(235, 235, 243);
+}
+.page-3 .sec-2 .title {
+  margin: 0 0 40px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.page-3 .sec-2 .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-3 .sec-2 .list a {
+  text-decoration: none;
+  line-height: 36px;
+}
+/* #Page 3 */

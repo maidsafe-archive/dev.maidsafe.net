@@ -145,7 +145,7 @@
     max-width: 448px;
     margin-bottom: 25px;
   }
-  
+
   .page-2 .box-type-base .box-type {
     height: 360px;
     margin: 0 !important;
@@ -166,6 +166,21 @@
   .page-2 .box-type-base .box-type .content .center-link {
     margin-bottom: 32px;
   }
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+  .page-3 .sec-2 {
+    width: 100%;
+    position: static;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* #Page 3 */
 }
 
 /* Media Less than 768px  */
@@ -310,6 +325,21 @@
   .page-2 .box-type-base .box-type .content .center-link {
     margin-bottom: 32px;
   }
+
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+  .page-3 .sec-2 {
+    width: 100%;
+    position: static;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* #Page 3 */
 }
 
 /* Less Than 1024 */
@@ -488,6 +518,11 @@
     margin-bottom: 32px;
   }
   /* #Page 2 */
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 720px;
+  }
+  /* #Page 3 */
 }
 
 /* Desktops and laptops ----------- */
@@ -534,4 +569,10 @@
     text-align: left;
     padding-left: 136px;
   }
+
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 930px;
+  }
+  /* #Page 3 */
 }
