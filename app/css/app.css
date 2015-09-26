@@ -558,11 +558,16 @@ footer .layer-3 ul li a{
 }
 
 .breadcum nav a:not(:last-child):after {
-  content: "/";
+  content: "";
   position: absolute;
-  top: 0;
+  background-image: url(../img/breadcrumb_arrow.svg);
+  width: 10px;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  top: 3px;
   left: 100%;
-  margin: 0 5px;
+  margin: 0 2px;
 }
 /* #Breadcum */
 
