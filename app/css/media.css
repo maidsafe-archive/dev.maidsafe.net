@@ -120,7 +120,67 @@
     margin-bottom: 25px;
     font-weight: normal;
   }
+
+  .page-1 .media .video {
+    height: 200px;
+  }
   /* #Page Type 1 */
+
+  /* Banner Gradient */
+  .banner-gradian:after {
+    background: #000000;
+    background: rgba(0,0,0,0.8);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.5)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fefefe', GradientType=1 );
+  }
+  /* #Banner Gradient */
+  /* Page 2 */
+  .page-2 .box-type-base {
+    width: 100%;
+    max-width: 448px;
+    margin-bottom: 25px;
+  }
+
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+    margin: 0 !important;
+  }
+
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+  .page-3 .sec-2 {
+    width: 100%;
+    position: static;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* #Page 3 */
 }
 
 /* Media Less than 768px  */
@@ -240,6 +300,46 @@
     text-align: center;
   }
   /* #Page Banner */
+  /* Page 2 */
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+  }
+  .page-2 .box-type-base:first-child .box-type {
+    margin-right: 12.5px;
+  }
+  .page-2 .box-type-base:last-child .box-type {
+    margin-left: 12.5px;
+  }
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
+
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+  .page-3 .sec-2 {
+    width: 100%;
+    position: static;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* #Page 3 */
 }
 
 /* Less Than 1024 */
@@ -392,10 +492,58 @@
     text-align: center;
   }
   /* #Footer */
+  /* Page 2 */
+  .page-2 .box-type-base .box-type {
+    height: 360px;
+  }
+  .page-2 .box-type-base:first-child .box-type {
+    margin-right: 12.5px;
+  }
+  .page-2 .box-type-base:last-child .box-type {
+    margin-left: 12.5px;
+  }
+  .page-2 .box-type-base .box-type > .head {
+    padding: 20px;
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .page-2 .box-type-base .box-type .content {
+    padding: 40px 20px;
+  }
+  .page-2 .box-type-base .box-type .content .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .page-2 .box-type-base .box-type .content .center-link {
+    margin-bottom: 32px;
+  }
+  /* #Page 2 */
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 720px;
+  }
+  /* #Page 3 */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
+  .layout-1 {
+      width: 100%;
+  }
+
+  .layout-1 .left-sec {
+    width: 20.5% !important;
+    margin: 0;
+    float: left;
+  }
+
+  .layout-1 .right-sec {
+    width: 79.5% !important;
+    margin: 0;
+    float: right;
+    padding: 0 16px;
+  }
+
   footer .brand-list .brand-list-base .sec-center {
     width: 272px;
     margin: 0 auto;
@@ -421,4 +569,10 @@
     text-align: left;
     padding-left: 136px;
   }
+
+  /* Page 3 */
+  .page-3 .sec-1 {
+      width: 930px;
+  }
+  /* #Page 3 */
 }

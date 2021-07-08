@@ -1,0 +1,79 @@
+---
+layout: base
+description: MaidSafe's distributed platform enables the creation of fast and secure applications that help ensure digital privacy, security and freedom for all.
+keywords: Distributed Platform, MaidSafe
+sidebarClass: left-sec
+leftSidebar:
+  - target: Getting Started
+    href: core_developers.html
+  - target: Crust
+    href: core_developers_crust.html
+  - target: Routing
+    href: core_developers_routing.html
+  - target: Vaults
+    href: core_developers_vaults.html
+  - target: Self Encryption
+    href: core_developers_self_encryption.html
+  - target: Client
+    href: core_developers_client.html
+  - target: DNS
+    href: default
+  - target: NFS
+    href: default
+primaryNav:
+  - target: App Developers
+    link: app_developers.html
+    class: type-1
+  - target: Core Developers
+    link: default
+    class: type-2 selected
+  - target: Careers
+    link: careers.html
+    class: type-3
+innerPrimaryNav:
+  Getting Started: #
+  Support: #
+  Rewards: #
+secondaryNav:
+  - target : App Developers
+    href: default
+    innerNav:
+      - name: Rust
+        link: default
+      - name: JavaScript
+        link: default
+      - name: Rewards
+        link: default
+  - target : Core Developers
+    href: default
+    innerNav:
+      - name: Getting Started
+        link: core_developers.html
+      - name: Support
+        link: default
+      - name: Rewards
+        link: default
+  - target: Careers
+    href: careers.html
+---
+
+<div class="wrapper container">
+  <!-- Sub Page Title -->
+  <div class="sub-page-title-base">
+    <h2 class="sub-page-title">Components</h2>
+    <h4 id="showSidemenu" class="sub-page-title-opt hidden-md hidden-lg"><a href="#">Show</a></h4>
+  </div>
+  <!-- #Sub Page Title -->
+
+  <div class="inner-wrapper row layout-1">
+    <!-- Left Sidebar -->
+    {% include leftSidebar.html %}
+    <!-- #Left Sidebar -->
+
+    <div class="page-1-base col-xs-12 col-md-9 col-md-offset-3 right-sec">
+      <div class="page-1">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

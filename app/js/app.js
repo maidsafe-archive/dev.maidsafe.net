@@ -62,12 +62,12 @@ var toggleSideMenu = function() {
     if (e.target !== this) {
       return;
     }
-    if (instant.parent().hasClass('selected')) {
-      instant.parent().removeClass('selected');
-      return;
-    }
-    $('.left-side-menu li').removeClass('selected');
-    instant.parent().addClass('selected');
+    // if (instant.parent().hasClass('selected')) {
+    //   instant.parent().removeClass('selected');
+    //   return;
+    // }
+    // $('.left-side-menu li').removeClass('selected');
+    // instant.parent().addClass('selected');
   });
 
   $('.left-side-menu > li > ul > li > a').on('click', function(e) {

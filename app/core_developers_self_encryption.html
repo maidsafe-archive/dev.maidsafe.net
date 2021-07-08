@@ -1,0 +1,40 @@
+---
+layout: core_developer_base
+title: MaidSafe - Core Developers Self-Encryption
+breadcrumbs:
+  Developer: /
+  Core Developer: core_developers.html
+  Self-Encryption: core_developers_self_encryption.html
+---
+<h3 class="title">Self-Encryption</h3>
+<p class="p">
+  Self-encrypting files (convergent encryption plus obfuscation) which
+  can be accessed via either a REST or POSIX API. The REST API offers
+  simplicity (GET, PUT, POST, DELETE), while the POSIX API provides
+  more granular access.
+</p>
+<p class="p">
+  A version of 
+  <a href="https://en.wikipedia.org/wiki/Convergent_encryption">
+  convergent encryption</a> with an additional obfuscation step. This
+  pattern enables secured data that can also be 
+  <a href="https://en.wikipedia.org/wiki/Data_deduplication">
+  de-duplicated</a>. This library presents an API that can be
+  utilised in any application that provides a POSIX like filesystem
+  interface, dealing very effectively with the content part of any data
+  (in tests the parallelised approach can actually be faster than
+  reading/writing data as a single stream). It is important to realise
+  two important aspects of this library:
+</p>
+<ul class="list">
+  <li>This library deals with file content <b>only</b></li>
+  <li>This library provides very secure data, but does return a data
+    structure (DataMap) that in turn requires to be secured.
+  </li>
+</ul>
+<p class="p media">
+  <iframe class="video" src="https://www.youtube.com/embed/Jnvwv4z17b4" allowfullscreen></iframe>
+</p>
+<p class="p media">
+  <img src="img/Self-encryption.png" alt="Self-encryption" />
+</p>
